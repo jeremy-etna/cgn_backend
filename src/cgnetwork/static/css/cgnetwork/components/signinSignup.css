@@ -1,0 +1,125 @@
+.signin-signup {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup-btns {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.register-btn {
+    width: 100px;
+    padding: 10px;
+    background-color: #313439;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+.login-btn {
+    width: 100px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #292a2f;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+label {
+    color: #d30e5a;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+.register,
+.login {
+    width: 25%;
+    height: 50%;
+    margin: 10% auto;
+}
+select {
+    width: 100%;
+    border-bottom: 1px solid #d30e5a;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    -webkit-appearance: listbox !important;
+}
+select:focus {
+    outline: none;
+}
+option {
+    color: #fff;
+    background-color: #1c1b20;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+input {
+    width: 100%;
+    border-bottom: 1px solid #d30e5a;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+input:focus {
+    outline: none;
+}
+input[type="checkbox"]:checked {
+    accent-color: #d30e5a;
+}
+.helptext {
+    color: #aaa;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    margin-top: 5px;
+
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+label:hover + .helptext {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+input[type = submit],
+.edit-btn {
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #d30e5a;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+input[type = submit]:hover,
+.edit-btn:hover {
+    background-color: #d30e5a;
+    transition: background 1s;
+}

@@ -1,0 +1,9 @@
+<div class="coordinate">
+    <h1>Coordonates</h1>
+    <br>
+    <ul class="coordinate-list">
+        {% for label, coord in coordinate.items %}
+            <li class="{{ label }}">{{ label | upper }}<div class="{{ coord }}">{{ coord }}</div></li>
+        {% endfor %}
+    </ul>
+</div>

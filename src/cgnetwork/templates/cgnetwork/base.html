@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Cg Network</title>
+		<link rel="stylesheet" href="{% static 'css/cgnetwork/baseStyle.css' %}">
+		{% block extra_css %}{% endblock %}
+	</head>
+
+	<body>
+		<header>
+			{% include "CgNetwork/components/navbar.html" %}
+		</header>
+
+		<main>
+			{% block content %}{% endblock %}
+		</main>
+
+		<footer>
+			{% include "CgNetwork/components/footer.html" %}
+		</footer>
+
+	</body>
+
+</html>

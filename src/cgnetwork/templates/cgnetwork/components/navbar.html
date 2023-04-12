@@ -1,0 +1,28 @@
+<nav>
+    <a class="nav-brand" href="/">CG Network</a>
+    {% if not request.user.is_authenticated %}
+    <div class="nav-links">
+        <a class="nav-link" href="/register">register</a>
+        <a class="nav-link" href="/login">Login</a>
+    </div>
+    {% else %}
+        {% if user_role == 'artist' %}
+            <p class="nav-welcome" style="display:inline">Welcome {{ user.artist.first_name }}</p>
+            <div class="nav-links">
+                <a class="nav-link" href="{% url 'artist-profile' %}">Profile</a>
+                <a class="nav-link" href="{% url 'artist-jobs' %}">Jobs</a>
+                <a class="nav-link" href="{% url 'artist-companies' %}">Companies</a>
+                <a class="nav-link" href="/logout">Logout</a>
+            </div>
+        {% endif %}
+        {% if user_role == 'company' %}
+            <p class="nav-welcome">{{ user.company.company_name }}</p>
+            <div class="nav-links">
+                <a class="nav-link" href="{% url 'company-profile' %}">Profile</a>
+                <a class="nav-link" href="{% url 'company-jobs' %}">Jobs</a>
+                <a class="nav-link" href="{% url 'company-artists' %}">Artists</a>
+                <a class="nav-link" href="/logout">Logout</a>
+            </div>
+        {% endif %}
+    {% endif %}
+</nav>

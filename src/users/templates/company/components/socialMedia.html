@@ -1,0 +1,9 @@
+<div class="urls">
+    <h1>urls</h1>
+    <br>
+    <ul class="urls-list">
+        {% for label, url in socialmedia.items %}
+            <li class="{{ label }}">{{ label | upper }}<div class="{{ url }}">{{ url }}</div></li>
+        {% endfor %}
+    </ul>
+</div>

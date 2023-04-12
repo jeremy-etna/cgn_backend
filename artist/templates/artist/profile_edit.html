@@ -1,0 +1,60 @@
+{% extends 'CgNetwork/base.html' %}
+
+{% block content %}
+<main>
+    <section class="container-profile">
+        <img src="/media/{{ identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="identity-form">
+                <h1>identity</h1>
+                {{ ArtistIdentityForm.as_div }}
+            </div>
+
+            <div class="row-form">
+
+                <div class="form">
+                    <h1>coordonates</h1>
+                    <br>
+                    {{ ArtistCoordonatesForm.as_div }}
+                </div>
+
+                <div class="form">
+                    <h1>sectors</h1>
+                    <br>
+                    {{ ArtistSectorForm.as_div }}
+                </div>
+
+                <div class="form">
+                    <h1>contract</h1>
+                    <br>
+                    {{ ArtistContractForm.as_div }}
+                </div>
+
+                <div class="form">
+                    <h1>urls</h1>
+                    <br>
+                    {{ ArtistUrlForm.as_div }}
+                </div>
+            </div>
+
+            <div class="skills">
+                <h1>art skills</h1>
+                <ul class="skills-list">
+                    {{ ArtistArtisticSkillForm.as_div }}
+                </ul>
+            </div>
+
+            <div class="softwares">
+                <h1>softwares</h1>
+                <ul class="softwares-list">
+                    {{ ArtistSoftwareForm.as_div }}
+                </ul>
+            </div>
+            {{ errors }}
+            <input type="submit" value="save profile">
+        </form>
+    </section>
+</main>
+{% endblock %}

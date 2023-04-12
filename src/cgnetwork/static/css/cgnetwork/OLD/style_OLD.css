@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300;1,900&family=Playfair+Display:ital,wght@1,900&display=swap');
+@import "reset.css";
+
+body {
+    background-color: #1c1b20;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+/*    justify-content: center;
+    align-items: center;*/
+}
+
+footer {
+    background-color: #292a2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.container-profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* NAVBAR */
+.navbar {
+    background-color: #292a2f;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-brand {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-left: 20px;
+}
+.nav-link {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 20px;
+}
+p.nav-welcome {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+
+/* PRIMITIVES */
+h1 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 20px;
+}
+h2 {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 20px;
+}
+h3 {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 20px;
+}
+li {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+/* REGISTER - LOGIN */
+.signup {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.signup-btns {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+}
+.register-btn {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #292a2f;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+.login-btn {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #ccc;
+    border: 1px solid #fff;
+    color: #292a2f;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+label {
+    color: #d30e5a;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+.register, .login {
+    width: 25%;
+    height: 50%;
+    margin: 10% auto;
+}
+select {
+  border-bottom: 1px solid #d30e5a;
+  color: #fff;
+  margin-top: 5px;
+  width: 100%;
+  -webkit-appearance: listbox !important;
+}
+option {
+    color: #fff;
+    background-color: #1c1b20;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+input {
+  border-bottom: 1px solid #d30e5a;
+  color: #fff;
+  margin-top: 5px;
+  width: 100%;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.helptext {
+    color: #aaa;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    margin-top: 5px;
+
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+label:hover + .helptext {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+input[type = submit] {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #d30e5a;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+}
+input[type = submit]:hover {
+    background-color: #d30e5a;
+    transition: background 1s;
+}
+/* ARTIST - PROFILE */
+.identity img {border-radius: 50%;}
+.identity {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8% auto 5% auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* FIRST ROW */
+.row-info {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 5% 0 5%;
+}
+.coordonates-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 3% 0;
+}
+.sectors-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 3% 0;
+}
+.contracts-types-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 3% 0;
+}
+.urls-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 3% 0;
+}
+.True {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    background-color: #d30e5a;
+}
+.False {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    background-color: #333;
+}
+/* SKILLS */
+.skills {
+    width: 90%;
+    margin: 5% 5% 0 5%;
+}
+.skills h1 {
+    text-align: center;
+}
+.skills > ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.skills-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5% 3% 5%;
+}
+.level {
+    width: 82%;
+    height: 5px;
+    background-color: #333;
+}
+.Never {
+    width: 0%;
+    height: 5px;
+    background-color: #d30e5a;
+}
+.Novice {
+    width: 16%;
+    height: 5px;
+    background-color: #d30e5a;
+}
+.Advanced {
+    width: 32%;
+    height: 5px;
+    background-color: #d30e5a;
+}
+.Competent {
+    width: 48%;
+    height: 5px;
+    background-color: #d30e5a;
+}
+.Proficient {
+    width: 64%;
+    height: 5px;
+    background-color: #d30e5a;
+}
+.Expert {
+    width: 82%;
+    height: 5px;
+    background-color: #d30e5a;
+}
+/* SOFTWARES */
+.softwares {
+    width: 90%;
+    margin: 5% 5% 0 5%;
+}
+.softwares h1 {
+    text-align: center;
+}
+.softwares > ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.softwares-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5% 3% 5%;
+}
+/* GALLERY COMPANY */
+.container-gallery {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 5% 5% 0 5%;
+}
+.company-card {
+    width: 400px;
+    height: 500px;
+    background-color: #292a2f;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.company-logo {
+    width: 100%;
+    height: 50%;
+    background-color: #292a2f;
+    display: flex;
+    justify-content: center;
+}
+.company-card img {
+    height: 200px;
+    margin-top: 10%;
+    border-radius: 10%;
+}
+.company-content {
+    width: 100%;
+    height: 50%;
+    background-color: #292a2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.company-location {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.company-card a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.company-card a:hover {
+    color: #d30e5a;
+    transition: color 1s;
+}
+.company-card p {
+    color: #aaa;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.company-identity a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.company-identity a:hover {
+    color: #d30e5a;
+    transition: color 1s;
+}
+.company-identity {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8% auto 5% auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.company-info {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}

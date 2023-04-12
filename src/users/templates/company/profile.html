@@ -1,0 +1,22 @@
+{% extends 'CgNetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section class="container-profile">
+            <section class="container-profile">{% include 'company/components/identity.html' %}</section>
+
+            <a class="edit-btn" href="{% url 'company-profile-edit' %}">EDIT MODE</a>
+
+            <section class="identity">{% include 'company/components/coordinate.html' %}</section>
+            <section class="contract">{% include 'company/components/contract.html' %}</section>
+            <section class="sector">{% include 'company/components/sector.html' %}</section>
+            <section class="social-media">{% include 'company/components/socialMedia.html' %}</section>
+            <section class="competence">{% include 'company/components/competence.html' %}</section>
+            <section class="software">{% include 'company/components/software.html' %}</section>
+        </section>
+    </main>
+{% endblock %}

@@ -1,0 +1,9 @@
+<div class="sector">
+    <h1>Sectors</h1>
+    <br>
+    <ul class="sectors-list">
+        {% for label, s in sector.items %}
+            <li class="{{ label }}">{{ label | upper }}<div class="{{ s }}"></div></li>
+        {% endfor %}
+    </ul>
+</div>

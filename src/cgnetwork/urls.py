@@ -1,0 +1,19 @@
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+from .views import home, register, logged_in
+
+# Application URLs
+urlpatterns = [
+    path("__reload__/", include("django_browser_reload.urls")),  # Browser reload
+    path('', home, name='home'),
+    path('register/', register, name='register'),
+    path('', include('django.contrib.auth.urls')),  # Auth views (login, logout, password reset, etc.)
+    path('logged_in', logged_in, name='logged_in'),  # Logged in view
+    path('artist/', include('users.urls.artist')),  # Artist URLs
+    path('company/', include('users.urls.company')),  # Company URLs
+]
+
+# Media files serving during development
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

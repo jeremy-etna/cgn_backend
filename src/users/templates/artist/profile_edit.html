@@ -1,0 +1,52 @@
+{% extends 'CgNetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/artist/components/level-bar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/artist/components/toggle-switch.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="container-profile">
+        <img src="/media/{{ identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <section class="identity">
+                {% include 'artist/components/form-edit-template.html' with form_title='Identity' form=ArtistIdentityForm %}
+            </section>
+
+            <div class="row-form">
+
+                <section class="coordinate">
+                    {% include 'artist/components/form-edit-template.html' with form_title='Coordinates' form=ArtistCoordinateForm %}
+                </section>
+                <section class="sector">
+                    {% include 'artist/components/form-edit-template.html' with form_title='Sectors' form=ArtistSectorForm %}
+                </section>
+                <section class="contract">
+                    {% include 'artist/components/form-edit-template.html' with form_title='Contracts' form=ArtistContractForm %}
+                </section>
+                <section class="social-media">
+                    {% include 'artist/components/form-edit-template.html' with form_title='Urls' form=ArtistSocialMediaForm %}
+                </section>
+                <section class="competence">
+                    {% include 'artist/components/form-edit-template.html' with form_title='Competences' form=ArtistCompetenceForm %}
+                </section>
+                <section class="software">
+                    {% include 'artist/components/form-edit-template.html' with form=ArtistSoftwareForm %}
+                </section>
+
+                {% include 'artist/components/level-bar.html' %}
+                <br>
+                {% include 'artist/components/toggle-switch.html' %}
+
+            </div>
+
+            {{ errors }}
+            <input type="submit" value="save profile">
+        </form>
+    </section>
+</main>
+{% endblock %}

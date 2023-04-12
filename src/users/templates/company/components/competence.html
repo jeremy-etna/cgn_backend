@@ -1,0 +1,9 @@
+<div class="skills">
+    <h1>skills</h1>
+    <br>
+    <ul class="skills-list">
+        {% for label, c in competence.items %}
+            <li class="{{ label }}">{{ label | upper }}<div class="level"><div class="{{ c }}"></div></div></li>
+        {% endfor %}
+    </ul>
+</div>

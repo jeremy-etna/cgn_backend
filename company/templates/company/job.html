@@ -1,0 +1,49 @@
+{% extends 'CgNetwork/base.html' %}
+
+{% block content %}
+<main>
+    <section class="container-profile">
+        <div class="identity">
+            <img src="/media/{{ identity.logo }}" alt="NO IMAGE CHOSEN" style="height:200px">
+            <br>
+            <h1>{{ identity.title | upper }}</h1>
+            <br>
+            <h2>{{ identity.company_name | upper }}</h2>
+            <br>
+            <h3 >JOB DESCRIPTION:</h3>
+            <br>
+            <p>{{ identity.description }}</p>
+            <br>
+            <p>SECTOR: {{ identity.sector | safe }}</p>
+            <br>
+            <p>CONTRACT TYPE: {{ identity.contract_type }}</p>
+            <br>
+            <p>SALARY RANGE: {{ identity.salary_min }} € <i class="arrow right"></i><i class="arrow right"></i><i class="arrow right"></i> {{ identity.salary_max }} € / Day</p>
+        </div>
+
+        <div class="skills">
+            <h1>Skills required</h1>
+            <br>
+            <ul class="skills-list">
+                {% for label, skill in artistic_skills.items %}
+                    {% if skill != 'Never used' %}
+                        <li class="{{ label }}">{{ label | upper }}<div class="level"><div class="{{ skill }}"></div></div></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="softwares">
+            <h1>Softwares required</h1>
+            <br>
+            <ul class="softwares-list">
+                {% for label, software in softwares.items %}
+                    {% if software != 'Never used' %}
+                        <li class="{{ label }}">{{ label | upper }}<div class="level"><div class="{{ software }}"></div></div></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</main>
+{% endblock %}
