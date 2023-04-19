@@ -1,0 +1,7 @@
+<nav id="sticky-menu">
+  <ul>
+    {% for section_name, path_template in templates.items %}
+      <li><a class="scroll" href="#{{ section_name }}">{{ section_name }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

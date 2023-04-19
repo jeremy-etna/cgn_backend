@@ -1,13 +1,16 @@
 from django.forms import ModelForm
-from users.models.company import Company
 from job.models import Job
 
+from users.models.company import (
+    Company,
+    CompanyCompetence,
+    CompanySoftware,
+)
 from cgnetwork.models import (
     Coordinate,
+    Mobility,
     SocialMedia,
     Sector,
-    Competence,
-    Software,
 )
 
 
@@ -20,6 +23,12 @@ class CompanyIdentityForm(ModelForm):
 class CompanyCoordinateForm(ModelForm):
     class Meta:
         model = Coordinate
+        exclude = ['user']
+
+
+class CompanyMobilityForm(ModelForm):
+    class Meta:
+        model = Mobility
         exclude = ['user']
 
 
@@ -37,31 +46,31 @@ class CompanySectorForm(ModelForm):
 
 class CompanyCompetenceForm(ModelForm):
     class Meta:
-        model = Competence
+        model = CompanyCompetence
         exclude = ['user']
 
 
 class CompanySoftwareForm(ModelForm):
     class Meta:
-        model = Software
+        model = CompanySoftware
         exclude = ['user']
 
 
-class JobForm(ModelForm):
-    class Meta:
-        model = Job
-        exclude = ['user']
-
-
-class JobCompetenceForm(ModelForm):
-    class Meta:
-        model = Competence
-        exclude = ['user']
-
-
-class JobSoftwareForm(ModelForm):
-    class Meta:
-        model = Software
-        exclude = ['user']
+# class JobForm(ModelForm):
+#     class Meta:
+#         model = Job
+#         exclude = ['user']
+#
+#
+# class JobCompetenceForm(ModelForm):
+#     class Meta:
+#         model = Competence
+#         exclude = ['user']
+#
+#
+# class JobSoftwareForm(ModelForm):
+#     class Meta:
+#         model = Software
+#         exclude = ['user']
 
 

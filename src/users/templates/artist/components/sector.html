@@ -1,7 +1,7 @@
-<div class="sector">
-    <h1>Sectors</h1>
+<div class="{{ title }}">
+    <h1>{{ title | capfirst }}s</h1>
     <br>
-    <ul class="sectors-list">
+    <ul class="{{ title }}s-list">
         {% for label, sect in sector.items %}
             <li class="{{ label }}">{{ label | upper }}<div class="{{ sect }}">{{ sect }}</div></li>
         {% endfor %}

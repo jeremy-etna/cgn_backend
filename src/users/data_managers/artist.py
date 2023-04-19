@@ -40,6 +40,19 @@ def convert_objects_to_dict(context: dict) -> dict:
     return context
 
 
+def get_templates(role: str, components: list) -> dict:
+    context = {}
+    for component in components:
+        path = f"{role}/components/{component}.html"
+        context[component] = path
+    return context
+
+
+
+
+
+
+
 def get_artist_data(user_id):
     artist = Artist.objects.get(user_id=user_id)
     coordinate = Coordinate.objects.get(user_id=user_id)

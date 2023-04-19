@@ -1,12 +1,10 @@
 from cgnetwork.models import (
     Coordinate,
-    Contract,
     Mobility,
-    Administrative,
     SocialMedia,
     Sector,
-    Competence,
-    Software,
+    CompanyCompetence,
+    CompanySoftware,
 )
 from users.models.company import Company
 
@@ -16,11 +14,10 @@ def get_profile_data(user_id: int) -> dict:
         (Company, 'identity'),
         (Coordinate, 'coordinate'),
         (Mobility, 'mobility'),
-        (Administrative, 'administrative'),
         (SocialMedia, 'socialMedia'),
         (Sector, 'sector'),
-        (Competence, 'competence'),
-        (Software, 'software'),
+        (CompanyCompetence, 'competence'),
+        (CompanySoftware, 'software'),
     ]
     context = {}
     for model, context_key in models:
@@ -36,4 +33,12 @@ def convert_objects_to_dict(context: dict) -> dict:
                 for field in obj._meta.fields
                 if field.name not in ('id', 'user')
             }
+    return context
+
+
+def get_templates(role: str, components: list) -> dict:
+    context = {}
+    for component in components:
+        path = f"{role}/components/{component}.html"
+        context[component] = path
     return context

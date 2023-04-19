@@ -1,0 +1,27 @@
+{% extends 'CgNetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section class="container-profile">
+            <div class="{{ job.title }}">
+                <h1>{{ job.title | capfirst }}</h1>
+                <br>
+                <ul class="{{ title }}s-list">
+                    {% for label, url in job.items %}
+                        <li class="{{ label }}">{{ label | upper }}<div class="{{ url }}">{{ url }}</div></li>
+                    {% endfor %}
+                    {% for label, value in user.items %}
+                        <li class="{{ label }}">{{ label | upper }}<div class="{{ value }}">{{ value }}</div></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </main>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

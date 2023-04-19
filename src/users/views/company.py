@@ -10,7 +10,10 @@ from users.models.artist import Artist
 from users.data_managers.company import (
     get_profile_data,
     convert_objects_to_dict,
+    get_templates,
 )
+
+COMPONENTS = ['identity', 'coordinate', 'mobility', 'sector', 'socialMedia', 'competence', 'software']
 
 
 @login_required()
@@ -19,6 +22,7 @@ def profile(request):
     context = get_profile_data(user_id)
     context = convert_objects_to_dict(context)
     context['user_role'] = request.user.user_role
+    context['templates'] = get_templates(context['user_role'], COMPONENTS)
     return render(request, 'company/profile.html', context)
 
 
@@ -31,6 +35,7 @@ def profile_edit(request):
     forms_and_instances = [
         (CompanyIdentityForm, context['identity']),
         (CompanyCoordinateForm, context['coordinate']),
+        (CompanyMobilityForm, context['mobility']),
         (CompanyCompetenceForm, context['competence']),
         (CompanySectorForm, context['sector']),
         (CompanySocialMediaForm, context['socialMedia']),
@@ -46,8 +51,11 @@ def profile_edit(request):
                 context['errors'] = current_form.errors
         return HttpResponseRedirect('../')
     else:
-        for form, instance in forms_and_instances:
-            context[form.__name__] = form(initial=instance)
+        context['forms'] = {}
+        for form_class, instance in forms_and_instances:
+            form = form_class(instance=instance)
+            context['forms'][form_class.__name__] = form
+            context['templates'] = get_templates(context['user_role'], ['form_edit_template'])
 
     return render(request, 'company/profile_edit.html', context)
 

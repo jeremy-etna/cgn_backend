@@ -1,0 +1,9 @@
+<div class="{{ title }}">
+    <h1>{{ title | capfirst }}</h1>
+    <br>
+    <ul class="{{ title }}-list">
+        {% for label, mob in mobility.items %}
+            <li class="{{ label }}">{{ label | upper }}<div class="{{ mob }}">{{ mob }}</div></li>
+        {% endfor %}
+    </ul>
+</div>

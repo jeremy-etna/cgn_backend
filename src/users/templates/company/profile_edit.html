@@ -1,20 +1,26 @@
 {% extends 'CgNetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/{{ user_role }}/components/level_bar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/artist/components/toggle_switch.css' %}">
+{% endblock %}
 
 {% block content %}
 <main>
     <section class="container-profile">
-        <img src="/media/{{ identity.logo }}" alt="NO IMAGE CHOSEN" style="height:200px">
-
+        <img src="/media/{{ identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            <h1>identity</h1>
-            {{ CompanyIdentityForm.as_p }}
-            <h1>coordonates</h1>
-            {{ CompanyCoordonatesForm.as_p }}
-            <h1>urls</h1>
-            {{ CompanySectorForm.as_p }}
-            <h1>urls</h1>
-            {{ CompanyUrlForm.as_p }}
+
+            {% for name, form in forms.items %}
+                <section class="{{ form_section.class_name }}">
+                    {% with templates.form_edit_template as template_name %}
+                        {% include template_name with form_title=name|cut:"Company"|cut:"Form" form=form %}
+                    {% endwith %}
+                </section>
+            {% endfor %}
+
             {{ errors }}
             <input type="submit" value="save profile">
         </form>

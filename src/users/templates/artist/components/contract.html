@@ -1,7 +1,7 @@
-<div class="contract-types">
-    <h1>Contract types</h1>
+<div class="{{ title }}">
+    <h1>{{ title | capfirst }}s</h1>
     <br>
-    <ul class="contracts-types-list">
+    <ul class="{{ title }}s-list">
         {% for label, cont in contract.items %}
             <li class="{{ label }}">{{ label | upper }}<div class="{{ contract }}">{{ cont }}</div></li>
         {% endfor %}

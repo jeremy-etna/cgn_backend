@@ -1,9 +1,9 @@
-<div class="skills">
-    <h1>skills</h1>
+<div class="{{ title }}">
+    <h1>{{ title | capfirst }}s</h1>
     <br>
-    <ul class="skills-list">
-        {% for label, c in competence.items %}
-            <li class="{{ label }}">{{ label | upper }}<div class="level"><div class="{{ c }}"></div></div></li>
+    <ul class="{{ title }}s-list">
+        {% for label, comp in competence.items %}
+            <li class="{{ label }}">{{ label | upper }}<div class="level"><div class="{{ comp }}">{{ comp }}</div></div></li>
         {% endfor %}
     </ul>
 </div>

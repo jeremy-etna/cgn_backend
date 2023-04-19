@@ -1,8 +1,8 @@
-<div class="urls">
-    <h1>urls</h1>
+<div class="{{ title }}">
+    <h1>{{ title | capfirst }}s</h1>
     <br>
-    <ul class="urls-list">
-        {% for label, url in socialmedia.items %}
+    <ul class="{{ title }}s-list">
+        {% for label, url in socialMedia.items %}
             <li class="{{ label }}">{{ label | upper }}<div class="{{ url }}">{{ url }}</div></li>
         {% endfor %}
     </ul>

@@ -1,0 +1,22 @@
+{% extends 'CgNetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="container-profile">
+        <form method="post">
+            {% csrf_token %}
+            {% include 'D:\RNCP\cg_network\src\users\templates\artist\components\form_edit_template.html' %}
+            {{ errors }}
+            <input type="hidden" name="current-form" value="{{ name }}">
+            <input type="submit" value="save profile">
+        </form>
+    </section>
+</main>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

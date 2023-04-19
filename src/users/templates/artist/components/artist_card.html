@@ -1,0 +1,15 @@
+ <div class="company-card">
+    <div class="avatar">
+        <a href="{% url 'artist-company' user.id %}">
+            <img src="/media/{{ user.avatar }}" alt="NO IMAGE CHOSEN">
+        </a>
+    </div>
+    <div class="company-content">
+        <h1>{{ user.first_name | upper}} {{ user.last_name | upper}}</h1>
+        <div class="company-location">
+            <h2>{{ user.user.country | upper }}</h2>
+            <h3>{{ user.user.city }}</h3>
+        </div>
+        <p>{{ user.description | slice:"0:150"}}...</p>
+    </div>
+</div>

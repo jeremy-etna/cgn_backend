@@ -13,16 +13,47 @@ nav {
     font-weight: 900;
     margin-left: 20px;
 }
+/*.nav-link {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 20px;
+}*/
+
+p.nav-welcome {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
 .nav-link {
     color: #fff;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 300;
     margin-right: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
 }
-p.nav-welcome {
-    color: #fff;
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    font-weight: 700;
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d30e5a;
+
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }

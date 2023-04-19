@@ -1,0 +1,52 @@
+/* Réinitialiser certaines propriétés CSS pour tous les navigateurs */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styliser le menu sticky */
+#sticky-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+#sticky-menu ul {
+  list-style-type: none;
+}
+
+#sticky-menu ul li {
+  margin-bottom: 10px;
+}
+
+#sticky-menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#sticky-menu ul li a:hover {
+  color: #007bff;
+}
+
+/* Styliser le contenu */
+#content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}

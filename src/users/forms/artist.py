@@ -1,7 +1,11 @@
-from django.forms import ModelForm
+from django.forms import (
+    ModelForm,
+)
 from users.models.artist import Artist
 from cgnetwork.models import (
     Coordinate,
+    Administrative,
+    Mobility,
     Contract,
     SocialMedia,
     Sector,
@@ -19,6 +23,18 @@ class ArtistIdentityForm(ModelForm):
 class ArtistCoordinateForm(ModelForm):
     class Meta:
         model = Coordinate
+        exclude = ['user']
+
+
+class ArtistAdministrativeForm(ModelForm):
+    class Meta:
+        model = Administrative
+        exclude = ['user']
+
+
+class ArtistMobilityForm(ModelForm):
+    class Meta:
+        model = Mobility
         exclude = ['user']
 
 

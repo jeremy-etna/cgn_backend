@@ -12,6 +12,7 @@ urlpatterns = [
     path('logged_in', logged_in, name='logged_in'),  # Logged in view
     path('artist/', include('users.urls.artist')),  # Artist URLs
     path('company/', include('users.urls.company')),  # Company URLs
+    path('job/', include('job.urls')),  # Job URLs
 ]
 
 # Media files serving during development
