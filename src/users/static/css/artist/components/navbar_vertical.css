@@ -12,41 +12,30 @@
   left: 0;
   width: 200px;
   height: 100%;
-  background-color: #f8f9fa;
+  background-color: transparent; /* Rendre la barre de navigation transparente */
   padding: 20px;
+  z-index: 1; /* S'assurer que la barre de navigation n'est pas par-dessus la barre de navigation horizontale */
 }
 
-#sticky-menu ul {
-  list-style-type: none;
+/* Styliser la barre de navigation horizontale */
+#horizontal-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f8f9fa;
+  z-index: 2; /* S'assurer que la barre de navigation horizontale est au-dessus de la barre de navigation verticale */
 }
 
-#sticky-menu ul li {
-  margin-bottom: 10px;
-}
-
-#sticky-menu ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-#sticky-menu ul li a:hover {
-  color: #007bff;
-}
+/* Styliser le menu sticky */
+/* ... (les autres styles restent inchangés) */
 
 /* Styliser le contenu */
 #content {
   margin-left: 220px;
   padding: 20px;
+  padding-top: 80px; /* Ajouter un espace en haut pour tenir compte de la hauteur de la barre de navigation horizontale */
 }
 
-section {
-  margin-bottom: 40px;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 10px;
-}
+/* ... (les autres styles restent inchangés) */

@@ -7,66 +7,74 @@ from users.forms.company import *
 from job.models import Job
 from users.models.artist import Artist
 
-from users.data_managers.company import (
-    get_profile_data,
+from users.data_manager import (
+    get_company_profile_data,
     convert_objects_to_dict,
     get_templates,
 )
 
-COMPONENTS = ['identity', 'coordinate', 'mobility', 'sector', 'socialMedia', 'competence', 'software']
+COMPONENTS = [
+    "identity",
+    "coordinate",
+    "mobility",
+    "sector",
+    "socialMedia",
+    "competence",
+    "software",
+]
 
 
 @login_required()
 def profile(request):
     user_id = request.user.id
-    context = get_profile_data(user_id)
+    context = get_company_profile_data(user_id)
     context = convert_objects_to_dict(context)
-    context['user_role'] = request.user.user_role
-    context['templates'] = get_templates(context['user_role'], COMPONENTS)
-    return render(request, 'company/profile.html', context)
+    context["user_role"] = request.user.user_role
+    context["templates"] = get_templates(context["user_role"], COMPONENTS)
+    return render(request, "company/profile.html", context)
 
 
 @login_required()
 def profile_edit(request):
     user_id = request.user.id
-    context = get_profile_data(user_id)
-    context['user_role'] = request.user.user_role
+    context = get_company_profile_data(user_id)
+    context["user_role"] = request.user.user_role
 
     forms_and_instances = [
-        (CompanyIdentityForm, context['identity']),
-        (CompanyCoordinateForm, context['coordinate']),
-        (CompanyMobilityForm, context['mobility']),
-        (CompanyCompetenceForm, context['competence']),
-        (CompanySectorForm, context['sector']),
-        (CompanySocialMediaForm, context['socialMedia']),
-        (CompanySoftwareForm, context['software']),
+        (CompanyIdentityForm, context["identity"]),
+        (CompanyCoordinateForm, context["coordinate"]),
+        (CompanyMobilityForm, context["mobility"]),
+        (CompanyCompetenceForm, context["competence"]),
+        (CompanySectorForm, context["sector"]),
+        (CompanySocialMediaForm, context["socialMedia"]),
+        (CompanySoftwareForm, context["software"]),
     ]
 
-    if request.method == 'POST':
+    if request.method == "POST":
         for form, instance in forms_and_instances:
             current_form = form(request.POST, request.FILES, instance=instance)
             if current_form.is_valid():
                 current_form.save()
             else:
-                context['errors'] = current_form.errors
-        return HttpResponseRedirect('../')
+                context["errors"] = current_form.errors
+        return HttpResponseRedirect("../")
     else:
-        context['forms'] = {}
+        context["forms"] = {}
         for form_class, instance in forms_and_instances:
             form = form_class(instance=instance)
-            context['forms'][form_class.__name__] = form
-            context['templates'] = get_templates(context['user_role'], ['form_edit_template'])
+            context["forms"][form_class.__name__] = form
+            context["templates"] = get_templates('common', ["form_edit"])
 
-    return render(request, 'company/profile_edit.html', context)
+    return render(request, "company/profile_edit.html", context)
 
 
 @login_required()
 def artists(request):
     user_role = request.user.user_role
     context = {}
-    context['user_role'] = user_role
-    context['artists'] = Artist.objects.all()
-    return render(request, 'company/artists.html', context=context)
+    context["user_role"] = user_role
+    context["artists"] = Artist.objects.all()
+    return render(request, "company/artists.html", context=context)
 
 
 @login_required()
@@ -74,22 +82,22 @@ def artist(request, id):
     user_role = request.user.user_role
     artist = Artist.objects.get(id=id)
     context = get_artist_data(artist)
-    context['user_role'] = user_role
-    return render(request, 'company/artist.html', context=context)
+    context["user_role"] = user_role
+    return render(request, "company/artist.html", context=context)
 
 
 @login_required()
 def job_create(request):
     user_role = request.user.user_role
     context = {}
-    context['user_role'] = user_role
-    if request.method == 'POST':
+    context["user_role"] = user_role
+    if request.method == "POST":
         entry = Job.objects.create(
             user=user,
             company_size=user.company.company_size,
             company_name=user.company.company_name,
             creation_date=datetime.now(),
-            logo=user.company.logo
+            logo=user.company.logo,
         )
         entry.save()
 
@@ -98,18 +106,18 @@ def job_create(request):
             if form.is_valid():
                 form.save()
             else:
-                context['errors'] = form.errors
+                context["errors"] = form.errors
                 entry.delete()
 
         submit_form(JobForm)
         submit_form(JobArtisticSkillForm)
         submit_form(JobSoftwareForm)
-        return HttpResponseRedirect('../')
+        return HttpResponseRedirect("../")
     else:
-        context['JobForm'] = JobForm()
-        context['JobArtisticSkillForm'] = JobArtisticSkillForm()
-        context['JobSoftwareForm'] = JobSoftwareForm()
-    return render(request, 'company/job_create.html', context=context)
+        context["JobForm"] = JobForm()
+        context["JobArtisticSkillForm"] = JobArtisticSkillForm()
+        context["JobSoftwareForm"] = JobSoftwareForm()
+    return render(request, "company/job_create.html", context=context)
 
 
 @login_required()
@@ -117,24 +125,24 @@ def job(request, id):
     user_role = request.user.user_role
     job = Job.objects.get(id=id)
     context = get_job_data(job)
-    context['user_role'] = user_role
-    return render(request, 'company/job.html', context=context)
+    context["user_role"] = user_role
+    return render(request, "company/job.html", context=context)
 
 
 @login_required()
 def jobs(request):
     user_role = request.user.user_role
     context = {}
-    context['user_role'] = user_role
+    context["user_role"] = user_role
     jobs = Job.objects.filter(user=user)
-    context['jobs'] = jobs
-    return render(request, 'company/jobs.html', context=context)
+    context["jobs"] = jobs
+    return render(request, "company/jobs.html", context=context)
 
 
 @login_required()
 def job_delete(request, id):
     user_role = request.user.user_role
     context = {}
-    context['user_role'] = user_role
+    context["user_role"] = user_role
     Job.objects.get(id=id).delete()
-    return HttpResponseRedirect('../')
+    return HttpResponseRedirect("../")

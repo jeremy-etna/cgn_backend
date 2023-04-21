@@ -2,7 +2,7 @@
     <h1>{{ title | capfirst }}s</h1>
     <br>
     <ul class="{{ title }}s-list">
-        {% for label, spec in administrative.items %}
+        {% for label, admin in administrative.items %}
             <li class="{{ label }}">{{ label | upper }}<div class="{{ admin }}">{{ admin }}</div></li>
         {% endfor %}
     </ul>

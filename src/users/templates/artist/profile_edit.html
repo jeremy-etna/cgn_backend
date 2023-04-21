@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/artist/profile.css' %}">
     <link rel="stylesheet" href="{% static 'css/artist/components/level_bar.css' %}">
     <link rel="stylesheet" href="{% static 'css/artist/components/toggle_switch.css' %}">
     <link rel="stylesheet" href="{% static 'css/artist/components/navbar_vertical.css' %}">
@@ -10,13 +11,13 @@
 {% block content %}
 <main>
     <section class="container-profile">
-        {% include '.\artist\components\navbar_vertical.html' with sections=templates %}
+        {% include templates.navbar_vertical with sections=forms %}
         <img src="/media/{{ identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
         {% for name, form in forms.items %}
             <section class="{{ name }}" id="{{ name }}">
                 <form method="post" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {% with templates.form_edit_template as template_name %}
+                    {% with templates.form_edit as template_name %}
                         {% include template_name with form_title=name|cut:"Company"|cut:"Form"|cut:"Artist" form=form %}
                     {% endwith %}
                     {{ errors }}

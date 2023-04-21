@@ -1,38 +1,32 @@
+import os
 from django.contrib.auth.decorators import login_required
 from django.http import (
     HttpResponseRedirect,
-    HttpResponseForbidden,
 )
 from django.utils.datetime_safe import datetime
 from django.utils.html import escape
 
 from django.shortcuts import render
 from django.forms.models import model_to_dict
-from django.core.paginator import Paginator
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from job.models import Job
 from job.forms import JobCreationForm
 
-from job.data_manager import (
-    get_profile_data,
-)
 
 
 @login_required()
 def jobs(request):
-    user_id = request.user.id
 
     jobs = Job.objects.all()
-
-    paginator = Paginator(jobs, 3)
+    paginator = Paginator(jobs, 5)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
     context = {}
     context['user_role'] = request.user.user_role
-    context['jobs'] = page_obj
-    # context['jobs'] = jobs
-
+    context['objects'] = page_obj
+    context["paginator_template_path"] = os.path.join("common", "components", "paginator.html")
     return render(request, 'jobs.html', context)
 
 

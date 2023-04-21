@@ -2,55 +2,37 @@
 {% load static %}
 
 {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/common/components/paginator.css' %}">
 {% endblock %}
 
 {% block content %}
-    <main>
-        <section class="jobs-list">
-            {% if jobs|length > 0 %}
-                {% for job in jobs %}
-                    <a href="{% url 'artist-job' job.id %}">
-                        <img src="/media/{{ job.avatar }}" alt="NO IMAGE CHOSEN">
-                    </a>
+<main>
+    <section class="jobs-list">
+        {% if objects|length > 0 %}
+        {% for object in objects %}
+        <a href="{% url 'artist-job' object.id %}">
+            <img src="/media/{{ object.avatar }}" alt="NO IMAGE CHOSEN">
+        </a>
 
-                    <div class="company-content">
-                        <h1>{{ job.title | upper}}</h1>
-                        <h2>{{ job.company_name | upper}}</h2>
-                        <p>{{ job.description |slice:":150"}}...</p>
-                    </div>
-            {% endfor %}
-          {% else %}
-            <h1>There is no registered job yet...</h1>
-          {% endif %}
-        </section>
-
-        {% if jobs.has_other_pages %}
-            <ul class="pagination">
-                {% if jobs.has_previous %}
-                    <li><a href="?page={{ jobs.previous_page_number }}">&laquo;</a></li>
-                {% else %}
-                    <li class="disabled"><span>&laquo;</span></li>
-                {% endif %}
-
-                {% for i in jobs.paginator.page_range %}
-                {% if jobs.number == i %}
-                    <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
-                {% else %}
-                    <li><a href="?page={{ i }}">{{ i }}</a></li>
-                {% endif %}
-                {% endfor %}
-
-                {% if jobs.has_next %}
-                    <li><a href="?page={{ jobs.next_page_number }}">&raquo;</a></li>
-                {% else %}
-                    <li class="disabled"><span>&raquo;</span></li>
-                {% endif %}
-            </ul>
+        <div class="company-content">
+            <h1>{{ object.title | upper}}</h1>
+            <h2>{{ object.company_name | upper}}</h2>
+            <p>{{ object.description |slice:":150"}}...</p>
+        </div>
+        {% endfor %}
+        {% else %}
+        <h1>There is no registered job yet...</h1>
         {% endif %}
-    </main>
+    </section>
+    {% if object.has_other_pages %}
+
+    <section class="pagination">
+        {% include paginator_template_path %}
+    </section>
+    {% endif %}
+
+</main>
 {% endblock %}
 
 {% block javascript %}
-<!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
-<!--    <script src="{% static 'javascript/loading_on_bottom.js' %}"></script>-->
 {% endblock %}

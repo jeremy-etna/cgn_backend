@@ -1,0 +1,27 @@
+{% extends 'CgNetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/artist/components/artist_card.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/paginator.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="gallery">
+        {% if users|length > 0 %}
+        {% for user in users %}
+        {% include card_template_path %}
+        {% endfor %}
+        {% else %}
+        <h1>There is no registered company yet...</h1>
+        {% endif %}
+    </section>
+    <section class="paginator">
+        {% include paginator_template_path %}
+    </section>
+</main>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
