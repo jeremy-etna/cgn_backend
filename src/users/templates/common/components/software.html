@@ -2,7 +2,7 @@
     <h1>{{ title | capfirst }}s</h1>
     <br>
     <ul class="{{ title }}s-list">
-        {% for label, soft in software.items %}
+        {% for label, soft in objects.software.items %}
             <li class="{{ label }}">{{ label | upper }}<div class="{{ soft }}">{{ soft }}</div></li>
         {% endfor %}
     </ul>

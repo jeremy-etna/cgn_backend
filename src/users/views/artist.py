@@ -12,41 +12,59 @@ from users.data_manager import (
     # get_artist_card_data,
 )
 from users.forms.artist import *
+
+from users.models.artist import Artist
 from users.models.company import Company
 
-COMPONENTS = [
-    "identity",
-    "coordinate",
-    "administrative",
-    "mobility",
-    "socialMedia",
-    "contract",
-    "sector",
-    "competence",
-    "software",
-]
+from cgnetwork.context import TemplateResolver, ContextBuilder, FormResolver, ObjectResolver
+from cgnetwork.constants import ARTIST_COMPONENTS
+
 
 
 @login_required()
 def profile(request):
-    user_id = request.user.id
-    context = get_artist_profile_data(user_id)
-    context = convert_objects_to_dict(context)
-    context["user_role"] = request.user.user_role
-    context["templates"] = {}
-    context["templates"]["identity"] = os.path.join('artist', 'components', 'identity.html')
-    context["templates"]["coordinate"] = os.path.join('common', 'components', 'coordinate.html')
-    context["templates"]["administrative"] = os.path.join('artist', 'components', 'administrative.html')
-    context["templates"]["mobility"] = os.path.join('common', 'components', 'mobility.html')
-    context["templates"]["socialMedia"] = os.path.join('common', 'components', 'socialMedia.html')
-    context["templates"]["contract"] = os.path.join('artist', 'components', 'contract.html')
-    context["templates"]["sector"] = os.path.join('common', 'components', 'sector.html')
-    context["templates"]["competence"] = os.path.join('artist', 'components', 'competence.html')
-    context["templates"]["software"] = os.path.join('common', 'components', 'software.html')
-    context["navbar_vertical"] = os.path.join('common', 'components', 'navbar_vertical.html')
-    print(context)
-    return render(request, os.path.join("artist", "profile.html"), context)
+    # user_id = request.user.id
+    # context ={}
+    # context["objects"] = {}
+    # objects = get_artist_profile_data(user_id)
+    # context["objects"] = convert_objects_to_dict(objects)
+    # context["user_role"] = request.user.user_role
+    # context["templates"] = {}
+    # context["templates"]["models"] = {}
+    # context["templates"]["ui"] = {}
+    # context["templates"]["models"]["identity"] = os.path.join('artist', 'components', 'artist.html')
+    # context["templates"]["models"]["coordinate"] = os.path.join('common', 'components', 'coordinate.html')
+    # context["templates"]["models"]["administrative"] = os.path.join('artist', 'components', 'administrative.html')
+    # context["templates"]["models"]["mobility"] = os.path.join('common', 'components', 'mobility.html')
+    # context["templates"]["models"]["socialMedia"] = os.path.join('common', 'components', 'socialMedia.html')
+    # context["templates"]["models"]["contract"] = os.path.join('artist', 'components', 'contract.html')
+    # context["templates"]["models"]["sector"] = os.path.join('common', 'components', 'sector.html')
+    # context["templates"]["models"]["competence"] = os.path.join('artist', 'components', 'competence.html')
+    # context["templates"]["models"]["software"] = os.path.join('common', 'components', 'software.html')
+    # context["templates"]["ui"]["navbar_vertical"] = os.path.join('common', 'components', 'navbar_vertical.html')
 
+    context = {}
+    context["templates"] = {}
+    resolved_templates = TemplateResolver(request.user.user_role)
+    models_templates = resolved_templates.get_templates('users', ARTIST_COMPONENTS, 'models')
+    ui_templates = resolved_templates.get_templates('users', ['navbar_vertical'], 'ui')
+    context["templates"]["models"] = models_templates
+    # context["templates"]["ui"] = ui_templates
+
+    context["objects"] = {}
+    objects = get_artist_profile_data(request.user.id)
+    context["objects"] = convert_objects_to_dict(objects)
+
+    # form_resolver = FormResolver(request.user.user_role, 'users')
+    # resolved_forms = form_resolver.get_forms(ARTIST_COMPONENTS)
+    # print(resolved_forms)
+
+    object_resolver = ObjectResolver(request.user.user_role, request.user.id)
+    objects = object_resolver.get_objects_by_name(['cgnetwork', 'users'], ARTIST_COMPONENTS)
+    print(objects)
+
+
+    return render(request, os.path.join("artist", "profile.html"), context)
 
 @login_required()
 def profile_edit(request):
@@ -59,7 +77,7 @@ def profile_edit(request):
     context["user_role"] = request.user.user_role
 
     forms_and_instances = [
-        (ArtistIdentityForm, context["identity"]),
+        (ArtistArtistForm, context["identity"]),
         (ArtistCoordinateForm, context["coordinate"]),
         (ArtistAdministrativeForm, context["administrative"]),
         (ArtistMobilityForm, context["mobility"]),

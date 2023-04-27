@@ -14,7 +14,7 @@ from cgnetwork.models import (
 )
 
 
-class ArtistIdentityForm(ModelForm):
+class ArtistArtistForm(ModelForm):
     class Meta:
         model = Artist
         exclude = ['user']

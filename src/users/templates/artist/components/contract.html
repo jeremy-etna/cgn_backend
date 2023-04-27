@@ -2,7 +2,7 @@
     <h1>{{ title | capfirst }}s</h1>
     <br>
     <ul class="{{ title }}s-list">
-        {% for label, cont in contract.items %}
+        {% for label, cont in objects.contract.items %}
             <li class="{{ label }}">{{ label | upper }}<div class="{{ contract }}">{{ cont }}</div></li>
         {% endfor %}
     </ul>

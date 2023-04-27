@@ -136,3 +136,16 @@ class CompanySize(models.TextChoices):
     SIZE_1_10 = '1 - 10', '1 - 10'
     SIZE_11_50 = '11 - 50', '11 - 50'
     SIZE_51_99 = '51 - 99', '51 - 99'
+
+
+ARTIST_COMPONENTS = [
+    'artist',
+    'coordinate',
+    'administrative',
+    'mobility',
+    'socialMedia',
+    'contract',
+    'sector',
+    'competence',
+    'software',
+    ]
