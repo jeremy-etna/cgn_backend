@@ -16,7 +16,7 @@ import environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
-environ.Env.read_env(env_file=str(BASE_DIR / 'cgnetwork' / '.env'))
+environ.Env.read_env(env_file=str(BASE_DIR / '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -133,7 +133,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'job/static'),
 ]
 
-AUTH_USER_MODEL = 'cgnetwork.CustomUser'
+AUTH_USER_MODEL = 'users.CustomUser'
 LOGIN_REDIRECT_URL = 'logged_in'
 LOGOUT_REDIRECT_URL = 'home'
 login_url = 'login'

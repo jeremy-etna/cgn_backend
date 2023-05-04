@@ -2,28 +2,35 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/{{ user_role }}/components/level_bar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/artist/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/artist/components/level_bar.css' %}">
     <link rel="stylesheet" href="{% static 'css/artist/components/toggle_switch.css' %}">
+    <link rel="stylesheet" href="{% static 'css/artist/components/navbar_vertical.css' %}">
 {% endblock %}
 
 {% block content %}
 <main>
     <section class="container-profile">
-        <img src="/media/{{ identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
-        <form method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-
-            {% for name, form in forms.items %}
-                <section class="{{ form_section.class_name }}">
-                    {% with templates.form_edit_template as template_name %}
-                        {% include template_name with form_title=name|cut:"Company"|cut:"Form" form=form %}
+        {% include templates.navbar_vertical with sections=forms %}
+        <img src="/media/{{ company.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
+        {% for name, form in forms.items %}
+            <section class="{{ name }}" id="{{ name }}">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% with templates.form_edit as template_name %}
+                        {% include template_name with form_title=name|cut:"Company"|cut:"Form"|cut:"Artist" form=form %}
                     {% endwith %}
-                </section>
-            {% endfor %}
-
-            {{ errors }}
-            <input type="submit" value="save profile">
-        </form>
+                    {{ errors }}
+                    <input type="hidden" name="current-form" value="{{ name }}">
+                    <input type="submit" value="save profile">
+                </form>
+            </section>
+        {% endfor %}
     </section>
 </main>
+{% endblock %}
+
+{% block javascript %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'javascript/animated_scroll.js' %}"></script>
 {% endblock %}

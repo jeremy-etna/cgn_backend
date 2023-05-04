@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import Mock
 from django.test import TestCase
-from users.data_manager import (
+from users.services.objects_manager import (
     get_profile_data,
     get_artist_profile_data,
     get_company_profile_data,

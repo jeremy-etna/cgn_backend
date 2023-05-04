@@ -10,10 +10,11 @@
 {% block content %}
 <main>
     <section class="container-profile">
-        {% for section_name, path_template in templates.models.items %}
+        {% include templates_ui.navbar_vertical with sections=objects %}
+        {% for section_name, path_template in templates_models.items %}
         <section class="{{ section_name }}" id="{{ section_name }}">
             <a class="edit-btn" href="{% url 'artist-profile-edit' %}#Artist{{ section_name | capfirst }}Form">EDIT MODE</a>\
-            {% include path_template with title=section_name models=objects%}
+            {% include path_template with title=section_name objects=objects %}
         </section>
         {% endfor %}
     </section>

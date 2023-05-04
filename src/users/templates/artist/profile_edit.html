@@ -12,7 +12,7 @@
 <main>
     <section class="container-profile">
         {% include templates.navbar_vertical with sections=forms %}
-        <img src="/media/{{ identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
+        <img src="/media/{{ artist.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
         {% for name, form in forms.items %}
             <section class="{{ name }}" id="{{ name }}">
                 <form method="post" enctype="multipart/form-data">

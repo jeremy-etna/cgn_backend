@@ -2,16 +2,26 @@
 {% load static %}
 
 {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/artist/profile.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/level_bar.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/navbar_vertical.css' %}">
 {% endblock %}
 
 {% block content %}
-    <main>
-        <section class="container-profile">
-            <a class="edit-btn" href="{% url 'company-profile-edit' %}">EDIT MODE</a>
-
-            {% for section_name, path_template in templates.items %}
-                <section class="{{ section_name }}">{% include path_template with title=section_name %}</section>
-            {% endfor %}
+<main>
+    <section class="container-profile">
+        {% include templates_ui.navbar_vertical with sections=objects %}
+        {% for section_name, path_template in templates_models.items %}
+        <section class="{{ section_name }}" id="{{ section_name }}">
+            <a class="edit-btn" href="{% url 'company-profile-edit' %}#Artist{{ section_name | capfirst }}Form">EDIT MODE</a>\
+            {% include path_template with title=section_name objects=objects %}
         </section>
-    </main>
+        {% endfor %}
+    </section>
+</main>
+{% endblock %}
+
+{% block javascript %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{% static 'javascript/animated_scroll.js' %}"></script>
 {% endblock %}

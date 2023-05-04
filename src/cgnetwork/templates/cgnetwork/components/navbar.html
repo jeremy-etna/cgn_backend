@@ -6,7 +6,7 @@
         <a class="nav-link" href="/login">Login</a>
     </div>
     {% else %}
-        {% if user_role == 'artist' %}
+        {% if role == 'artist' %}
             <p class="nav-welcome" style="display:inline">Welcome {{ user.artist.first_name }}</p>
             <div class="nav-links">
                 <a class="nav-link" href="{% url 'artist-profile' %}">Profile</a>
@@ -16,12 +16,13 @@
                 <a class="nav-link" href="/logout">Logout</a>
             </div>
         {% endif %}
-        {% if user_role == 'company' %}
-            <p class="nav-welcome">{{ user.company.company_name }}</p>
+        {% if role == 'company' %}
+            <p class="nav-welcome" style="display:inline">Welcome {{ user.company.company_name }}</p>
             <div class="nav-links">
                 <a class="nav-link" href="{% url 'company-profile' %}">Profile</a>
                 <a class="nav-link" href="{% url 'jobs' %}">Jobs</a>
-                <a class="nav-link" href="{% url 'company-artists' %}">Artists</a>
+                <a class="nav-link" href="{% url 'artists-gallery' %}">Artists</a>
+                <a class="nav-link" href="{% url 'companies-gallery' %}">Companies</a>
                 <a class="nav-link" href="/logout">Logout</a>
             </div>
         {% endif %}

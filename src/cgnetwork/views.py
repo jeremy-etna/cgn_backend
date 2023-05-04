@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from .forms import UserRegistrationForm
+from cgnetwork.forms import UserRegistrationForm
 
 
 def home(request):
@@ -21,9 +21,9 @@ def register(request):
     auth = request.user.is_authenticated
 
     if auth:
-        user_role = request.user.user_role
+        role = request.user.role
         context['auth'] = auth
-        context['user_role'] = user_role
+        context['role'] = role
 
     else:
         context['auth'] = auth
@@ -48,9 +48,9 @@ def register(request):
 
 @login_required()
 def logged_in(request):
-    user_role = request.user.user_role
-    if user_role == 'artist':
+    role = request.user.role
+    if role == 'artist':
         return HttpResponseRedirect(reverse('artist-profile'))
-    elif user_role == 'company':
+    elif role == 'company':
         return HttpResponseRedirect(reverse('company-profile'))
 

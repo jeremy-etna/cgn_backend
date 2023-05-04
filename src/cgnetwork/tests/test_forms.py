@@ -1,12 +1,12 @@
 from django.test import SimpleTestCase
-from CgNetwork.forms import UserRegistrationForm
+from cgnetwork.forms import UserRegistrationForm
 
 
 class TestForms(SimpleTestCase):
 
     def test_UserRegistrationForm_valid_data(self):
         form = UserRegistrationForm(data={
-            'user_role': 'artist',
+            'role': 'artist',
             'email': 'jeremy@etna.net',
         })
         self.assertTrue(form.is_valid())

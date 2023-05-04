@@ -1,8 +1,7 @@
-from django.forms import (
-    ModelForm,
-)
+from django.forms import ModelForm
+
 from users.models.artist import Artist
-from cgnetwork.models import (
+from users.models.common import (
     Coordinate,
     Administrative,
     Mobility,

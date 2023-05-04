@@ -2,22 +2,19 @@ from django.db import models
 from django.conf import settings
 from django.core.validators import FileExtensionValidator
 from users.validators import validate_file_size
-from cgnetwork.constants import (
-    COMPETENCES,
-    SOFTWARES,
-    CompanySize,
-)
+from cgnetwork.constants.models import COMPETENCES, SOFTWARES, CompanySize
 
 
 class Company(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     avatar = models.ImageField(
-        upload_to='logos',
-        default='logos/company_default.png',
+        upload_to="logos",
+        default="logos/company_default.png",
         validators=[
             validate_file_size,
-            FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png'])
-        ])
+            FileExtensionValidator(allowed_extensions=["jpg", "jpeg", "png"]),
+        ],
+    )
 
     company_name = models.CharField(max_length=100)
     description = models.TextField()
@@ -27,13 +24,13 @@ class Company(models.Model):
         return self.company_name
 
 
-class CompanyCompetence(models.Model):
+class Competence(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     for competence in COMPETENCES:
         vars()[competence] = models.BooleanField(default=False)
 
 
-class CompanySoftware(models.Model):
+class Software(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     for software in SOFTWARES:
         vars()[software] = models.BooleanField(default=False)

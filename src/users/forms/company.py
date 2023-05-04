@@ -6,7 +6,7 @@ from users.models.company import (
     CompanyCompetence,
     CompanySoftware,
 )
-from cgnetwork.models import (
+from users.models.common import (
     Coordinate,
     Mobility,
     SocialMedia,
@@ -14,7 +14,7 @@ from cgnetwork.models import (
 )
 
 
-class CompanyIdentityForm(ModelForm):
+class CompanyCompanyForm(ModelForm):
     class Meta:
         model = Company
         exclude = ['user']

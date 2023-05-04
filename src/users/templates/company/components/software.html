@@ -1,0 +1,9 @@
+<div class="{{ title }}">
+    <h1>{{ title | capfirst }}s</h1>
+    <br>
+    <ul class="{{ title }}s-list">
+        {% for label, soft in objects.companysoftware.items %}
+            <li class="{{ label }}">{{ label | upper }}<div class="{{ soft }}">{{ soft }}</div></li>
+        {% endfor %}
+    </ul>
+</div>
