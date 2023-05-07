@@ -1,3 +1,3 @@
 from .common import CustomUser
-from .artist import Artist
-from .company import Company
+from .artist import ArtistIdentity
+from .company import CompanyIdentity

@@ -102,13 +102,13 @@ class ProfileEditView(View):
 
 @login_required()
 def artists(request):
-    models = get_models_from_list(ARTIST_MODELS_LIST)
-    objects = get_objects_from_models(models, request.user.id)
+    objects = get_all_objects_from_models(ARTIST_PROFILE_MODELS)
+    objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
+    objects = remove_pattern_dict_keys(objects, "artist")
+    print(objects)
     context = CONTEXT_TEMPLATE
     context["role"] = request.user.role
     context["objects"] = objects
-
-    artists_list = Artist.objects.all()
 
     paginator = Paginator(artists_list, 5)
     page_number = request.GET.get("page")

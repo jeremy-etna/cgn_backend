@@ -1,46 +1,43 @@
 from django.forms import ModelForm
-from job.models import Job
 
 from users.models.company import (
-    Company,
+    CompanyIdentity,
+    CompanyCoordinate,
+    CompanyMobility,
+    CompanySocialMedia,
+    CompanySector,
     CompanyCompetence,
     CompanySoftware,
 )
-from users.models.common import (
-    Coordinate,
-    Mobility,
-    SocialMedia,
-    Sector,
-)
 
 
-class CompanyCompanyForm(ModelForm):
+class CompanyIdentityForm(ModelForm):
     class Meta:
-        model = Company
+        model = CompanyIdentity
         exclude = ['user']
 
 
 class CompanyCoordinateForm(ModelForm):
     class Meta:
-        model = Coordinate
+        model = CompanyCoordinate
         exclude = ['user']
 
 
 class CompanyMobilityForm(ModelForm):
     class Meta:
-        model = Mobility
+        model = CompanyMobility
         exclude = ['user']
 
 
 class CompanySocialMediaForm(ModelForm):
     class Meta:
-        model = SocialMedia
+        model = CompanySocialMedia
         exclude = ['user']
 
 
 class CompanySectorForm(ModelForm):
     class Meta:
-        model = Sector
+        model = CompanySector
         exclude = ['user']
 
 
@@ -54,23 +51,3 @@ class CompanySoftwareForm(ModelForm):
     class Meta:
         model = CompanySoftware
         exclude = ['user']
-
-
-# class JobForm(ModelForm):
-#     class Meta:
-#         model = Job
-#         exclude = ['user']
-#
-#
-# class JobCompetenceForm(ModelForm):
-#     class Meta:
-#         model = Competence
-#         exclude = ['user']
-#
-#
-# class JobSoftwareForm(ModelForm):
-#     class Meta:
-#         model = Software
-#         exclude = ['user']
-
-

@@ -8,22 +8,29 @@ from django.views import View
 
 from users.services.objects_manager import (
     get_objects_from_models,
+    get_all_objects_from_models,
     remove_elements_by_keys_recursive,
+    remove_pattern_dict_keys,
     get_templates,
 )
 
-from users.services.models_selector import CONTEXT_TEMPLATE, ARTIST_PROFILE_MODELS, ARTIST_PROFILE_FORMS
+from users.services.models_selector import (
+    CONTEXT_TEMPLATE,
+    ARTIST_PROFILE_MODELS,
+    ARTIST_PROFILE_FORMS,
+)
 
 
 @login_required()
 def profile(request):
     objects = get_objects_from_models(ARTIST_PROFILE_MODELS, request.user.id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
+    objects = remove_pattern_dict_keys(objects, "artist")
     context = CONTEXT_TEMPLATE
     context["role"] = request.user.role
     context["objects"] = objects
-    context["templates_models"]["artist"] = os.path.join(
-        "artist", "components", "artist.html"
+    context["templates_models"]["identity"] = os.path.join(
+        "artist", "components", "identity.html"
     )
     context["templates_models"]["coordinate"] = os.path.join(
         "common", "components", "coordinate.html"
@@ -47,7 +54,7 @@ def profile(request):
         "artist", "components", "competence.html"
     )
     context["templates_models"]["software"] = os.path.join(
-        "common", "components", "software.html"
+        "artist", "components", "software.html"
     )
     context["templates_ui"]["navbar_vertical"] = os.path.join(
         "common", "components", "navbar_vertical.html"
@@ -58,7 +65,7 @@ def profile(request):
 class ProfileEditView(View):
     COMPONENTS = ["form_edit", "navbar_vertical"]
     context_keys = [
-        str(form.__name__).replace('Artist', '', 1).replace("Form", "").lower()
+        str(form.__name__).replace("Form", "").lower()
         for form in ARTIST_PROFILE_FORMS
     ]
     forms_and_instances = list(zip(context_keys, ARTIST_PROFILE_FORMS))
@@ -102,18 +109,15 @@ class ProfileEditView(View):
 
 @login_required()
 def artists(request):
-    models = get_models_from_list(ARTIST_MODELS_LIST)
-    objects = get_objects_from_models(models, request.user.id)
-    context = CONTEXT_TEMPLATE
-    context["role"] = request.user.role
-    context["objects"] = objects
+    from users.models.artist import ArtistIdentity
 
-    artists_list = Artist.objects.all()
+    artists_list = ArtistIdentity.objects.all().order_by('id')
 
     paginator = Paginator(artists_list, 5)
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
+    context = CONTEXT_TEMPLATE
     context["objects"] = page_obj
     context["templates_ui"]["artist_card"] = os.path.join(
         "artist", "components", "artist_card.html"

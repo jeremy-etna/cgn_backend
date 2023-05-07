@@ -1,21 +1,22 @@
 from django.db import models
 
 MOBILITIES = [
-    "remote",
-    "mobility",
+    "full remote",
+    "hybrid",
+    "on site",
+    "Relocation Assistance",
 ]
 
 CONTRACTS = [
-    "cdd",
-    "cdi",
-    "stage",
+    "full-time",
+    "part-time",
     "freelance",
-    "intermittent",
-    "alternate",
+    "Internship",
+    "apprenticeship",
 ]
 
 WEBSITES = [
-    "website",
+    "portfolio",
     "youtube",
     "linkedin",
     "instagram",
@@ -23,9 +24,9 @@ WEBSITES = [
 ]
 
 SECTORS = [
-    "luxe",
+    "luxury",
     "vfx",
-    "games",
+    "video games",
     "motion",
     "design",
     "architecture",
@@ -118,7 +119,7 @@ SOFTWARES = [
 ]
 
 
-class UserRole(models.TextChoices):
+class Role(models.TextChoices):
     ARTIST = "artist", "artist"
     COMPANY = "company", "company"
 

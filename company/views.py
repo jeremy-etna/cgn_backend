@@ -67,7 +67,7 @@ def artist(request, id):
     artist = Artist.objects.get(id=id)
     context = get_artist_data(artist)
     context['user_role'] = user_role
-    return render(request, 'company/artist.html', context=context)
+    return render(request, 'company/identity.html', context=context)
 
 
 @login_required()

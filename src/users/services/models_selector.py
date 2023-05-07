@@ -1,22 +1,27 @@
-from users.models.artist import Artist
-from users.models.company import (
-    Company,
-    Competence,
-    Software,
+from users.models.artist import (
+    ArtistIdentity,
+    ArtistCoordinate,
+    ArtistAdministrative,
+    ArtistMobility,
+    ArtistSocialMedia,
+    ArtistContract,
+    ArtistSector,
+    ArtistCompetence,
+    ArtistSoftware,
 )
-from users.models.common import (
-    Coordinate,
-    Administrative,
-    Mobility,
-    SocialMedia,
-    Contract,
-    Sector,
-    Competence,
-    Software,
+
+from users.models.company import (
+    CompanyIdentity,
+    CompanyCoordinate,
+    CompanyMobility,
+    CompanySocialMedia,
+    CompanySector,
+    CompanyCompetence,
+    CompanySoftware,
 )
 
 from users.forms.artist import (
-    ArtistArtistForm,
+    ArtistIdentityForm,
     ArtistCoordinateForm,
     ArtistAdministrativeForm,
     ArtistMobilityForm,
@@ -28,7 +33,7 @@ from users.forms.artist import (
 )
 
 from users.forms.company import (
-    CompanyCompanyForm,
+    CompanyIdentityForm,
     CompanyCoordinateForm,
     CompanyMobilityForm,
     CompanySocialMediaForm,
@@ -36,6 +41,10 @@ from users.forms.company import (
     CompanyCompetenceForm,
     CompanySoftwareForm,
 )
+
+
+### START SELECTION SET DEFINITIONS
+
 
 CONTEXT_TEMPLATE = {
     "role": "",
@@ -46,19 +55,19 @@ CONTEXT_TEMPLATE = {
 }
 
 ARTIST_PROFILE_MODELS = [
-    Artist,
-    Coordinate,
-    Administrative,
-    Mobility,
-    SocialMedia,
-    Contract,
-    Sector,
-    Competence,
-    Software,
+    ArtistIdentity,
+    ArtistCoordinate,
+    ArtistAdministrative,
+    ArtistMobility,
+    ArtistSocialMedia,
+    ArtistContract,
+    ArtistSector,
+    ArtistCompetence,
+    ArtistSoftware,
 ]
 
 ARTIST_PROFILE_FORMS = [
-    ArtistArtistForm,
+    ArtistIdentityForm,
     ArtistCoordinateForm,
     ArtistAdministrativeForm,
     ArtistMobilityForm,
@@ -70,17 +79,17 @@ ARTIST_PROFILE_FORMS = [
 ]
 
 COMPANY_PROFILE_MODELS = [
-    Company,
-    Coordinate,
-    Mobility,
-    SocialMedia,
-    Sector,
+    CompanyIdentity,
+    CompanyCoordinate,
+    CompanyMobility,
+    CompanySocialMedia,
+    CompanySector,
     CompanyCompetence,
     CompanySoftware,
 ]
 
 COMPANY_PROFILE_FORMS = [
-    CompanyCompanyForm,
+    CompanyIdentityForm,
     CompanyCoordinateForm,
     CompanyMobilityForm,
     CompanySocialMediaForm,

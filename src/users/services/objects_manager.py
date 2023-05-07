@@ -12,7 +12,7 @@ def get_objects_from_models(models: List[Type], user_id: int) -> Dict[str, Any]:
     """
     objects = {}
 
-    for model in models:
+    for index, model in enumerate(models):
         model_name = model.__name__.lower()
         objects[model_name] = model_to_dict(model.objects.get(user_id=user_id))
 
@@ -59,14 +59,14 @@ def remove_elements_by_keys_recursive(dictionary: Dict[str, Any], keys_to_remove
     return new_dictionary
 
 
-def get_templates_from_models(models: list[type], role: str) -> dict:
-    return {
-        model.__name__.lower(): f"{role}/components/{model.__name__.lower()}.html"
-        for model in models
-    }
-
-
 def get_templates(role: str, components: list) -> dict:
     return {
         component: f"{role}/components/{component}.html" for component in components
     }
+
+
+def remove_pattern_dict_keys(dictionary: dict, pattern: dict) -> dict:
+    new_dictionary = {}
+    for key_name, value in dictionary.items():
+        new_dictionary[key_name.replace(pattern, '')] = value
+    return new_dictionary

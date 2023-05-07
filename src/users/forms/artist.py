@@ -1,67 +1,68 @@
 from django.forms import ModelForm
 
-from users.models.artist import Artist
-from users.models.common import (
-    Coordinate,
-    Administrative,
-    Mobility,
-    Contract,
-    SocialMedia,
-    Sector,
-    Competence,
-    Software,
+
+from users.models.artist import (
+    ArtistIdentity,
+    ArtistCoordinate,
+    ArtistAdministrative,
+    ArtistMobility,
+    ArtistContract,
+    ArtistSocialMedia,
+    ArtistSector,
+    ArtistCompetence,
+    ArtistSoftware,
 )
 
 
-class ArtistArtistForm(ModelForm):
+class ArtistIdentityForm(ModelForm):
     class Meta:
-        model = Artist
+        model = ArtistIdentity
         exclude = ['user']
 
 
 class ArtistCoordinateForm(ModelForm):
     class Meta:
-        model = Coordinate
+        model = ArtistCoordinate
         exclude = ['user']
 
 
 class ArtistAdministrativeForm(ModelForm):
     class Meta:
-        model = Administrative
+        model = ArtistAdministrative
         exclude = ['user']
 
 
 class ArtistMobilityForm(ModelForm):
     class Meta:
-        model = Mobility
+        model = ArtistMobility
         exclude = ['user']
 
 
 class ArtistContractForm(ModelForm):
     class Meta:
-        model = Contract
+        model = ArtistContract
         exclude = ['user']
 
 
 class ArtistSocialMediaForm(ModelForm):
     class Meta:
-        model = SocialMedia
+        model = ArtistSocialMedia
         exclude = ['user']
 
 
 class ArtistSectorForm(ModelForm):
     class Meta:
-        model = Sector
+        model = ArtistSector
         exclude = ['user']
 
 
 class ArtistCompetenceForm(ModelForm):
     class Meta:
-        model = Competence
+        model = ArtistCompetence
         exclude = ['user']
 
 
 class ArtistSoftwareForm(ModelForm):
     class Meta:
-        model = Software
+        model = ArtistSoftware
         exclude = ['user']

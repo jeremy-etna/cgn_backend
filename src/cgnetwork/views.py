@@ -10,8 +10,8 @@ def home(request):
     context = {'auth': auth}
 
     if auth:
-        user_role = request.user.user_role
-        context['user_role'] = user_role
+        role = request.user.role
+        context['role'] = role
 
     return render(request, 'cgnetwork/home.html', context=context)
 
