@@ -1,11 +1,11 @@
  <div class="card">
     <div class="avatar">
-        <a href="{% url 'artist-artist' object.user_id %}">
+        <a href="{% url 'artist-company' object.user_id %}">
             <img src="/media/{{ object.avatar }}" alt="NO IMAGE CHOSEN">
         </a>
     </div>
     <div class="content">
-        <h1>{{ object.first_name | upper}} {{ object.last_name | upper}}</h1>
+        <h1>{{ object.company_name | upper}}</h1>
         <h1>{{ object.title}}</h1>
         <div class="company-location">
             <h2>{{ object.country | upper }} - {{ objects.city }}</h2>

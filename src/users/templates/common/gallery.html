@@ -9,9 +9,9 @@
 {% block content %}
 <main>
     <section class="gallery">
-        {% if users|length > 0 %}
-        {% for user in users %}
-        {% include card_template_path %}
+        {% if objects|length > 0 %}
+        {% for object in objects %}
+        {% include templates_ui.card %}
         {% endfor %}
         {% else %}
         <h1>There is no registered company yet...</h1>

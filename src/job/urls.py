@@ -6,7 +6,7 @@ from job.views import (
 )
 
 urlpatterns = [
-    path('jobs/', jobs, name='jobs'),
-    path('job/<id>', job, name='artist-job'),
+    path('all/', jobs, name='jobs'),
+    path('<id>/', job, name='artist-job'),
     path('creation/', job_creation, name='job-creation'),
 ]

@@ -104,4 +104,4 @@ def company(request, id):
     context = get_company_data(company)
     context['user_role'] = user_role
 
-    return render(request, 'artist/company.html', context=context)
+    return render(request, 'artist/identity.html', context=context)

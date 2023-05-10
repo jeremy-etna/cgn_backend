@@ -10,4 +10,3 @@ class JobCreationForm(ModelForm):
             'creation_date',
             'views'
         ]
-        # fields = "__all__"

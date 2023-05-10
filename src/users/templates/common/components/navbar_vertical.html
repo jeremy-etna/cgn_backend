@@ -1,7 +1,9 @@
 <nav id="sticky-menu">
     <ul>
         {% for section_name, path_template in sections.items %}
-        <li><a class="scroll" href="#{{ section_name }}">{{ section_name|cut:"Company"|cut:"Form"|cut:"Artist"|lower }}</a>
+        <li><a class="scroll" href="#{{ section_name }}">{{ section_name|cut:"Company"|cut:"Form"|cut:"Artist"|lower }}
+        <img src="D:\RNCP\cg_network\src\media\icons\profile\{{ section_name|cut:'Company'|cut:'Form'|cut:'Artist'|lower }}.svg">
+        </a>
         </li>
         {% endfor %}
     </ul>

@@ -5,7 +5,6 @@ from django.utils import timezone
 
 class Job(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-
     creation_date = models.DateTimeField(default=timezone.now)
 
     title = models.CharField(max_length=100)

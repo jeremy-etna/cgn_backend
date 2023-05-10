@@ -47,4 +47,4 @@ class TestViews(TestCase):
     def test_company_GET(self):
         response = self.client.get(self.company_url)
         self.assertEqual(response.status_code, 302)
-        self.assertTemplateUsed(response, 'artist/company.html')
+        self.assertTemplateUsed(response, 'artist/identity.html')

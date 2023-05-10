@@ -8,7 +8,6 @@ from django.views import View
 
 from users.services.objects_manager import (
     get_objects_from_models,
-    get_all_objects_from_models,
     remove_elements_by_keys_recursive,
     remove_pattern_dict_keys,
     get_templates,
@@ -18,6 +17,7 @@ from users.services.models_selector import (
     CONTEXT_TEMPLATE,
     ARTIST_PROFILE_MODELS,
     ARTIST_PROFILE_FORMS,
+    COMPANY_PROFILE_MODELS,
 )
 
 
@@ -102,16 +102,15 @@ class ProfileEditView(View):
                     self.context["errors"] = current_form.errors
 
         if form_saved:
-            return HttpResponseRedirect("../")
+            return HttpResponseRedirect("../" + '#' + form_name.replace('Form', '').replace('Artist', '').lower())
         else:
             return render(request, "profile_edit.html", self.context)
 
 
 @login_required()
 def artists(request):
-    from users.models.artist import ArtistIdentity
-
-    artists_list = ArtistIdentity.objects.all().order_by('id')
+    artist_identity = ARTIST_PROFILE_MODELS[0]
+    artists_list = artist_identity.objects.all().order_by('id')
 
     paginator = Paginator(artists_list, 5)
     page_number = request.GET.get("page")
@@ -119,8 +118,31 @@ def artists(request):
 
     context = CONTEXT_TEMPLATE
     context["objects"] = page_obj
-    context["templates_ui"]["artist_card"] = os.path.join(
+    context["role"] = request.user.role
+    context["templates_ui"]["card"] = os.path.join(
         "artist", "components", "artist_card.html"
+    )
+    context["templates_ui"]["paginator"] = os.path.join(
+        "common", "components", "paginator.html"
+    )
+    return render(request, os.path.join("common", "gallery.html"), context)
+
+
+@login_required()
+def companies(request):
+    from users.models.company import CompanyIdentity
+
+    companies_list = CompanyIdentity.objects.all().order_by('id')
+
+    paginator = Paginator(companies_list, 5)
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
+    context = CONTEXT_TEMPLATE
+    context["objects"] = page_obj
+    context["role"] = request.user.role
+    context["templates_ui"]["card"] = os.path.join(
+        "company", "components", "company_card.html"
     )
     context["templates_ui"]["paginator"] = os.path.join(
         "common", "components", "paginator.html"
@@ -128,35 +150,77 @@ def artists(request):
 
     return render(request, os.path.join("common", "gallery.html"), context)
 
-
 @login_required()
-def companies(request):
-    user_role = request.user.user_role
-    companies = Company.objects.all()
-
-    paginator = Paginator(companies, 25)
-    page = request.GET.get("page")
-
-    try:
-        companies = paginator.page(page)
-    except PageNotAnInteger:
-        companies = paginator.page(1)
-    except EmptyPage:
-        companies = paginator.page(paginator.num_pages)
-
-    context = {
-        "user_role": user_role,
-        "users": companies,
-        "card_template_path": os.path.join("artist", "components", "company_card.html"),
-        "paginator_template_path": os.path.join(
-            "common", "components", "paginator.html"
-        ),
-    }
-    return render(request, os.path.join("common", "gallery.html"), context)
+def artist(request, id):
+    objects = get_objects_from_models(ARTIST_PROFILE_MODELS, id)
+    objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
+    objects = remove_pattern_dict_keys(objects, "artist")
+    context = CONTEXT_TEMPLATE
+    context["role"] = request.user.role
+    context["objects"] = objects
+    context["templates_models"]["identity"] = os.path.join(
+        "artist", "components", "identity.html"
+    )
+    context["templates_models"]["coordinate"] = os.path.join(
+        "common", "components", "coordinate.html"
+    )
+    context["templates_models"]["administrative"] = os.path.join(
+        "artist", "components", "administrative.html"
+    )
+    context["templates_models"]["mobility"] = os.path.join(
+        "common", "components", "mobility.html"
+    )
+    context["templates_models"]["socialMedia"] = os.path.join(
+        "common", "components", "socialMedia.html"
+    )
+    context["templates_models"]["contract"] = os.path.join(
+        "artist", "components", "contract.html"
+    )
+    context["templates_models"]["sector"] = os.path.join(
+        "common", "components", "sector.html"
+    )
+    context["templates_models"]["competence"] = os.path.join(
+        "artist", "components", "competence.html"
+    )
+    context["templates_models"]["software"] = os.path.join(
+        "artist", "components", "software.html"
+    )
+    context["templates_ui"]["navbar_vertical"] = os.path.join(
+        "common", "components", "navbar_vertical.html"
+    )
+    return render(request, os.path.join("artist", "profile.html"), context)
 
 
 @login_required()
 def company(request, id):
-    user = request.user
-    context = {"user_role": user.user_role, "company": Company.objects.get(id=id)}
-    return render(request, os.path.join("artist", "gallery.html"), context)
+    objects = get_objects_from_models(COMPANY_PROFILE_MODELS, id)
+    objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
+    objects = remove_pattern_dict_keys(objects, "company")
+    context = CONTEXT_TEMPLATE
+    context["role"] = request.user.role
+    context["objects"] = objects
+    context["templates_models"]["company"] = os.path.join(
+        "company", "components", "identity.html"
+    )
+    context["templates_models"]["coordinate"] = os.path.join(
+        "common", "components", "coordinate.html"
+    )
+    context["templates_models"]["mobility"] = os.path.join(
+        "common", "components", "mobility.html"
+    )
+    context["templates_models"]["socialMedia"] = os.path.join(
+        "common", "components", "socialMedia.html"
+    )
+    context["templates_models"]["sector"] = os.path.join(
+        "common", "components", "sector.html"
+    )
+    context["templates_models"]["competence"] = os.path.join(
+        "company", "components", "competence.html"
+    )
+    context["templates_models"]["software"] = os.path.join(
+        "company", "components", "software.html"
+    )
+    context["templates_ui"]["navbar_vertical"] = os.path.join(
+        "common", "components", "navbar_vertical.html"
+    )
+    return render(request, os.path.join("company", "profile.html"), context)
