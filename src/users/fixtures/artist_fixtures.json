@@ -1,0 +1,5342 @@
+[
+    {
+        "model": "users.artistidentity",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "avatar": "avatars/portrait_1.jpg",
+            "title": "Surveyor, building control",
+            "first_name": "Kristen",
+            "last_name": "Miranda",
+            "description": "Relate provide system debate until consider. News relate foreign population part threat. She evening some hit society play choose."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "avatar": "avatars/portrait_2.jpg",
+            "title": "Clinical embryologist",
+            "first_name": "Jamie",
+            "last_name": "Garrison",
+            "description": "Weight suggest meet environment box environmental somebody. Agreement rather describe company without."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "avatar": "avatars/portrait_3.jpg",
+            "title": "Nurse, mental health",
+            "first_name": "Phillip",
+            "last_name": "Hayes",
+            "description": "Avoid civil film any. Cover realize at item.\nQuite nothing station commercial. Standard push know. Site something mission lose process memory woman professor. Example strong rock."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "avatar": "avatars/portrait_4.jpg",
+            "title": "Photographer",
+            "first_name": "Melissa",
+            "last_name": "Bruce",
+            "description": "Myself detail enter list treat morning. Mission state upon determine talk watch."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "avatar": "avatars/portrait_5.jpg",
+            "title": "Therapist, speech and language",
+            "first_name": "Betty",
+            "last_name": "Miranda",
+            "description": "I behind since citizen work. Might season young security yeah become. Difference tend space central purpose point."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "avatar": "avatars/portrait_6.jpg",
+            "title": "Games developer",
+            "first_name": "Chelsea",
+            "last_name": "Morales",
+            "description": "Hope maybe field including analysis leader training. Line understand manage late. Ball service course many local information.\nKeep war commercial middle course response."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "avatar": "avatars/portrait_7.jpg",
+            "title": "Chief Financial Officer",
+            "first_name": "Collin",
+            "last_name": "Hernandez",
+            "description": "Reach present cell. Affect follow who deep television. Owner just matter skill every when.\nMight stock either. Under other reach truth audience others without dinner."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 8,
+        "fields": {
+            "user": 8,
+            "avatar": "avatars/portrait_8.jpg",
+            "title": "Development worker, international aid",
+            "first_name": "Christopher",
+            "last_name": "Taylor",
+            "description": "To probably number idea but seven. Manager training purpose majority study significant. Those central education radio floor bed expert."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 9,
+        "fields": {
+            "user": 9,
+            "avatar": "avatars/portrait_9.jpg",
+            "title": "Designer, industrial/product",
+            "first_name": "Melinda",
+            "last_name": "Nunez",
+            "description": "Fact would soldier. Economy suddenly forward general become book. Threat style or issue.\nBecome rather nor usually thank voice building election."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "avatar": "avatars/portrait_10.jpg",
+            "title": "IT technical support officer",
+            "first_name": "Alyssa",
+            "last_name": "Smith",
+            "description": "Realize fund environmental get. Receive draw meet garden Republican. Week somebody six organization tax.\nLive central interview billion method. Explain food would some himself risk."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 11,
+        "fields": {
+            "user": 11,
+            "avatar": "avatars/portrait_11.jpg",
+            "title": "Armed forces technical officer",
+            "first_name": "Jamie",
+            "last_name": "Blake",
+            "description": "To order gas small describe value. Scientist threat key.\nAgree week sometimes respond. Hold worry father get citizen sing common final."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 12,
+        "fields": {
+            "user": 12,
+            "avatar": "avatars/portrait_12.jpg",
+            "title": "Health and safety adviser",
+            "first_name": "Erik",
+            "last_name": "Brown",
+            "description": "Final morning one my computer. Eat natural short assume.\nDefense meeting official pass. Upon our point us upon determine box."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 13,
+        "fields": {
+            "user": 13,
+            "avatar": "avatars/portrait_13.jpg",
+            "title": "Trade union research officer",
+            "first_name": "Darrell",
+            "last_name": "Lee",
+            "description": "Director activity page. Citizen whose house scientist money thousand. Act free even third.\nTrue business door child collection strategy. National work surface nothing stand officer."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 14,
+        "fields": {
+            "user": 14,
+            "avatar": "avatars/portrait_14.jpg",
+            "title": "Teacher, early years/pre",
+            "first_name": "Katherine",
+            "last_name": "Lee",
+            "description": "Great fight give. Drive east teach yard attention collection.\nSkill mention if leave responsibility. Health sure doctor put plan. Doctor size free care least."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 15,
+        "fields": {
+            "user": 15,
+            "avatar": "avatars/portrait_15.jpg",
+            "title": "Building control surveyor",
+            "first_name": "William",
+            "last_name": "Burns",
+            "description": "Themselves whom manage. Clearly mission remain financial.\nExample bar character garden. Central if health nature myself of join."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 16,
+        "fields": {
+            "user": 16,
+            "avatar": "avatars/portrait_16.jpg",
+            "title": "Games developer",
+            "first_name": "Jane",
+            "last_name": "Lopez",
+            "description": "Democratic all court today prove treatment world. Recent color including. Letter by move.\nThis ready section peace send hair. Whether issue wall go traditional speech."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 17,
+        "fields": {
+            "user": 17,
+            "avatar": "avatars/portrait_17.jpg",
+            "title": "Medical technical officer",
+            "first_name": "Emily",
+            "last_name": "Robinson",
+            "description": "Right power audience statement special. Cost though office already treatment. Still have above morning."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 18,
+        "fields": {
+            "user": 18,
+            "avatar": "avatars/portrait_18.jpg",
+            "title": "Fast food restaurant manager",
+            "first_name": "Laura",
+            "last_name": "Martinez",
+            "description": "Job attention early article. Only including reach cultural low debate. If issue step PM.\nGuy somebody issue book mother reduce result. Style themselves country. Action look when lot soldier."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 19,
+        "fields": {
+            "user": 19,
+            "avatar": "avatars/portrait_19.jpg",
+            "title": "Nature conservation officer",
+            "first_name": "Rebekah",
+            "last_name": "Klein",
+            "description": "Claim expert alone form miss. Table responsibility fight age design left beautiful. Whose girl picture pressure player finish."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 20,
+        "fields": {
+            "user": 20,
+            "avatar": "avatars/portrait_20.jpg",
+            "title": "Marine scientist",
+            "first_name": "Tracey",
+            "last_name": "Sawyer",
+            "description": "Admit specific truth. Whatever model he. Big carry crime attention state."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 21,
+        "fields": {
+            "user": 21,
+            "avatar": "avatars/portrait_21.jpg",
+            "title": "Armed forces operational officer",
+            "first_name": "Susan",
+            "last_name": "Reese",
+            "description": "Door message whether positive beat.\nSenior purpose image character. Return nation apply news part meet herself."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 22,
+        "fields": {
+            "user": 22,
+            "avatar": "avatars/portrait_22.jpg",
+            "title": "Surveyor, rural practice",
+            "first_name": "Lisa",
+            "last_name": "Roy",
+            "description": "Visit assume short bag result. Actually head help success question. Investment official friend. Board third save authority tough hear computer kind."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 23,
+        "fields": {
+            "user": 23,
+            "avatar": "avatars/portrait_23.jpg",
+            "title": "Tax inspector",
+            "first_name": "Jacob",
+            "last_name": "Mckee",
+            "description": "Street officer college forward example. Possible smile suddenly listen.\nDoor administration away go herself. Son between board ok."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 24,
+        "fields": {
+            "user": 24,
+            "avatar": "avatars/portrait_24.jpg",
+            "title": "Designer, fashion/clothing",
+            "first_name": "Stephanie",
+            "last_name": "Lee",
+            "description": "Memory carry next man newspaper home. When dog society focus."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 25,
+        "fields": {
+            "user": 25,
+            "avatar": "avatars/portrait_25.jpg",
+            "title": "Dance movement psychotherapist",
+            "first_name": "Sarah",
+            "last_name": "Reese",
+            "description": "Similar later available. Foreign no language economy allow picture. This truth trade agree goal."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 26,
+        "fields": {
+            "user": 26,
+            "avatar": "avatars/portrait_26.jpg",
+            "title": "Pharmacologist",
+            "first_name": "Carlos",
+            "last_name": "Jackson",
+            "description": "While up each play wonder speak. Option issue truth image car daughter.\nAvoid measure more test rise skill buy. Style language will. Agree next such talk knowledge true."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 27,
+        "fields": {
+            "user": 27,
+            "avatar": "avatars/portrait_27.jpg",
+            "title": "Facilities manager",
+            "first_name": "Rachel",
+            "last_name": "Jones",
+            "description": "Question treatment total offer newspaper crime main. Television song billion affect strong I item. Performance eight development remain what."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 28,
+        "fields": {
+            "user": 28,
+            "avatar": "avatars/portrait_28.jpg",
+            "title": "Architectural technologist",
+            "first_name": "Mary",
+            "last_name": "Vargas",
+            "description": "Enough policy news much.\nSupport until television thus difficult investment fast. Must in check federal. Affect soldier beautiful."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 29,
+        "fields": {
+            "user": 29,
+            "avatar": "avatars/portrait_29.jpg",
+            "title": "Maintenance engineer",
+            "first_name": "Angela",
+            "last_name": "Tate",
+            "description": "Process cell able whole money wrong interesting. Beyond according cup over authority picture doctor.\nAccording measure from house far. Glass week particular model."
+        }
+    },
+    {
+        "model": "users.artistidentity",
+        "pk": 30,
+        "fields": {
+            "user": 30,
+            "avatar": "avatars/portrait_30.jpg",
+            "title": "Scientist, marine",
+            "first_name": "Courtney",
+            "last_name": "Franco",
+            "description": "Begin someone cost read ten member. True kitchen there. Subject stop against similar allow upon church third.\nOccur law dinner contain with would security."
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "country": "Tokelau",
+            "state": "Pennsylvania",
+            "city": "Whiteport",
+            "zip_code": "34885",
+            "street_name": "Davis Inlet",
+            "street_number": "1756",
+            "phone_number": "(963)213-4937x78877"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "country": "Cambodia",
+            "state": "Ohio",
+            "city": "Gilbertburgh",
+            "zip_code": "51064",
+            "street_name": "Lori Hill",
+            "street_number": "220",
+            "phone_number": "197-620-1580x4300"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "country": "Aruba",
+            "state": "Maine",
+            "city": "Coffeyfurt",
+            "zip_code": "05711",
+            "street_name": "Alexander Lights",
+            "street_number": "981",
+            "phone_number": "001-581-792-1657x203"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "country": "Comoros",
+            "state": "Kentucky",
+            "city": "Lake Janethaven",
+            "zip_code": "18778",
+            "street_name": "Charles Locks",
+            "street_number": "7568",
+            "phone_number": "562.373.9950"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "country": "Kuwait",
+            "state": "Illinois",
+            "city": "Hallbury",
+            "zip_code": "01795",
+            "street_name": "Robert Rapids",
+            "street_number": "703",
+            "phone_number": "1053348701"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "country": "British Virgin Islands",
+            "state": "California",
+            "city": "East Ashleyfort",
+            "zip_code": "21171",
+            "street_name": "Trevino Well",
+            "street_number": "0947",
+            "phone_number": "148-479-2731x75987"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "country": "Bahrain",
+            "state": "Georgia",
+            "city": "Barnesmouth",
+            "zip_code": "67802",
+            "street_name": "Long Village",
+            "street_number": "271",
+            "phone_number": "665-553-5863x4098"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 8,
+        "fields": {
+            "user": 8,
+            "country": "Saint Pierre and Miquelon",
+            "state": "Idaho",
+            "city": "New Jamesberg",
+            "zip_code": "71794",
+            "street_name": "Galvan Shoal",
+            "street_number": "518",
+            "phone_number": "724.504.4562x043"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 9,
+        "fields": {
+            "user": 9,
+            "country": "Dominica",
+            "state": "South Carolina",
+            "city": "Cynthiashire",
+            "zip_code": "70557",
+            "street_name": "Richard Parkway",
+            "street_number": "07381",
+            "phone_number": "+1-400-051-7504x8796"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "country": "Tunisia",
+            "state": "Iowa",
+            "city": "Holtton",
+            "zip_code": "84415",
+            "street_name": "Smith Knolls",
+            "street_number": "1051",
+            "phone_number": "480-338-1535"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 11,
+        "fields": {
+            "user": 11,
+            "country": "Mozambique",
+            "state": "Louisiana",
+            "city": "Michaelberg",
+            "zip_code": "80773",
+            "street_name": "Bill Plains",
+            "street_number": "3209",
+            "phone_number": "(153)930-2976x96951"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 12,
+        "fields": {
+            "user": 12,
+            "country": "Papua New Guinea",
+            "state": "Indiana",
+            "city": "East Brittanymouth",
+            "zip_code": "85307",
+            "street_name": "Brown Forge",
+            "street_number": "8519",
+            "phone_number": "(171)100-8944"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 13,
+        "fields": {
+            "user": 13,
+            "country": "Cambodia",
+            "state": "Texas",
+            "city": "North Williamland",
+            "zip_code": "36872",
+            "street_name": "Susan Plains",
+            "street_number": "519",
+            "phone_number": "760-802-0740x7327"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 14,
+        "fields": {
+            "user": 14,
+            "country": "Somalia",
+            "state": "Oklahoma",
+            "city": "Riveraberg",
+            "zip_code": "25359",
+            "street_name": "Gray Mountain",
+            "street_number": "85358",
+            "phone_number": "+1-027-800-5004x47255"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 15,
+        "fields": {
+            "user": 15,
+            "country": "British Virgin Islands",
+            "state": "Colorado",
+            "city": "West Antoniotown",
+            "zip_code": "05145",
+            "street_name": "Clarke Roads",
+            "street_number": "840",
+            "phone_number": "+1-465-693-6546x68701"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 16,
+        "fields": {
+            "user": 16,
+            "country": "Hungary",
+            "state": "Minnesota",
+            "city": "Lake Jonathan",
+            "zip_code": "61640",
+            "street_name": "Dawn Brook",
+            "street_number": "1146",
+            "phone_number": "7751752403"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 17,
+        "fields": {
+            "user": 17,
+            "country": "Cook Islands",
+            "state": "Arizona",
+            "city": "North Christopherchester",
+            "zip_code": "43223",
+            "street_name": "Best Harbor",
+            "street_number": "22011",
+            "phone_number": "278-198-4052"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 18,
+        "fields": {
+            "user": 18,
+            "country": "Greece",
+            "state": "Utah",
+            "city": "South Scott",
+            "zip_code": "82366",
+            "street_name": "Brett Ranch",
+            "street_number": "36003",
+            "phone_number": "001-509-827-4599"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 19,
+        "fields": {
+            "user": 19,
+            "country": "Tajikistan",
+            "state": "Minnesota",
+            "city": "North Savannah",
+            "zip_code": "21513",
+            "street_name": "Amy Harbors",
+            "street_number": "115",
+            "phone_number": "001-259-245-2776x8912"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 20,
+        "fields": {
+            "user": 20,
+            "country": "Fiji",
+            "state": "California",
+            "city": "Lake Madisonchester",
+            "zip_code": "28695",
+            "street_name": "Singleton Avenue",
+            "street_number": "67622",
+            "phone_number": "369.273.5240x086"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 21,
+        "fields": {
+            "user": 21,
+            "country": "Tunisia",
+            "state": "Kansas",
+            "city": "Heatherburgh",
+            "zip_code": "62851",
+            "street_name": "Ryan Mount",
+            "street_number": "0534",
+            "phone_number": "(589)774-4126x984"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 22,
+        "fields": {
+            "user": 22,
+            "country": "Guatemala",
+            "state": "Florida",
+            "city": "South David",
+            "zip_code": "05955",
+            "street_name": "Booth Neck",
+            "street_number": "4316",
+            "phone_number": "(960)364-0054x82326"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 23,
+        "fields": {
+            "user": 23,
+            "country": "Holy See (Vatican City State)",
+            "state": "Massachusetts",
+            "city": "Port Markmouth",
+            "zip_code": "39144",
+            "street_name": "Butler Pass",
+            "street_number": "45997",
+            "phone_number": "+1-256-683-3904x683"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 24,
+        "fields": {
+            "user": 24,
+            "country": "Israel",
+            "state": "Utah",
+            "city": "Lake Mark",
+            "zip_code": "83647",
+            "street_name": "Snow Road",
+            "street_number": "557",
+            "phone_number": "+1-068-558-8316x4346"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 25,
+        "fields": {
+            "user": 25,
+            "country": "Cuba",
+            "state": "Michigan",
+            "city": "Lake Shawn",
+            "zip_code": "23709",
+            "street_name": "Ferguson Roads",
+            "street_number": "2975",
+            "phone_number": "+1-337-967-9378x595"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 26,
+        "fields": {
+            "user": 26,
+            "country": "Angola",
+            "state": "Mississippi",
+            "city": "Grahamside",
+            "zip_code": "96629",
+            "street_name": "Christensen Coves",
+            "street_number": "2345",
+            "phone_number": "001-489-613-3797x62870"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 27,
+        "fields": {
+            "user": 27,
+            "country": "Italy",
+            "state": "Minnesota",
+            "city": "Sharpburgh",
+            "zip_code": "40642",
+            "street_name": "Timothy Stream",
+            "street_number": "263",
+            "phone_number": "147-876-5899x5808"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 28,
+        "fields": {
+            "user": 28,
+            "country": "Togo",
+            "state": "Idaho",
+            "city": "South Brandonstad",
+            "zip_code": "47211",
+            "street_name": "Lara Isle",
+            "street_number": "2168",
+            "phone_number": "001-235-439-0842"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 29,
+        "fields": {
+            "user": 29,
+            "country": "Saint Helena",
+            "state": "Pennsylvania",
+            "city": "Lake Amyside",
+            "zip_code": "21339",
+            "street_name": "Thornton Alley",
+            "street_number": "48811",
+            "phone_number": "(161)372-9980"
+        }
+    },
+    {
+        "model": "users.artistcoordinate",
+        "pk": 30,
+        "fields": {
+            "user": 30,
+            "country": "Guadeloupe",
+            "state": "Pennsylvania",
+            "city": "Rodneyfort",
+            "zip_code": "83171",
+            "street_name": "Jacqueline Mountain",
+            "street_number": "025",
+            "phone_number": "001-724-443-4080x2715"
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "spectacle_number": "34245412",
+            "siret_number": "84248694823357",
+            "price": 675
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "spectacle_number": "70654985",
+            "siret_number": "48836837016318",
+            "price": 529
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "spectacle_number": "11786986",
+            "siret_number": "96089490961087",
+            "price": 540
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "spectacle_number": "00722612",
+            "siret_number": "06861944447043",
+            "price": 205
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "spectacle_number": "10388568",
+            "siret_number": "84269401528181",
+            "price": 234
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "spectacle_number": "78659978",
+            "siret_number": "11437983413709",
+            "price": 252
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "spectacle_number": "38582912",
+            "siret_number": "97720804583435",
+            "price": 7
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 8,
+        "fields": {
+            "user": 8,
+            "spectacle_number": "82704691",
+            "siret_number": "93007578244111",
+            "price": 864
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 9,
+        "fields": {
+            "user": 9,
+            "spectacle_number": "17436010",
+            "siret_number": "49036457131884",
+            "price": 830
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "spectacle_number": "47592442",
+            "siret_number": "35721529532590",
+            "price": 808
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 11,
+        "fields": {
+            "user": 11,
+            "spectacle_number": "27064794",
+            "siret_number": "88052696971243",
+            "price": 507
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 12,
+        "fields": {
+            "user": 12,
+            "spectacle_number": "16004038",
+            "siret_number": "13143508174043",
+            "price": 512
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 13,
+        "fields": {
+            "user": 13,
+            "spectacle_number": "42471199",
+            "siret_number": "50532916723010",
+            "price": 988
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 14,
+        "fields": {
+            "user": 14,
+            "spectacle_number": "95769162",
+            "siret_number": "14691940174086",
+            "price": 225
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 15,
+        "fields": {
+            "user": 15,
+            "spectacle_number": "80394519",
+            "siret_number": "09022476919593",
+            "price": 537
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 16,
+        "fields": {
+            "user": 16,
+            "spectacle_number": "68610187",
+            "siret_number": "12092414499053",
+            "price": 800
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 17,
+        "fields": {
+            "user": 17,
+            "spectacle_number": "59197914",
+            "siret_number": "92023518418413",
+            "price": 787
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 18,
+        "fields": {
+            "user": 18,
+            "spectacle_number": "40791607",
+            "siret_number": "98333040180057",
+            "price": 825
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 19,
+        "fields": {
+            "user": 19,
+            "spectacle_number": "60773754",
+            "siret_number": "51449097121127",
+            "price": 213
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 20,
+        "fields": {
+            "user": 20,
+            "spectacle_number": "39054893",
+            "siret_number": "59717432232386",
+            "price": 521
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 21,
+        "fields": {
+            "user": 21,
+            "spectacle_number": "23414996",
+            "siret_number": "46508082077663",
+            "price": 530
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 22,
+        "fields": {
+            "user": 22,
+            "spectacle_number": "98445569",
+            "siret_number": "09860746494708",
+            "price": 534
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 23,
+        "fields": {
+            "user": 23,
+            "spectacle_number": "38619226",
+            "siret_number": "73965679937750",
+            "price": 338
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 24,
+        "fields": {
+            "user": 24,
+            "spectacle_number": "70413466",
+            "siret_number": "77605873272859",
+            "price": 201
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 25,
+        "fields": {
+            "user": 25,
+            "spectacle_number": "47664741",
+            "siret_number": "37292615721534",
+            "price": 671
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 26,
+        "fields": {
+            "user": 26,
+            "spectacle_number": "15911882",
+            "siret_number": "78881602297353",
+            "price": 60
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 27,
+        "fields": {
+            "user": 27,
+            "spectacle_number": "74841055",
+            "siret_number": "93785264550141",
+            "price": 136
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 28,
+        "fields": {
+            "user": 28,
+            "spectacle_number": "91114039",
+            "siret_number": "80069453639278",
+            "price": 708
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 29,
+        "fields": {
+            "user": 29,
+            "spectacle_number": "78009195",
+            "siret_number": "86486200553311",
+            "price": 201
+        }
+    },
+    {
+        "model": "users.artistadministrative",
+        "pk": 30,
+        "fields": {
+            "user": 30,
+            "spectacle_number": "94023355",
+            "siret_number": "40467626506726",
+            "price": 851
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "full-time": false,
+            "part-time": true,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "full-time": true,
+            "part-time": true,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "full-time": true,
+            "part-time": true,
+            "freelance": false,
+            "Internship": true,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "full-time": false,
+            "part-time": false,
+            "freelance": true,
+            "Internship": true,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "full-time": false,
+            "part-time": false,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "full-time": true,
+            "part-time": true,
+            "freelance": false,
+            "Internship": true,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "full-time": false,
+            "part-time": false,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 8,
+        "fields": {
+            "user": 8,
+            "full-time": true,
+            "part-time": false,
+            "freelance": false,
+            "Internship": true,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 9,
+        "fields": {
+            "user": 9,
+            "full-time": true,
+            "part-time": false,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "full-time": true,
+            "part-time": false,
+            "freelance": false,
+            "Internship": true,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 11,
+        "fields": {
+            "user": 11,
+            "full-time": true,
+            "part-time": false,
+            "freelance": false,
+            "Internship": true,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 12,
+        "fields": {
+            "user": 12,
+            "full-time": true,
+            "part-time": false,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 13,
+        "fields": {
+            "user": 13,
+            "full-time": true,
+            "part-time": false,
+            "freelance": false,
+            "Internship": false,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 14,
+        "fields": {
+            "user": 14,
+            "full-time": true,
+            "part-time": true,
+            "freelance": true,
+            "Internship": true,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 15,
+        "fields": {
+            "user": 15,
+            "full-time": true,
+            "part-time": false,
+            "freelance": false,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 16,
+        "fields": {
+            "user": 16,
+            "full-time": true,
+            "part-time": true,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 17,
+        "fields": {
+            "user": 17,
+            "full-time": false,
+            "part-time": false,
+            "freelance": true,
+            "Internship": true,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 18,
+        "fields": {
+            "user": 18,
+            "full-time": false,
+            "part-time": true,
+            "freelance": false,
+            "Internship": true,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 19,
+        "fields": {
+            "user": 19,
+            "full-time": true,
+            "part-time": false,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 20,
+        "fields": {
+            "user": 20,
+            "full-time": true,
+            "part-time": true,
+            "freelance": true,
+            "Internship": true,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 21,
+        "fields": {
+            "user": 21,
+            "full-time": false,
+            "part-time": false,
+            "freelance": false,
+            "Internship": true,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 22,
+        "fields": {
+            "user": 22,
+            "full-time": true,
+            "part-time": false,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 23,
+        "fields": {
+            "user": 23,
+            "full-time": false,
+            "part-time": true,
+            "freelance": false,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 24,
+        "fields": {
+            "user": 24,
+            "full-time": false,
+            "part-time": false,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 25,
+        "fields": {
+            "user": 25,
+            "full-time": true,
+            "part-time": true,
+            "freelance": true,
+            "Internship": false,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 26,
+        "fields": {
+            "user": 26,
+            "full-time": true,
+            "part-time": false,
+            "freelance": true,
+            "Internship": true,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 27,
+        "fields": {
+            "user": 27,
+            "full-time": false,
+            "part-time": false,
+            "freelance": false,
+            "Internship": true,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 28,
+        "fields": {
+            "user": 28,
+            "full-time": false,
+            "part-time": false,
+            "freelance": false,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 29,
+        "fields": {
+            "user": 29,
+            "full-time": false,
+            "part-time": false,
+            "freelance": false,
+            "Internship": false,
+            "apprenticeship": true
+        }
+    },
+    {
+        "model": "users.artistcontract",
+        "pk": 30,
+        "fields": {
+            "user": 30,
+            "full-time": false,
+            "part-time": false,
+            "freelance": false,
+            "Internship": false,
+            "apprenticeship": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "full remote": false,
+            "hybrid": true,
+            "on site": false,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "full remote": false,
+            "hybrid": false,
+            "on site": false,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "full remote": true,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "full remote": true,
+            "hybrid": true,
+            "on site": false,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "full remote": true,
+            "hybrid": true,
+            "on site": false,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "full remote": true,
+            "hybrid": true,
+            "on site": false,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "full remote": true,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 8,
+        "fields": {
+            "user": 8,
+            "full remote": true,
+            "hybrid": true,
+            "on site": true,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 9,
+        "fields": {
+            "user": 9,
+            "full remote": false,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "full remote": true,
+            "hybrid": false,
+            "on site": false,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 11,
+        "fields": {
+            "user": 11,
+            "full remote": false,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 12,
+        "fields": {
+            "user": 12,
+            "full remote": false,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 13,
+        "fields": {
+            "user": 13,
+            "full remote": false,
+            "hybrid": true,
+            "on site": true,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 14,
+        "fields": {
+            "user": 14,
+            "full remote": true,
+            "hybrid": false,
+            "on site": false,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 15,
+        "fields": {
+            "user": 15,
+            "full remote": true,
+            "hybrid": true,
+            "on site": false,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 16,
+        "fields": {
+            "user": 16,
+            "full remote": false,
+            "hybrid": false,
+            "on site": false,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 17,
+        "fields": {
+            "user": 17,
+            "full remote": false,
+            "hybrid": true,
+            "on site": false,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 18,
+        "fields": {
+            "user": 18,
+            "full remote": true,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 19,
+        "fields": {
+            "user": 19,
+            "full remote": false,
+            "hybrid": true,
+            "on site": true,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 20,
+        "fields": {
+            "user": 20,
+            "full remote": false,
+            "hybrid": true,
+            "on site": true,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 21,
+        "fields": {
+            "user": 21,
+            "full remote": true,
+            "hybrid": true,
+            "on site": true,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 22,
+        "fields": {
+            "user": 22,
+            "full remote": true,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 23,
+        "fields": {
+            "user": 23,
+            "full remote": false,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 24,
+        "fields": {
+            "user": 24,
+            "full remote": false,
+            "hybrid": true,
+            "on site": true,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 25,
+        "fields": {
+            "user": 25,
+            "full remote": false,
+            "hybrid": false,
+            "on site": false,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 26,
+        "fields": {
+            "user": 26,
+            "full remote": false,
+            "hybrid": true,
+            "on site": false,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 27,
+        "fields": {
+            "user": 27,
+            "full remote": true,
+            "hybrid": true,
+            "on site": false,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 28,
+        "fields": {
+            "user": 28,
+            "full remote": false,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": false
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 29,
+        "fields": {
+            "user": 29,
+            "full remote": false,
+            "hybrid": false,
+            "on site": true,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistmobility",
+        "pk": 30,
+        "fields": {
+            "user": 30,
+            "full remote": false,
+            "hybrid": true,
+            "on site": false,
+            "Relocation Assistance": true
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "",
+            "instagram": "http://atkinson-davis.com/",
+            "github": "https://www.king.com/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "portfolio": "",
+            "youtube": "https://mitchell.com/",
+            "linkedin": "",
+            "instagram": "http://huerta-palmer.com/",
+            "github": "https://www.moore.net/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "portfolio": "https://www.meyers.biz/",
+            "youtube": "https://rivera.org/",
+            "linkedin": "",
+            "instagram": "http://carr.com/",
+            "github": "http://www.campbell-garcia.biz/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "portfolio": "http://owens.com/",
+            "youtube": "https://www.mcdonald.com/",
+            "linkedin": "http://castro.com/",
+            "instagram": "http://martin-moore.com/",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "http://www.lloyd.com/",
+            "instagram": "https://johnston-chen.biz/",
+            "github": "https://harris.com/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "portfolio": "",
+            "youtube": "http://www.williams.com/",
+            "linkedin": "",
+            "instagram": "https://www.livingston-white.com/",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "https://www.flores.org/",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 8,
+        "fields": {
+            "user": 8,
+            "portfolio": "https://porter.net/",
+            "youtube": "",
+            "linkedin": "",
+            "instagram": "https://bolton.com/",
+            "github": "http://www.garcia-lindsey.com/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 9,
+        "fields": {
+            "user": 9,
+            "portfolio": "http://www.petersen.org/",
+            "youtube": "https://villegas.biz/",
+            "linkedin": "",
+            "instagram": "",
+            "github": "http://jimenez-coffey.com/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "http://www.little.org/",
+            "instagram": "https://www.diaz.com/",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 11,
+        "fields": {
+            "user": 11,
+            "portfolio": "http://www.smith.info/",
+            "youtube": "https://roberson.net/",
+            "linkedin": "",
+            "instagram": "https://www.johnston.biz/",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 12,
+        "fields": {
+            "user": 12,
+            "portfolio": "https://www.salas-arias.net/",
+            "youtube": "",
+            "linkedin": "https://www.clark-jones.com/",
+            "instagram": "http://www.adkins-gonzales.com/",
+            "github": "http://www.schultz.net/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 13,
+        "fields": {
+            "user": 13,
+            "portfolio": "",
+            "youtube": "http://reynolds.com/",
+            "linkedin": "https://davis.biz/",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 14,
+        "fields": {
+            "user": 14,
+            "portfolio": "",
+            "youtube": "https://www.lawson.com/",
+            "linkedin": "",
+            "instagram": "http://www.fisher.biz/",
+            "github": "http://galloway.com/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 15,
+        "fields": {
+            "user": 15,
+            "portfolio": "https://www.wilkinson.com/",
+            "youtube": "https://navarro.com/",
+            "linkedin": "",
+            "instagram": "https://nixon.info/",
+            "github": "http://www.bell.info/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 16,
+        "fields": {
+            "user": 16,
+            "portfolio": "",
+            "youtube": "http://www.hill.com/",
+            "linkedin": "http://www.peterson.com/",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 17,
+        "fields": {
+            "user": 17,
+            "portfolio": "http://www.mahoney.info/",
+            "youtube": "http://franco-newman.com/",
+            "linkedin": "",
+            "instagram": "http://www.lindsey.biz/",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 18,
+        "fields": {
+            "user": 18,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "https://scott-white.com/",
+            "instagram": "https://www.wilson-page.com/",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 19,
+        "fields": {
+            "user": 19,
+            "portfolio": "https://www.nixon.org/",
+            "youtube": "https://walker.net/",
+            "linkedin": "https://www.davis.com/",
+            "instagram": "https://mueller-duncan.com/",
+            "github": "http://martinez.com/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 20,
+        "fields": {
+            "user": 20,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "https://www.diaz-lopez.info/",
+            "instagram": "",
+            "github": "http://wood.info/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 21,
+        "fields": {
+            "user": 21,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "",
+            "instagram": "",
+            "github": "http://www.ponce.com/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 22,
+        "fields": {
+            "user": 22,
+            "portfolio": "https://rangel-sanders.info/",
+            "youtube": "",
+            "linkedin": "http://www.hernandez-lane.net/",
+            "instagram": "https://www.taylor.com/",
+            "github": "https://www.smith.net/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 23,
+        "fields": {
+            "user": 23,
+            "portfolio": "https://www.young-smith.com/",
+            "youtube": "http://www.roy-sanchez.org/",
+            "linkedin": "",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 24,
+        "fields": {
+            "user": 24,
+            "portfolio": "",
+            "youtube": "http://www.chavez.com/",
+            "linkedin": "",
+            "instagram": "",
+            "github": "http://hale.com/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 25,
+        "fields": {
+            "user": 25,
+            "portfolio": "https://www.webster-fletcher.info/",
+            "youtube": "",
+            "linkedin": "",
+            "instagram": "",
+            "github": "https://bowers.info/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 26,
+        "fields": {
+            "user": 26,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "",
+            "instagram": "https://www.rice-grimes.com/",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 27,
+        "fields": {
+            "user": 27,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 28,
+        "fields": {
+            "user": 28,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "http://mccoy.com/",
+            "instagram": "",
+            "github": "https://www.peterson.com/"
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 29,
+        "fields": {
+            "user": 29,
+            "portfolio": "",
+            "youtube": "",
+            "linkedin": "",
+            "instagram": "",
+            "github": ""
+        }
+    },
+    {
+        "model": "users.artistsocialmedia",
+        "pk": 30,
+        "fields": {
+            "user": 30,
+            "portfolio": "https://www.henderson.com/",
+            "youtube": "http://www.sandoval.com/",
+            "linkedin": "http://moore-bryant.biz/",
+            "instagram": "https://www.ellis.info/",
+            "github": "http://garcia.net/"
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "luxury": false,
+            "vfx": false,
+            "video games": false,
+            "motion": false,
+            "design": false,
+            "architecture": false,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "luxury": false,
+            "vfx": true,
+            "video games": false,
+            "motion": false,
+            "design": false,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "luxury": true,
+            "vfx": true,
+            "video games": true,
+            "motion": false,
+            "design": false,
+            "architecture": false,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "luxury": true,
+            "vfx": false,
+            "video games": false,
+            "motion": false,
+            "design": true,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "luxury": false,
+            "vfx": false,
+            "video games": true,
+            "motion": false,
+            "design": true,
+            "architecture": false,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "luxury": false,
+            "vfx": true,
+            "video games": false,
+            "motion": false,
+            "design": true,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "luxury": true,
+            "vfx": true,
+            "video games": false,
+            "motion": true,
+            "design": false,
+            "architecture": false,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 8,
+        "fields": {
+            "user": 8,
+            "luxury": false,
+            "vfx": false,
+            "video games": true,
+            "motion": false,
+            "design": true,
+            "architecture": false,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 9,
+        "fields": {
+            "user": 9,
+            "luxury": false,
+            "vfx": false,
+            "video games": false,
+            "motion": false,
+            "design": false,
+            "architecture": true,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "luxury": false,
+            "vfx": false,
+            "video games": false,
+            "motion": true,
+            "design": false,
+            "architecture": false,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 11,
+        "fields": {
+            "user": 11,
+            "luxury": true,
+            "vfx": false,
+            "video games": false,
+            "motion": true,
+            "design": false,
+            "architecture": true,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 12,
+        "fields": {
+            "user": 12,
+            "luxury": false,
+            "vfx": false,
+            "video games": true,
+            "motion": true,
+            "design": true,
+            "architecture": true,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 13,
+        "fields": {
+            "user": 13,
+            "luxury": false,
+            "vfx": false,
+            "video games": false,
+            "motion": false,
+            "design": true,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 14,
+        "fields": {
+            "user": 14,
+            "luxury": false,
+            "vfx": false,
+            "video games": true,
+            "motion": true,
+            "design": false,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 15,
+        "fields": {
+            "user": 15,
+            "luxury": true,
+            "vfx": true,
+            "video games": false,
+            "motion": false,
+            "design": true,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 16,
+        "fields": {
+            "user": 16,
+            "luxury": true,
+            "vfx": false,
+            "video games": true,
+            "motion": false,
+            "design": false,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 17,
+        "fields": {
+            "user": 17,
+            "luxury": true,
+            "vfx": true,
+            "video games": false,
+            "motion": false,
+            "design": false,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 18,
+        "fields": {
+            "user": 18,
+            "luxury": false,
+            "vfx": false,
+            "video games": true,
+            "motion": true,
+            "design": true,
+            "architecture": true,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 19,
+        "fields": {
+            "user": 19,
+            "luxury": false,
+            "vfx": false,
+            "video games": false,
+            "motion": true,
+            "design": true,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 20,
+        "fields": {
+            "user": 20,
+            "luxury": false,
+            "vfx": false,
+            "video games": false,
+            "motion": false,
+            "design": false,
+            "architecture": false,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 21,
+        "fields": {
+            "user": 21,
+            "luxury": false,
+            "vfx": false,
+            "video games": false,
+            "motion": true,
+            "design": true,
+            "architecture": false,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 22,
+        "fields": {
+            "user": 22,
+            "luxury": false,
+            "vfx": false,
+            "video games": false,
+            "motion": false,
+            "design": true,
+            "architecture": true,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 23,
+        "fields": {
+            "user": 23,
+            "luxury": true,
+            "vfx": true,
+            "video games": true,
+            "motion": true,
+            "design": false,
+            "architecture": true,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 24,
+        "fields": {
+            "user": 24,
+            "luxury": true,
+            "vfx": true,
+            "video games": false,
+            "motion": false,
+            "design": true,
+            "architecture": false,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 25,
+        "fields": {
+            "user": 25,
+            "luxury": false,
+            "vfx": false,
+            "video games": true,
+            "motion": false,
+            "design": true,
+            "architecture": false,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 26,
+        "fields": {
+            "user": 26,
+            "luxury": false,
+            "vfx": true,
+            "video games": true,
+            "motion": false,
+            "design": false,
+            "architecture": true,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 27,
+        "fields": {
+            "user": 27,
+            "luxury": true,
+            "vfx": false,
+            "video games": false,
+            "motion": false,
+            "design": false,
+            "architecture": false,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 28,
+        "fields": {
+            "user": 28,
+            "luxury": true,
+            "vfx": true,
+            "video games": true,
+            "motion": false,
+            "design": false,
+            "architecture": false,
+            "animation": false
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 29,
+        "fields": {
+            "user": 29,
+            "luxury": false,
+            "vfx": false,
+            "video games": false,
+            "motion": false,
+            "design": false,
+            "architecture": false,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistsector",
+        "pk": 30,
+        "fields": {
+            "user": 30,
+            "luxury": true,
+            "vfx": false,
+            "video games": true,
+            "motion": true,
+            "design": true,
+            "architecture": true,
+            "animation": true
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "generalist": "Expert",
+            "conceptart": "Expert",
+            "match_moving": "Novice",
+            "modeling": "Expert",
+            "rigging": "Proficient",
+            "animating": "Novice",
+            "texturing": "Competent",
+            "surfacing": "Never practiced",
+            "rendering": "Competent",
+            "compositing": "Advanced Beginner",
+            "rotoscopy": "Never practiced",
+            "video_editing": "Novice",
+            "motionDesign": "Novice",
+            "technical_director": "Competent",
+            "developer": "Advanced Beginner",
+            "production_manager": "Proficient",
+            "producer": "Proficient",
+            "coordinator": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "generalist": "Never practiced",
+            "conceptart": "Proficient",
+            "match_moving": "Proficient",
+            "modeling": "Never practiced",
+            "rigging": "Never practiced",
+            "animating": "Never practiced",
+            "texturing": "Competent",
+            "surfacing": "Proficient",
+            "rendering": "Competent",
+            "compositing": "Novice",
+            "rotoscopy": "Never practiced",
+            "video_editing": "Never practiced",
+            "motionDesign": "Proficient",
+            "technical_director": "Never practiced",
+            "developer": "Expert",
+            "production_manager": "Competent",
+            "producer": "Novice",
+            "coordinator": "Novice"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "generalist": "Novice",
+            "conceptart": "Never practiced",
+            "match_moving": "Novice",
+            "modeling": "Never practiced",
+            "rigging": "Expert",
+            "animating": "Competent",
+            "texturing": "Novice",
+            "surfacing": "Competent",
+            "rendering": "Advanced Beginner",
+            "compositing": "Proficient",
+            "rotoscopy": "Advanced Beginner",
+            "video_editing": "Advanced Beginner",
+            "motionDesign": "Expert",
+            "technical_director": "Never practiced",
+            "developer": "Expert",
+            "production_manager": "Proficient",
+            "producer": "Never practiced",
+            "coordinator": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "generalist": "Never practiced",
+            "conceptart": "Novice",
+            "match_moving": "Competent",
+            "modeling": "Novice",
+            "rigging": "Advanced Beginner",
+            "animating": "Never practiced",
+            "texturing": "Novice",
+            "surfacing": "Proficient",
+            "rendering": "Proficient",
+            "compositing": "Expert",
+            "rotoscopy": "Proficient",
+            "video_editing": "Advanced Beginner",
+            "motionDesign": "Proficient",
+            "technical_director": "Competent",
+            "developer": "Novice",
+            "production_manager": "Proficient",
+            "producer": "Competent",
+            "coordinator": "Novice"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "generalist": "Novice",
+            "conceptart": "Advanced Beginner",
+            "match_moving": "Never practiced",
+            "modeling": "Never practiced",
+            "rigging": "Novice",
+            "animating": "Advanced Beginner",
+            "texturing": "Novice",
+            "surfacing": "Proficient",
+            "rendering": "Competent",
+            "compositing": "Never practiced",
+            "rotoscopy": "Expert",
+            "video_editing": "Novice",
+            "motionDesign": "Proficient",
+            "technical_director": "Competent",
+            "developer": "Expert",
+            "production_manager": "Advanced Beginner",
+            "producer": "Advanced Beginner",
+            "coordinator": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "generalist": "Advanced Beginner",
+            "conceptart": "Never practiced",
+            "match_moving": "Expert",
+            "modeling": "Never practiced",
+            "rigging": "Never practiced",
+            "animating": "Expert",
+            "texturing": "Expert",
+            "surfacing": "Never practiced",
+            "rendering": "Competent",
+            "compositing": "Never practiced",
+            "rotoscopy": "Advanced Beginner",
+            "video_editing": "Never practiced",
+            "motionDesign": "Expert",
+            "technical_director": "Expert",
+            "developer": "Competent",
+            "production_manager": "Advanced Beginner",
+            "producer": "Advanced Beginner",
+            "coordinator": "Competent"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "generalist": "Advanced Beginner",
+            "conceptart": "Never practiced",
+            "match_moving": "Novice",
+            "modeling": "Expert",
+            "rigging": "Expert",
+            "animating": "Competent",
+            "texturing": "Expert",
+            "surfacing": "Never practiced",
+            "rendering": "Novice",
+            "compositing": "Proficient",
+            "rotoscopy": "Proficient",
+            "video_editing": "Never practiced",
+            "motionDesign": "Competent",
+            "technical_director": "Expert",
+            "developer": "Never practiced",
+            "production_manager": "Novice",
+            "producer": "Never practiced",
+            "coordinator": "Expert"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 8,
+        "fields": {
+            "user": 8,
+            "generalist": "Novice",
+            "conceptart": "Proficient",
+            "match_moving": "Expert",
+            "modeling": "Proficient",
+            "rigging": "Expert",
+            "animating": "Never practiced",
+            "texturing": "Proficient",
+            "surfacing": "Novice",
+            "rendering": "Novice",
+            "compositing": "Advanced Beginner",
+            "rotoscopy": "Competent",
+            "video_editing": "Novice",
+            "motionDesign": "Novice",
+            "technical_director": "Never practiced",
+            "developer": "Advanced Beginner",
+            "production_manager": "Advanced Beginner",
+            "producer": "Proficient",
+            "coordinator": "Advanced Beginner"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 9,
+        "fields": {
+            "user": 9,
+            "generalist": "Never practiced",
+            "conceptart": "Proficient",
+            "match_moving": "Advanced Beginner",
+            "modeling": "Proficient",
+            "rigging": "Advanced Beginner",
+            "animating": "Competent",
+            "texturing": "Advanced Beginner",
+            "surfacing": "Novice",
+            "rendering": "Novice",
+            "compositing": "Novice",
+            "rotoscopy": "Proficient",
+            "video_editing": "Proficient",
+            "motionDesign": "Never practiced",
+            "technical_director": "Expert",
+            "developer": "Competent",
+            "production_manager": "Advanced Beginner",
+            "producer": "Novice",
+            "coordinator": "Never practiced"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "generalist": "Proficient",
+            "conceptart": "Advanced Beginner",
+            "match_moving": "Expert",
+            "modeling": "Expert",
+            "rigging": "Novice",
+            "animating": "Competent",
+            "texturing": "Expert",
+            "surfacing": "Novice",
+            "rendering": "Competent",
+            "compositing": "Never practiced",
+            "rotoscopy": "Expert",
+            "video_editing": "Competent",
+            "motionDesign": "Competent",
+            "technical_director": "Never practiced",
+            "developer": "Expert",
+            "production_manager": "Competent",
+            "producer": "Never practiced",
+            "coordinator": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 11,
+        "fields": {
+            "user": 11,
+            "generalist": "Advanced Beginner",
+            "conceptart": "Never practiced",
+            "match_moving": "Competent",
+            "modeling": "Advanced Beginner",
+            "rigging": "Novice",
+            "animating": "Proficient",
+            "texturing": "Competent",
+            "surfacing": "Expert",
+            "rendering": "Novice",
+            "compositing": "Never practiced",
+            "rotoscopy": "Novice",
+            "video_editing": "Never practiced",
+            "motionDesign": "Competent",
+            "technical_director": "Competent",
+            "developer": "Proficient",
+            "production_manager": "Novice",
+            "producer": "Proficient",
+            "coordinator": "Expert"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 12,
+        "fields": {
+            "user": 12,
+            "generalist": "Novice",
+            "conceptart": "Proficient",
+            "match_moving": "Proficient",
+            "modeling": "Competent",
+            "rigging": "Advanced Beginner",
+            "animating": "Advanced Beginner",
+            "texturing": "Novice",
+            "surfacing": "Advanced Beginner",
+            "rendering": "Proficient",
+            "compositing": "Novice",
+            "rotoscopy": "Expert",
+            "video_editing": "Novice",
+            "motionDesign": "Expert",
+            "technical_director": "Advanced Beginner",
+            "developer": "Competent",
+            "production_manager": "Never practiced",
+            "producer": "Competent",
+            "coordinator": "Expert"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 13,
+        "fields": {
+            "user": 13,
+            "generalist": "Never practiced",
+            "conceptart": "Expert",
+            "match_moving": "Never practiced",
+            "modeling": "Expert",
+            "rigging": "Advanced Beginner",
+            "animating": "Never practiced",
+            "texturing": "Competent",
+            "surfacing": "Competent",
+            "rendering": "Never practiced",
+            "compositing": "Competent",
+            "rotoscopy": "Novice",
+            "video_editing": "Never practiced",
+            "motionDesign": "Advanced Beginner",
+            "technical_director": "Proficient",
+            "developer": "Expert",
+            "production_manager": "Competent",
+            "producer": "Never practiced",
+            "coordinator": "Competent"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 14,
+        "fields": {
+            "user": 14,
+            "generalist": "Competent",
+            "conceptart": "Proficient",
+            "match_moving": "Advanced Beginner",
+            "modeling": "Never practiced",
+            "rigging": "Novice",
+            "animating": "Advanced Beginner",
+            "texturing": "Never practiced",
+            "surfacing": "Never practiced",
+            "rendering": "Advanced Beginner",
+            "compositing": "Expert",
+            "rotoscopy": "Proficient",
+            "video_editing": "Competent",
+            "motionDesign": "Advanced Beginner",
+            "technical_director": "Expert",
+            "developer": "Competent",
+            "production_manager": "Novice",
+            "producer": "Never practiced",
+            "coordinator": "Expert"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 15,
+        "fields": {
+            "user": 15,
+            "generalist": "Never practiced",
+            "conceptart": "Advanced Beginner",
+            "match_moving": "Never practiced",
+            "modeling": "Competent",
+            "rigging": "Expert",
+            "animating": "Never practiced",
+            "texturing": "Advanced Beginner",
+            "surfacing": "Never practiced",
+            "rendering": "Competent",
+            "compositing": "Never practiced",
+            "rotoscopy": "Competent",
+            "video_editing": "Expert",
+            "motionDesign": "Never practiced",
+            "technical_director": "Novice",
+            "developer": "Never practiced",
+            "production_manager": "Advanced Beginner",
+            "producer": "Expert",
+            "coordinator": "Expert"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 16,
+        "fields": {
+            "user": 16,
+            "generalist": "Expert",
+            "conceptart": "Proficient",
+            "match_moving": "Expert",
+            "modeling": "Competent",
+            "rigging": "Competent",
+            "animating": "Never practiced",
+            "texturing": "Expert",
+            "surfacing": "Competent",
+            "rendering": "Expert",
+            "compositing": "Never practiced",
+            "rotoscopy": "Expert",
+            "video_editing": "Expert",
+            "motionDesign": "Proficient",
+            "technical_director": "Novice",
+            "developer": "Competent",
+            "production_manager": "Novice",
+            "producer": "Proficient",
+            "coordinator": "Novice"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 17,
+        "fields": {
+            "user": 17,
+            "generalist": "Competent",
+            "conceptart": "Competent",
+            "match_moving": "Advanced Beginner",
+            "modeling": "Competent",
+            "rigging": "Advanced Beginner",
+            "animating": "Never practiced",
+            "texturing": "Advanced Beginner",
+            "surfacing": "Competent",
+            "rendering": "Proficient",
+            "compositing": "Novice",
+            "rotoscopy": "Advanced Beginner",
+            "video_editing": "Proficient",
+            "motionDesign": "Competent",
+            "technical_director": "Competent",
+            "developer": "Competent",
+            "production_manager": "Proficient",
+            "producer": "Proficient",
+            "coordinator": "Advanced Beginner"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 18,
+        "fields": {
+            "user": 18,
+            "generalist": "Novice",
+            "conceptart": "Competent",
+            "match_moving": "Expert",
+            "modeling": "Advanced Beginner",
+            "rigging": "Proficient",
+            "animating": "Competent",
+            "texturing": "Competent",
+            "surfacing": "Expert",
+            "rendering": "Never practiced",
+            "compositing": "Advanced Beginner",
+            "rotoscopy": "Expert",
+            "video_editing": "Advanced Beginner",
+            "motionDesign": "Competent",
+            "technical_director": "Never practiced",
+            "developer": "Never practiced",
+            "production_manager": "Novice",
+            "producer": "Advanced Beginner",
+            "coordinator": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 19,
+        "fields": {
+            "user": 19,
+            "generalist": "Novice",
+            "conceptart": "Advanced Beginner",
+            "match_moving": "Expert",
+            "modeling": "Competent",
+            "rigging": "Never practiced",
+            "animating": "Proficient",
+            "texturing": "Competent",
+            "surfacing": "Expert",
+            "rendering": "Proficient",
+            "compositing": "Competent",
+            "rotoscopy": "Novice",
+            "video_editing": "Expert",
+            "motionDesign": "Competent",
+            "technical_director": "Advanced Beginner",
+            "developer": "Novice",
+            "production_manager": "Never practiced",
+            "producer": "Competent",
+            "coordinator": "Competent"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 20,
+        "fields": {
+            "user": 20,
+            "generalist": "Expert",
+            "conceptart": "Expert",
+            "match_moving": "Never practiced",
+            "modeling": "Advanced Beginner",
+            "rigging": "Novice",
+            "animating": "Proficient",
+            "texturing": "Competent",
+            "surfacing": "Proficient",
+            "rendering": "Advanced Beginner",
+            "compositing": "Competent",
+            "rotoscopy": "Never practiced",
+            "video_editing": "Never practiced",
+            "motionDesign": "Expert",
+            "technical_director": "Proficient",
+            "developer": "Expert",
+            "production_manager": "Novice",
+            "producer": "Novice",
+            "coordinator": "Competent"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 21,
+        "fields": {
+            "user": 21,
+            "generalist": "Advanced Beginner",
+            "conceptart": "Advanced Beginner",
+            "match_moving": "Proficient",
+            "modeling": "Advanced Beginner",
+            "rigging": "Proficient",
+            "animating": "Competent",
+            "texturing": "Never practiced",
+            "surfacing": "Expert",
+            "rendering": "Competent",
+            "compositing": "Never practiced",
+            "rotoscopy": "Proficient",
+            "video_editing": "Proficient",
+            "motionDesign": "Expert",
+            "technical_director": "Proficient",
+            "developer": "Never practiced",
+            "production_manager": "Advanced Beginner",
+            "producer": "Proficient",
+            "coordinator": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 22,
+        "fields": {
+            "user": 22,
+            "generalist": "Advanced Beginner",
+            "conceptart": "Never practiced",
+            "match_moving": "Novice",
+            "modeling": "Competent",
+            "rigging": "Never practiced",
+            "animating": "Proficient",
+            "texturing": "Expert",
+            "surfacing": "Never practiced",
+            "rendering": "Advanced Beginner",
+            "compositing": "Expert",
+            "rotoscopy": "Proficient",
+            "video_editing": "Competent",
+            "motionDesign": "Advanced Beginner",
+            "technical_director": "Competent",
+            "developer": "Never practiced",
+            "production_manager": "Expert",
+            "producer": "Expert",
+            "coordinator": "Competent"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 23,
+        "fields": {
+            "user": 23,
+            "generalist": "Never practiced",
+            "conceptart": "Expert",
+            "match_moving": "Never practiced",
+            "modeling": "Competent",
+            "rigging": "Competent",
+            "animating": "Novice",
+            "texturing": "Advanced Beginner",
+            "surfacing": "Never practiced",
+            "rendering": "Proficient",
+            "compositing": "Expert",
+            "rotoscopy": "Novice",
+            "video_editing": "Expert",
+            "motionDesign": "Novice",
+            "technical_director": "Advanced Beginner",
+            "developer": "Novice",
+            "production_manager": "Expert",
+            "producer": "Novice",
+            "coordinator": "Never practiced"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 24,
+        "fields": {
+            "user": 24,
+            "generalist": "Advanced Beginner",
+            "conceptart": "Competent",
+            "match_moving": "Competent",
+            "modeling": "Competent",
+            "rigging": "Expert",
+            "animating": "Novice",
+            "texturing": "Advanced Beginner",
+            "surfacing": "Novice",
+            "rendering": "Expert",
+            "compositing": "Competent",
+            "rotoscopy": "Proficient",
+            "video_editing": "Never practiced",
+            "motionDesign": "Proficient",
+            "technical_director": "Expert",
+            "developer": "Expert",
+            "production_manager": "Advanced Beginner",
+            "producer": "Expert",
+            "coordinator": "Expert"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 25,
+        "fields": {
+            "user": 25,
+            "generalist": "Advanced Beginner",
+            "conceptart": "Competent",
+            "match_moving": "Proficient",
+            "modeling": "Never practiced",
+            "rigging": "Competent",
+            "animating": "Expert",
+            "texturing": "Expert",
+            "surfacing": "Competent",
+            "rendering": "Never practiced",
+            "compositing": "Proficient",
+            "rotoscopy": "Expert",
+            "video_editing": "Never practiced",
+            "motionDesign": "Expert",
+            "technical_director": "Competent",
+            "developer": "Advanced Beginner",
+            "production_manager": "Competent",
+            "producer": "Expert",
+            "coordinator": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 26,
+        "fields": {
+            "user": 26,
+            "generalist": "Competent",
+            "conceptart": "Never practiced",
+            "match_moving": "Competent",
+            "modeling": "Advanced Beginner",
+            "rigging": "Proficient",
+            "animating": "Proficient",
+            "texturing": "Novice",
+            "surfacing": "Advanced Beginner",
+            "rendering": "Novice",
+            "compositing": "Competent",
+            "rotoscopy": "Advanced Beginner",
+            "video_editing": "Advanced Beginner",
+            "motionDesign": "Advanced Beginner",
+            "technical_director": "Never practiced",
+            "developer": "Novice",
+            "production_manager": "Proficient",
+            "producer": "Expert",
+            "coordinator": "Novice"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 27,
+        "fields": {
+            "user": 27,
+            "generalist": "Advanced Beginner",
+            "conceptart": "Expert",
+            "match_moving": "Expert",
+            "modeling": "Proficient",
+            "rigging": "Advanced Beginner",
+            "animating": "Advanced Beginner",
+            "texturing": "Never practiced",
+            "surfacing": "Never practiced",
+            "rendering": "Never practiced",
+            "compositing": "Advanced Beginner",
+            "rotoscopy": "Never practiced",
+            "video_editing": "Expert",
+            "motionDesign": "Expert",
+            "technical_director": "Expert",
+            "developer": "Expert",
+            "production_manager": "Proficient",
+            "producer": "Proficient",
+            "coordinator": "Never practiced"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 28,
+        "fields": {
+            "user": 28,
+            "generalist": "Competent",
+            "conceptart": "Proficient",
+            "match_moving": "Competent",
+            "modeling": "Never practiced",
+            "rigging": "Novice",
+            "animating": "Advanced Beginner",
+            "texturing": "Novice",
+            "surfacing": "Advanced Beginner",
+            "rendering": "Never practiced",
+            "compositing": "Expert",
+            "rotoscopy": "Advanced Beginner",
+            "video_editing": "Novice",
+            "motionDesign": "Competent",
+            "technical_director": "Advanced Beginner",
+            "developer": "Proficient",
+            "production_manager": "Never practiced",
+            "producer": "Novice",
+            "coordinator": "Advanced Beginner"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 29,
+        "fields": {
+            "user": 29,
+            "generalist": "Never practiced",
+            "conceptart": "Expert",
+            "match_moving": "Expert",
+            "modeling": "Novice",
+            "rigging": "Proficient",
+            "animating": "Novice",
+            "texturing": "Proficient",
+            "surfacing": "Novice",
+            "rendering": "Expert",
+            "compositing": "Competent",
+            "rotoscopy": "Never practiced",
+            "video_editing": "Expert",
+            "motionDesign": "Proficient",
+            "technical_director": "Competent",
+            "developer": "Never practiced",
+            "production_manager": "Never practiced",
+            "producer": "Competent",
+            "coordinator": "Competent"
+        }
+    },
+    {
+        "model": "users.artistcompetence",
+        "pk": 30,
+        "fields": {
+            "user": 30,
+            "generalist": "Expert",
+            "conceptart": "Never practiced",
+            "match_moving": "Advanced Beginner",
+            "modeling": "Advanced Beginner",
+            "rigging": "Never practiced",
+            "animating": "Advanced Beginner",
+            "texturing": "Proficient",
+            "surfacing": "Proficient",
+            "rendering": "Novice",
+            "compositing": "Expert",
+            "rotoscopy": "Never practiced",
+            "video_editing": "Expert",
+            "motionDesign": "Never practiced",
+            "technical_director": "Advanced Beginner",
+            "developer": "Advanced Beginner",
+            "production_manager": "Novice",
+            "producer": "Novice",
+            "coordinator": "Never practiced"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "photoshop": "Proficient",
+            "afterEffects": "Advanced Beginner",
+            "premiere": "Advanced Beginner",
+            "substancePainter": "Expert",
+            "substanceDesigner": "Advanced Beginner",
+            "lightroom": "Expert",
+            "Coat": "Competent",
+            "max": "Expert",
+            "affinityDesigner": "Competent",
+            "affinityPhoto": "Never practiced",
+            "akeytsu": "Proficient",
+            "Arnold": "Never practiced",
+            "blender": "Advanced Beginner",
+            "cinema4d": "Proficient",
+            "clarisseIfx": "Competent",
+            "clipStudioPaint": "Competent",
+            "corelpainter": "Proficient",
+            "dazStudio": "Proficient",
+            "gaea": "Competent",
+            "gimp": "Novice",
+            "gravitySketch": "Competent",
+            "houdini": "Never practiced",
+            "illustrator": "Advanced Beginner",
+            "infinitePainter": "Never practiced",
+            "keyshot": "Competent",
+            "krita": "Advanced Beginner",
+            "mangaStudio": "Novice",
+            "mari": "Advanced Beginner",
+            "marmoset": "Expert",
+            "marvelousDesigner": "Competent",
+            "maya": "Expert",
+            "mentalRay": "Novice",
+            "moi3d": "Advanced Beginner",
+            "modo": "Novice",
+            "mudbox": "Expert",
+            "nuke": "Competent",
+            "paintToolSai": "Competent",
+            "procreate": "Expert",
+            "quixelSuite": "Advanced Beginner",
+            "revit": "Expert",
+            "rhino": "Never practiced",
+            "sketchbookPro": "Competent",
+            "sketchup": "Never practiced",
+            "speedtree": "Proficient",
+            "terragen": "Advanced Beginner",
+            "unity": "Novice",
+            "unrealEngine": "Competent",
+            "vray": "Competent",
+            "zbrush": "Advanced Beginner",
+            "xnormal": "Never practiced",
+            "davinci": "Never practiced",
+            "resolve": "Advanced Beginner",
+            "octaneRender": "Novice",
+            "redshift": "Never practiced",
+            "flame": "Expert",
+            "fusion": "Proficient",
+            "natron": "Never practiced",
+            "meshlab": "Advanced Beginner",
+            "meshroom": "Novice",
+            "pftrack": "Competent",
+            "equalizer": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "photoshop": "Expert",
+            "afterEffects": "Novice",
+            "premiere": "Advanced Beginner",
+            "substancePainter": "Proficient",
+            "substanceDesigner": "Competent",
+            "lightroom": "Advanced Beginner",
+            "Coat": "Proficient",
+            "max": "Proficient",
+            "affinityDesigner": "Proficient",
+            "affinityPhoto": "Expert",
+            "akeytsu": "Never practiced",
+            "Arnold": "Expert",
+            "blender": "Never practiced",
+            "cinema4d": "Expert",
+            "clarisseIfx": "Proficient",
+            "clipStudioPaint": "Expert",
+            "corelpainter": "Expert",
+            "dazStudio": "Expert",
+            "gaea": "Proficient",
+            "gimp": "Never practiced",
+            "gravitySketch": "Novice",
+            "houdini": "Competent",
+            "illustrator": "Never practiced",
+            "infinitePainter": "Competent",
+            "keyshot": "Never practiced",
+            "krita": "Novice",
+            "mangaStudio": "Advanced Beginner",
+            "mari": "Competent",
+            "marmoset": "Novice",
+            "marvelousDesigner": "Never practiced",
+            "maya": "Proficient",
+            "mentalRay": "Expert",
+            "moi3d": "Never practiced",
+            "modo": "Competent",
+            "mudbox": "Never practiced",
+            "nuke": "Proficient",
+            "paintToolSai": "Novice",
+            "procreate": "Never practiced",
+            "quixelSuite": "Competent",
+            "revit": "Proficient",
+            "rhino": "Advanced Beginner",
+            "sketchbookPro": "Never practiced",
+            "sketchup": "Never practiced",
+            "speedtree": "Proficient",
+            "terragen": "Proficient",
+            "unity": "Never practiced",
+            "unrealEngine": "Proficient",
+            "vray": "Never practiced",
+            "zbrush": "Proficient",
+            "xnormal": "Advanced Beginner",
+            "davinci": "Proficient",
+            "resolve": "Never practiced",
+            "octaneRender": "Never practiced",
+            "redshift": "Advanced Beginner",
+            "flame": "Novice",
+            "fusion": "Never practiced",
+            "natron": "Proficient",
+            "meshlab": "Proficient",
+            "meshroom": "Expert",
+            "pftrack": "Expert",
+            "equalizer": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "photoshop": "Competent",
+            "afterEffects": "Never practiced",
+            "premiere": "Proficient",
+            "substancePainter": "Novice",
+            "substanceDesigner": "Expert",
+            "lightroom": "Competent",
+            "Coat": "Proficient",
+            "max": "Advanced Beginner",
+            "affinityDesigner": "Expert",
+            "affinityPhoto": "Proficient",
+            "akeytsu": "Expert",
+            "Arnold": "Competent",
+            "blender": "Novice",
+            "cinema4d": "Expert",
+            "clarisseIfx": "Never practiced",
+            "clipStudioPaint": "Novice",
+            "corelpainter": "Advanced Beginner",
+            "dazStudio": "Competent",
+            "gaea": "Expert",
+            "gimp": "Competent",
+            "gravitySketch": "Expert",
+            "houdini": "Proficient",
+            "illustrator": "Competent",
+            "infinitePainter": "Novice",
+            "keyshot": "Never practiced",
+            "krita": "Proficient",
+            "mangaStudio": "Novice",
+            "mari": "Advanced Beginner",
+            "marmoset": "Never practiced",
+            "marvelousDesigner": "Proficient",
+            "maya": "Advanced Beginner",
+            "mentalRay": "Advanced Beginner",
+            "moi3d": "Expert",
+            "modo": "Proficient",
+            "mudbox": "Advanced Beginner",
+            "nuke": "Novice",
+            "paintToolSai": "Never practiced",
+            "procreate": "Proficient",
+            "quixelSuite": "Advanced Beginner",
+            "revit": "Advanced Beginner",
+            "rhino": "Expert",
+            "sketchbookPro": "Novice",
+            "sketchup": "Competent",
+            "speedtree": "Novice",
+            "terragen": "Competent",
+            "unity": "Advanced Beginner",
+            "unrealEngine": "Advanced Beginner",
+            "vray": "Proficient",
+            "zbrush": "Competent",
+            "xnormal": "Novice",
+            "davinci": "Competent",
+            "resolve": "Never practiced",
+            "octaneRender": "Advanced Beginner",
+            "redshift": "Advanced Beginner",
+            "flame": "Competent",
+            "fusion": "Proficient",
+            "natron": "Proficient",
+            "meshlab": "Advanced Beginner",
+            "meshroom": "Novice",
+            "pftrack": "Proficient",
+            "equalizer": "Never practiced"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "photoshop": "Proficient",
+            "afterEffects": "Competent",
+            "premiere": "Novice",
+            "substancePainter": "Proficient",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Advanced Beginner",
+            "Coat": "Competent",
+            "max": "Competent",
+            "affinityDesigner": "Competent",
+            "affinityPhoto": "Never practiced",
+            "akeytsu": "Never practiced",
+            "Arnold": "Expert",
+            "blender": "Proficient",
+            "cinema4d": "Novice",
+            "clarisseIfx": "Advanced Beginner",
+            "clipStudioPaint": "Never practiced",
+            "corelpainter": "Competent",
+            "dazStudio": "Proficient",
+            "gaea": "Proficient",
+            "gimp": "Novice",
+            "gravitySketch": "Novice",
+            "houdini": "Novice",
+            "illustrator": "Expert",
+            "infinitePainter": "Advanced Beginner",
+            "keyshot": "Advanced Beginner",
+            "krita": "Advanced Beginner",
+            "mangaStudio": "Proficient",
+            "mari": "Never practiced",
+            "marmoset": "Expert",
+            "marvelousDesigner": "Novice",
+            "maya": "Proficient",
+            "mentalRay": "Never practiced",
+            "moi3d": "Never practiced",
+            "modo": "Advanced Beginner",
+            "mudbox": "Novice",
+            "nuke": "Advanced Beginner",
+            "paintToolSai": "Expert",
+            "procreate": "Novice",
+            "quixelSuite": "Advanced Beginner",
+            "revit": "Competent",
+            "rhino": "Expert",
+            "sketchbookPro": "Advanced Beginner",
+            "sketchup": "Competent",
+            "speedtree": "Proficient",
+            "terragen": "Novice",
+            "unity": "Novice",
+            "unrealEngine": "Advanced Beginner",
+            "vray": "Advanced Beginner",
+            "zbrush": "Proficient",
+            "xnormal": "Expert",
+            "davinci": "Novice",
+            "resolve": "Never practiced",
+            "octaneRender": "Proficient",
+            "redshift": "Novice",
+            "flame": "Expert",
+            "fusion": "Expert",
+            "natron": "Proficient",
+            "meshlab": "Advanced Beginner",
+            "meshroom": "Never practiced",
+            "pftrack": "Advanced Beginner",
+            "equalizer": "Advanced Beginner"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "photoshop": "Proficient",
+            "afterEffects": "Competent",
+            "premiere": "Competent",
+            "substancePainter": "Never practiced",
+            "substanceDesigner": "Competent",
+            "lightroom": "Competent",
+            "Coat": "Competent",
+            "max": "Expert",
+            "affinityDesigner": "Expert",
+            "affinityPhoto": "Never practiced",
+            "akeytsu": "Competent",
+            "Arnold": "Proficient",
+            "blender": "Never practiced",
+            "cinema4d": "Proficient",
+            "clarisseIfx": "Competent",
+            "clipStudioPaint": "Competent",
+            "corelpainter": "Expert",
+            "dazStudio": "Advanced Beginner",
+            "gaea": "Expert",
+            "gimp": "Advanced Beginner",
+            "gravitySketch": "Novice",
+            "houdini": "Advanced Beginner",
+            "illustrator": "Never practiced",
+            "infinitePainter": "Expert",
+            "keyshot": "Novice",
+            "krita": "Novice",
+            "mangaStudio": "Never practiced",
+            "mari": "Novice",
+            "marmoset": "Never practiced",
+            "marvelousDesigner": "Expert",
+            "maya": "Advanced Beginner",
+            "mentalRay": "Advanced Beginner",
+            "moi3d": "Never practiced",
+            "modo": "Never practiced",
+            "mudbox": "Competent",
+            "nuke": "Advanced Beginner",
+            "paintToolSai": "Competent",
+            "procreate": "Advanced Beginner",
+            "quixelSuite": "Novice",
+            "revit": "Never practiced",
+            "rhino": "Competent",
+            "sketchbookPro": "Competent",
+            "sketchup": "Competent",
+            "speedtree": "Never practiced",
+            "terragen": "Novice",
+            "unity": "Novice",
+            "unrealEngine": "Novice",
+            "vray": "Never practiced",
+            "zbrush": "Novice",
+            "xnormal": "Never practiced",
+            "davinci": "Proficient",
+            "resolve": "Proficient",
+            "octaneRender": "Competent",
+            "redshift": "Proficient",
+            "flame": "Advanced Beginner",
+            "fusion": "Novice",
+            "natron": "Expert",
+            "meshlab": "Advanced Beginner",
+            "meshroom": "Never practiced",
+            "pftrack": "Never practiced",
+            "equalizer": "Never practiced"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "photoshop": "Expert",
+            "afterEffects": "Never practiced",
+            "premiere": "Never practiced",
+            "substancePainter": "Expert",
+            "substanceDesigner": "Never practiced",
+            "lightroom": "Advanced Beginner",
+            "Coat": "Competent",
+            "max": "Never practiced",
+            "affinityDesigner": "Novice",
+            "affinityPhoto": "Never practiced",
+            "akeytsu": "Novice",
+            "Arnold": "Never practiced",
+            "blender": "Novice",
+            "cinema4d": "Advanced Beginner",
+            "clarisseIfx": "Advanced Beginner",
+            "clipStudioPaint": "Advanced Beginner",
+            "corelpainter": "Competent",
+            "dazStudio": "Expert",
+            "gaea": "Competent",
+            "gimp": "Proficient",
+            "gravitySketch": "Novice",
+            "houdini": "Advanced Beginner",
+            "illustrator": "Never practiced",
+            "infinitePainter": "Competent",
+            "keyshot": "Never practiced",
+            "krita": "Proficient",
+            "mangaStudio": "Never practiced",
+            "mari": "Competent",
+            "marmoset": "Proficient",
+            "marvelousDesigner": "Novice",
+            "maya": "Expert",
+            "mentalRay": "Never practiced",
+            "moi3d": "Expert",
+            "modo": "Competent",
+            "mudbox": "Competent",
+            "nuke": "Novice",
+            "paintToolSai": "Novice",
+            "procreate": "Advanced Beginner",
+            "quixelSuite": "Competent",
+            "revit": "Novice",
+            "rhino": "Novice",
+            "sketchbookPro": "Proficient",
+            "sketchup": "Competent",
+            "speedtree": "Proficient",
+            "terragen": "Advanced Beginner",
+            "unity": "Expert",
+            "unrealEngine": "Never practiced",
+            "vray": "Competent",
+            "zbrush": "Advanced Beginner",
+            "xnormal": "Never practiced",
+            "davinci": "Expert",
+            "resolve": "Proficient",
+            "octaneRender": "Never practiced",
+            "redshift": "Never practiced",
+            "flame": "Never practiced",
+            "fusion": "Advanced Beginner",
+            "natron": "Expert",
+            "meshlab": "Expert",
+            "meshroom": "Expert",
+            "pftrack": "Expert",
+            "equalizer": "Competent"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "photoshop": "Never practiced",
+            "afterEffects": "Competent",
+            "premiere": "Novice",
+            "substancePainter": "Proficient",
+            "substanceDesigner": "Competent",
+            "lightroom": "Never practiced",
+            "Coat": "Expert",
+            "max": "Never practiced",
+            "affinityDesigner": "Competent",
+            "affinityPhoto": "Novice",
+            "akeytsu": "Proficient",
+            "Arnold": "Never practiced",
+            "blender": "Novice",
+            "cinema4d": "Novice",
+            "clarisseIfx": "Never practiced",
+            "clipStudioPaint": "Proficient",
+            "corelpainter": "Never practiced",
+            "dazStudio": "Never practiced",
+            "gaea": "Novice",
+            "gimp": "Competent",
+            "gravitySketch": "Advanced Beginner",
+            "houdini": "Competent",
+            "illustrator": "Competent",
+            "infinitePainter": "Advanced Beginner",
+            "keyshot": "Competent",
+            "krita": "Novice",
+            "mangaStudio": "Never practiced",
+            "mari": "Proficient",
+            "marmoset": "Expert",
+            "marvelousDesigner": "Expert",
+            "maya": "Never practiced",
+            "mentalRay": "Proficient",
+            "moi3d": "Advanced Beginner",
+            "modo": "Never practiced",
+            "mudbox": "Novice",
+            "nuke": "Competent",
+            "paintToolSai": "Never practiced",
+            "procreate": "Competent",
+            "quixelSuite": "Never practiced",
+            "revit": "Never practiced",
+            "rhino": "Competent",
+            "sketchbookPro": "Proficient",
+            "sketchup": "Competent",
+            "speedtree": "Proficient",
+            "terragen": "Expert",
+            "unity": "Proficient",
+            "unrealEngine": "Proficient",
+            "vray": "Expert",
+            "zbrush": "Expert",
+            "xnormal": "Never practiced",
+            "davinci": "Advanced Beginner",
+            "resolve": "Proficient",
+            "octaneRender": "Expert",
+            "redshift": "Never practiced",
+            "flame": "Expert",
+            "fusion": "Proficient",
+            "natron": "Never practiced",
+            "meshlab": "Expert",
+            "meshroom": "Novice",
+            "pftrack": "Advanced Beginner",
+            "equalizer": "Never practiced"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 8,
+        "fields": {
+            "user": 8,
+            "photoshop": "Competent",
+            "afterEffects": "Novice",
+            "premiere": "Never practiced",
+            "substancePainter": "Expert",
+            "substanceDesigner": "Never practiced",
+            "lightroom": "Never practiced",
+            "Coat": "Proficient",
+            "max": "Advanced Beginner",
+            "affinityDesigner": "Expert",
+            "affinityPhoto": "Competent",
+            "akeytsu": "Competent",
+            "Arnold": "Novice",
+            "blender": "Expert",
+            "cinema4d": "Novice",
+            "clarisseIfx": "Novice",
+            "clipStudioPaint": "Novice",
+            "corelpainter": "Novice",
+            "dazStudio": "Proficient",
+            "gaea": "Expert",
+            "gimp": "Novice",
+            "gravitySketch": "Advanced Beginner",
+            "houdini": "Competent",
+            "illustrator": "Never practiced",
+            "infinitePainter": "Proficient",
+            "keyshot": "Competent",
+            "krita": "Never practiced",
+            "mangaStudio": "Expert",
+            "mari": "Expert",
+            "marmoset": "Competent",
+            "marvelousDesigner": "Never practiced",
+            "maya": "Never practiced",
+            "mentalRay": "Never practiced",
+            "moi3d": "Never practiced",
+            "modo": "Novice",
+            "mudbox": "Competent",
+            "nuke": "Advanced Beginner",
+            "paintToolSai": "Expert",
+            "procreate": "Novice",
+            "quixelSuite": "Never practiced",
+            "revit": "Advanced Beginner",
+            "rhino": "Novice",
+            "sketchbookPro": "Competent",
+            "sketchup": "Novice",
+            "speedtree": "Advanced Beginner",
+            "terragen": "Proficient",
+            "unity": "Proficient",
+            "unrealEngine": "Advanced Beginner",
+            "vray": "Proficient",
+            "zbrush": "Advanced Beginner",
+            "xnormal": "Proficient",
+            "davinci": "Advanced Beginner",
+            "resolve": "Never practiced",
+            "octaneRender": "Proficient",
+            "redshift": "Advanced Beginner",
+            "flame": "Novice",
+            "fusion": "Never practiced",
+            "natron": "Novice",
+            "meshlab": "Advanced Beginner",
+            "meshroom": "Novice",
+            "pftrack": "Proficient",
+            "equalizer": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 9,
+        "fields": {
+            "user": 9,
+            "photoshop": "Advanced Beginner",
+            "afterEffects": "Competent",
+            "premiere": "Expert",
+            "substancePainter": "Expert",
+            "substanceDesigner": "Expert",
+            "lightroom": "Competent",
+            "Coat": "Proficient",
+            "max": "Competent",
+            "affinityDesigner": "Advanced Beginner",
+            "affinityPhoto": "Never practiced",
+            "akeytsu": "Competent",
+            "Arnold": "Proficient",
+            "blender": "Expert",
+            "cinema4d": "Competent",
+            "clarisseIfx": "Never practiced",
+            "clipStudioPaint": "Proficient",
+            "corelpainter": "Proficient",
+            "dazStudio": "Expert",
+            "gaea": "Proficient",
+            "gimp": "Competent",
+            "gravitySketch": "Never practiced",
+            "houdini": "Never practiced",
+            "illustrator": "Novice",
+            "infinitePainter": "Proficient",
+            "keyshot": "Competent",
+            "krita": "Advanced Beginner",
+            "mangaStudio": "Proficient",
+            "mari": "Never practiced",
+            "marmoset": "Expert",
+            "marvelousDesigner": "Never practiced",
+            "maya": "Expert",
+            "mentalRay": "Advanced Beginner",
+            "moi3d": "Proficient",
+            "modo": "Novice",
+            "mudbox": "Competent",
+            "nuke": "Never practiced",
+            "paintToolSai": "Never practiced",
+            "procreate": "Advanced Beginner",
+            "quixelSuite": "Expert",
+            "revit": "Competent",
+            "rhino": "Proficient",
+            "sketchbookPro": "Never practiced",
+            "sketchup": "Expert",
+            "speedtree": "Proficient",
+            "terragen": "Competent",
+            "unity": "Advanced Beginner",
+            "unrealEngine": "Expert",
+            "vray": "Competent",
+            "zbrush": "Proficient",
+            "xnormal": "Expert",
+            "davinci": "Advanced Beginner",
+            "resolve": "Proficient",
+            "octaneRender": "Advanced Beginner",
+            "redshift": "Novice",
+            "flame": "Never practiced",
+            "fusion": "Never practiced",
+            "natron": "Never practiced",
+            "meshlab": "Proficient",
+            "meshroom": "Competent",
+            "pftrack": "Expert",
+            "equalizer": "Expert"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "photoshop": "Competent",
+            "afterEffects": "Novice",
+            "premiere": "Novice",
+            "substancePainter": "Competent",
+            "substanceDesigner": "Advanced Beginner",
+            "lightroom": "Novice",
+            "Coat": "Proficient",
+            "max": "Expert",
+            "affinityDesigner": "Advanced Beginner",
+            "affinityPhoto": "Proficient",
+            "akeytsu": "Proficient",
+            "Arnold": "Never practiced",
+            "blender": "Proficient",
+            "cinema4d": "Novice",
+            "clarisseIfx": "Expert",
+            "clipStudioPaint": "Proficient",
+            "corelpainter": "Competent",
+            "dazStudio": "Expert",
+            "gaea": "Novice",
+            "gimp": "Never practiced",
+            "gravitySketch": "Novice",
+            "houdini": "Novice",
+            "illustrator": "Advanced Beginner",
+            "infinitePainter": "Expert",
+            "keyshot": "Proficient",
+            "krita": "Proficient",
+            "mangaStudio": "Competent",
+            "mari": "Expert",
+            "marmoset": "Never practiced",
+            "marvelousDesigner": "Never practiced",
+            "maya": "Never practiced",
+            "mentalRay": "Proficient",
+            "moi3d": "Advanced Beginner",
+            "modo": "Proficient",
+            "mudbox": "Advanced Beginner",
+            "nuke": "Advanced Beginner",
+            "paintToolSai": "Advanced Beginner",
+            "procreate": "Proficient",
+            "quixelSuite": "Expert",
+            "revit": "Competent",
+            "rhino": "Proficient",
+            "sketchbookPro": "Never practiced",
+            "sketchup": "Novice",
+            "speedtree": "Never practiced",
+            "terragen": "Novice",
+            "unity": "Advanced Beginner",
+            "unrealEngine": "Expert",
+            "vray": "Expert",
+            "zbrush": "Competent",
+            "xnormal": "Expert",
+            "davinci": "Novice",
+            "resolve": "Expert",
+            "octaneRender": "Proficient",
+            "redshift": "Expert",
+            "flame": "Never practiced",
+            "fusion": "Advanced Beginner",
+            "natron": "Novice",
+            "meshlab": "Never practiced",
+            "meshroom": "Novice",
+            "pftrack": "Advanced Beginner",
+            "equalizer": "Expert"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 11,
+        "fields": {
+            "user": 11,
+            "photoshop": "Expert",
+            "afterEffects": "Never practiced",
+            "premiere": "Competent",
+            "substancePainter": "Proficient",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Expert",
+            "Coat": "Proficient",
+            "max": "Advanced Beginner",
+            "affinityDesigner": "Competent",
+            "affinityPhoto": "Competent",
+            "akeytsu": "Proficient",
+            "Arnold": "Competent",
+            "blender": "Proficient",
+            "cinema4d": "Competent",
+            "clarisseIfx": "Proficient",
+            "clipStudioPaint": "Expert",
+            "corelpainter": "Advanced Beginner",
+            "dazStudio": "Competent",
+            "gaea": "Never practiced",
+            "gimp": "Novice",
+            "gravitySketch": "Competent",
+            "houdini": "Advanced Beginner",
+            "illustrator": "Novice",
+            "infinitePainter": "Never practiced",
+            "keyshot": "Never practiced",
+            "krita": "Never practiced",
+            "mangaStudio": "Proficient",
+            "mari": "Competent",
+            "marmoset": "Competent",
+            "marvelousDesigner": "Competent",
+            "maya": "Advanced Beginner",
+            "mentalRay": "Never practiced",
+            "moi3d": "Novice",
+            "modo": "Proficient",
+            "mudbox": "Expert",
+            "nuke": "Expert",
+            "paintToolSai": "Never practiced",
+            "procreate": "Competent",
+            "quixelSuite": "Expert",
+            "revit": "Advanced Beginner",
+            "rhino": "Novice",
+            "sketchbookPro": "Competent",
+            "sketchup": "Advanced Beginner",
+            "speedtree": "Expert",
+            "terragen": "Expert",
+            "unity": "Expert",
+            "unrealEngine": "Novice",
+            "vray": "Novice",
+            "zbrush": "Expert",
+            "xnormal": "Never practiced",
+            "davinci": "Advanced Beginner",
+            "resolve": "Expert",
+            "octaneRender": "Never practiced",
+            "redshift": "Competent",
+            "flame": "Competent",
+            "fusion": "Competent",
+            "natron": "Competent",
+            "meshlab": "Novice",
+            "meshroom": "Novice",
+            "pftrack": "Never practiced",
+            "equalizer": "Expert"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 12,
+        "fields": {
+            "user": 12,
+            "photoshop": "Advanced Beginner",
+            "afterEffects": "Proficient",
+            "premiere": "Novice",
+            "substancePainter": "Novice",
+            "substanceDesigner": "Expert",
+            "lightroom": "Expert",
+            "Coat": "Advanced Beginner",
+            "max": "Novice",
+            "affinityDesigner": "Novice",
+            "affinityPhoto": "Novice",
+            "akeytsu": "Never practiced",
+            "Arnold": "Proficient",
+            "blender": "Competent",
+            "cinema4d": "Never practiced",
+            "clarisseIfx": "Proficient",
+            "clipStudioPaint": "Advanced Beginner",
+            "corelpainter": "Proficient",
+            "dazStudio": "Competent",
+            "gaea": "Never practiced",
+            "gimp": "Competent",
+            "gravitySketch": "Proficient",
+            "houdini": "Expert",
+            "illustrator": "Proficient",
+            "infinitePainter": "Advanced Beginner",
+            "keyshot": "Novice",
+            "krita": "Proficient",
+            "mangaStudio": "Advanced Beginner",
+            "mari": "Never practiced",
+            "marmoset": "Proficient",
+            "marvelousDesigner": "Proficient",
+            "maya": "Novice",
+            "mentalRay": "Competent",
+            "moi3d": "Never practiced",
+            "modo": "Never practiced",
+            "mudbox": "Advanced Beginner",
+            "nuke": "Proficient",
+            "paintToolSai": "Proficient",
+            "procreate": "Competent",
+            "quixelSuite": "Proficient",
+            "revit": "Novice",
+            "rhino": "Expert",
+            "sketchbookPro": "Proficient",
+            "sketchup": "Advanced Beginner",
+            "speedtree": "Proficient",
+            "terragen": "Expert",
+            "unity": "Expert",
+            "unrealEngine": "Advanced Beginner",
+            "vray": "Novice",
+            "zbrush": "Expert",
+            "xnormal": "Proficient",
+            "davinci": "Never practiced",
+            "resolve": "Expert",
+            "octaneRender": "Expert",
+            "redshift": "Expert",
+            "flame": "Expert",
+            "fusion": "Advanced Beginner",
+            "natron": "Never practiced",
+            "meshlab": "Expert",
+            "meshroom": "Never practiced",
+            "pftrack": "Competent",
+            "equalizer": "Never practiced"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 13,
+        "fields": {
+            "user": 13,
+            "photoshop": "Expert",
+            "afterEffects": "Advanced Beginner",
+            "premiere": "Novice",
+            "substancePainter": "Advanced Beginner",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Advanced Beginner",
+            "Coat": "Never practiced",
+            "max": "Novice",
+            "affinityDesigner": "Advanced Beginner",
+            "affinityPhoto": "Advanced Beginner",
+            "akeytsu": "Never practiced",
+            "Arnold": "Proficient",
+            "blender": "Competent",
+            "cinema4d": "Competent",
+            "clarisseIfx": "Novice",
+            "clipStudioPaint": "Advanced Beginner",
+            "corelpainter": "Novice",
+            "dazStudio": "Expert",
+            "gaea": "Advanced Beginner",
+            "gimp": "Expert",
+            "gravitySketch": "Novice",
+            "houdini": "Expert",
+            "illustrator": "Never practiced",
+            "infinitePainter": "Proficient",
+            "keyshot": "Novice",
+            "krita": "Never practiced",
+            "mangaStudio": "Expert",
+            "mari": "Proficient",
+            "marmoset": "Expert",
+            "marvelousDesigner": "Never practiced",
+            "maya": "Competent",
+            "mentalRay": "Novice",
+            "moi3d": "Competent",
+            "modo": "Competent",
+            "mudbox": "Proficient",
+            "nuke": "Never practiced",
+            "paintToolSai": "Expert",
+            "procreate": "Competent",
+            "quixelSuite": "Proficient",
+            "revit": "Competent",
+            "rhino": "Expert",
+            "sketchbookPro": "Advanced Beginner",
+            "sketchup": "Proficient",
+            "speedtree": "Advanced Beginner",
+            "terragen": "Competent",
+            "unity": "Advanced Beginner",
+            "unrealEngine": "Expert",
+            "vray": "Novice",
+            "zbrush": "Advanced Beginner",
+            "xnormal": "Expert",
+            "davinci": "Competent",
+            "resolve": "Never practiced",
+            "octaneRender": "Proficient",
+            "redshift": "Novice",
+            "flame": "Expert",
+            "fusion": "Competent",
+            "natron": "Expert",
+            "meshlab": "Expert",
+            "meshroom": "Novice",
+            "pftrack": "Novice",
+            "equalizer": "Expert"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 14,
+        "fields": {
+            "user": 14,
+            "photoshop": "Never practiced",
+            "afterEffects": "Competent",
+            "premiere": "Competent",
+            "substancePainter": "Never practiced",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Proficient",
+            "Coat": "Advanced Beginner",
+            "max": "Never practiced",
+            "affinityDesigner": "Proficient",
+            "affinityPhoto": "Proficient",
+            "akeytsu": "Novice",
+            "Arnold": "Competent",
+            "blender": "Proficient",
+            "cinema4d": "Competent",
+            "clarisseIfx": "Proficient",
+            "clipStudioPaint": "Competent",
+            "corelpainter": "Novice",
+            "dazStudio": "Proficient",
+            "gaea": "Never practiced",
+            "gimp": "Proficient",
+            "gravitySketch": "Proficient",
+            "houdini": "Novice",
+            "illustrator": "Expert",
+            "infinitePainter": "Novice",
+            "keyshot": "Never practiced",
+            "krita": "Novice",
+            "mangaStudio": "Proficient",
+            "mari": "Never practiced",
+            "marmoset": "Never practiced",
+            "marvelousDesigner": "Proficient",
+            "maya": "Competent",
+            "mentalRay": "Advanced Beginner",
+            "moi3d": "Advanced Beginner",
+            "modo": "Competent",
+            "mudbox": "Expert",
+            "nuke": "Competent",
+            "paintToolSai": "Never practiced",
+            "procreate": "Novice",
+            "quixelSuite": "Never practiced",
+            "revit": "Competent",
+            "rhino": "Novice",
+            "sketchbookPro": "Expert",
+            "sketchup": "Proficient",
+            "speedtree": "Advanced Beginner",
+            "terragen": "Competent",
+            "unity": "Expert",
+            "unrealEngine": "Expert",
+            "vray": "Expert",
+            "zbrush": "Competent",
+            "xnormal": "Advanced Beginner",
+            "davinci": "Never practiced",
+            "resolve": "Never practiced",
+            "octaneRender": "Proficient",
+            "redshift": "Expert",
+            "flame": "Competent",
+            "fusion": "Competent",
+            "natron": "Competent",
+            "meshlab": "Competent",
+            "meshroom": "Competent",
+            "pftrack": "Never practiced",
+            "equalizer": "Expert"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 15,
+        "fields": {
+            "user": 15,
+            "photoshop": "Novice",
+            "afterEffects": "Advanced Beginner",
+            "premiere": "Expert",
+            "substancePainter": "Proficient",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Novice",
+            "Coat": "Never practiced",
+            "max": "Competent",
+            "affinityDesigner": "Competent",
+            "affinityPhoto": "Expert",
+            "akeytsu": "Advanced Beginner",
+            "Arnold": "Expert",
+            "blender": "Advanced Beginner",
+            "cinema4d": "Competent",
+            "clarisseIfx": "Competent",
+            "clipStudioPaint": "Novice",
+            "corelpainter": "Novice",
+            "dazStudio": "Advanced Beginner",
+            "gaea": "Proficient",
+            "gimp": "Competent",
+            "gravitySketch": "Novice",
+            "houdini": "Expert",
+            "illustrator": "Expert",
+            "infinitePainter": "Novice",
+            "keyshot": "Expert",
+            "krita": "Never practiced",
+            "mangaStudio": "Competent",
+            "mari": "Never practiced",
+            "marmoset": "Competent",
+            "marvelousDesigner": "Expert",
+            "maya": "Expert",
+            "mentalRay": "Never practiced",
+            "moi3d": "Never practiced",
+            "modo": "Competent",
+            "mudbox": "Expert",
+            "nuke": "Competent",
+            "paintToolSai": "Proficient",
+            "procreate": "Novice",
+            "quixelSuite": "Never practiced",
+            "revit": "Novice",
+            "rhino": "Competent",
+            "sketchbookPro": "Advanced Beginner",
+            "sketchup": "Advanced Beginner",
+            "speedtree": "Novice",
+            "terragen": "Never practiced",
+            "unity": "Novice",
+            "unrealEngine": "Proficient",
+            "vray": "Proficient",
+            "zbrush": "Competent",
+            "xnormal": "Proficient",
+            "davinci": "Expert",
+            "resolve": "Advanced Beginner",
+            "octaneRender": "Never practiced",
+            "redshift": "Proficient",
+            "flame": "Advanced Beginner",
+            "fusion": "Proficient",
+            "natron": "Novice",
+            "meshlab": "Expert",
+            "meshroom": "Expert",
+            "pftrack": "Novice",
+            "equalizer": "Expert"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 16,
+        "fields": {
+            "user": 16,
+            "photoshop": "Advanced Beginner",
+            "afterEffects": "Never practiced",
+            "premiere": "Expert",
+            "substancePainter": "Advanced Beginner",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Advanced Beginner",
+            "Coat": "Advanced Beginner",
+            "max": "Competent",
+            "affinityDesigner": "Advanced Beginner",
+            "affinityPhoto": "Advanced Beginner",
+            "akeytsu": "Expert",
+            "Arnold": "Advanced Beginner",
+            "blender": "Proficient",
+            "cinema4d": "Expert",
+            "clarisseIfx": "Advanced Beginner",
+            "clipStudioPaint": "Competent",
+            "corelpainter": "Novice",
+            "dazStudio": "Novice",
+            "gaea": "Proficient",
+            "gimp": "Proficient",
+            "gravitySketch": "Competent",
+            "houdini": "Novice",
+            "illustrator": "Expert",
+            "infinitePainter": "Advanced Beginner",
+            "keyshot": "Novice",
+            "krita": "Expert",
+            "mangaStudio": "Advanced Beginner",
+            "mari": "Expert",
+            "marmoset": "Expert",
+            "marvelousDesigner": "Advanced Beginner",
+            "maya": "Expert",
+            "mentalRay": "Competent",
+            "moi3d": "Proficient",
+            "modo": "Proficient",
+            "mudbox": "Competent",
+            "nuke": "Expert",
+            "paintToolSai": "Never practiced",
+            "procreate": "Proficient",
+            "quixelSuite": "Advanced Beginner",
+            "revit": "Proficient",
+            "rhino": "Proficient",
+            "sketchbookPro": "Expert",
+            "sketchup": "Novice",
+            "speedtree": "Novice",
+            "terragen": "Advanced Beginner",
+            "unity": "Expert",
+            "unrealEngine": "Competent",
+            "vray": "Never practiced",
+            "zbrush": "Proficient",
+            "xnormal": "Advanced Beginner",
+            "davinci": "Expert",
+            "resolve": "Advanced Beginner",
+            "octaneRender": "Novice",
+            "redshift": "Advanced Beginner",
+            "flame": "Expert",
+            "fusion": "Proficient",
+            "natron": "Expert",
+            "meshlab": "Proficient",
+            "meshroom": "Proficient",
+            "pftrack": "Expert",
+            "equalizer": "Novice"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 17,
+        "fields": {
+            "user": 17,
+            "photoshop": "Novice",
+            "afterEffects": "Never practiced",
+            "premiere": "Never practiced",
+            "substancePainter": "Expert",
+            "substanceDesigner": "Novice",
+            "lightroom": "Never practiced",
+            "Coat": "Competent",
+            "max": "Never practiced",
+            "affinityDesigner": "Novice",
+            "affinityPhoto": "Advanced Beginner",
+            "akeytsu": "Proficient",
+            "Arnold": "Advanced Beginner",
+            "blender": "Proficient",
+            "cinema4d": "Proficient",
+            "clarisseIfx": "Proficient",
+            "clipStudioPaint": "Advanced Beginner",
+            "corelpainter": "Competent",
+            "dazStudio": "Competent",
+            "gaea": "Proficient",
+            "gimp": "Advanced Beginner",
+            "gravitySketch": "Expert",
+            "houdini": "Proficient",
+            "illustrator": "Novice",
+            "infinitePainter": "Never practiced",
+            "keyshot": "Advanced Beginner",
+            "krita": "Expert",
+            "mangaStudio": "Never practiced",
+            "mari": "Competent",
+            "marmoset": "Proficient",
+            "marvelousDesigner": "Advanced Beginner",
+            "maya": "Novice",
+            "mentalRay": "Competent",
+            "moi3d": "Advanced Beginner",
+            "modo": "Competent",
+            "mudbox": "Advanced Beginner",
+            "nuke": "Advanced Beginner",
+            "paintToolSai": "Competent",
+            "procreate": "Expert",
+            "quixelSuite": "Novice",
+            "revit": "Proficient",
+            "rhino": "Novice",
+            "sketchbookPro": "Advanced Beginner",
+            "sketchup": "Expert",
+            "speedtree": "Novice",
+            "terragen": "Competent",
+            "unity": "Advanced Beginner",
+            "unrealEngine": "Novice",
+            "vray": "Never practiced",
+            "zbrush": "Novice",
+            "xnormal": "Never practiced",
+            "davinci": "Advanced Beginner",
+            "resolve": "Never practiced",
+            "octaneRender": "Advanced Beginner",
+            "redshift": "Novice",
+            "flame": "Advanced Beginner",
+            "fusion": "Never practiced",
+            "natron": "Advanced Beginner",
+            "meshlab": "Proficient",
+            "meshroom": "Advanced Beginner",
+            "pftrack": "Novice",
+            "equalizer": "Competent"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 18,
+        "fields": {
+            "user": 18,
+            "photoshop": "Novice",
+            "afterEffects": "Proficient",
+            "premiere": "Expert",
+            "substancePainter": "Novice",
+            "substanceDesigner": "Advanced Beginner",
+            "lightroom": "Advanced Beginner",
+            "Coat": "Competent",
+            "max": "Advanced Beginner",
+            "affinityDesigner": "Proficient",
+            "affinityPhoto": "Advanced Beginner",
+            "akeytsu": "Never practiced",
+            "Arnold": "Expert",
+            "blender": "Novice",
+            "cinema4d": "Proficient",
+            "clarisseIfx": "Expert",
+            "clipStudioPaint": "Competent",
+            "corelpainter": "Proficient",
+            "dazStudio": "Novice",
+            "gaea": "Expert",
+            "gimp": "Never practiced",
+            "gravitySketch": "Proficient",
+            "houdini": "Novice",
+            "illustrator": "Novice",
+            "infinitePainter": "Expert",
+            "keyshot": "Expert",
+            "krita": "Expert",
+            "mangaStudio": "Competent",
+            "mari": "Advanced Beginner",
+            "marmoset": "Advanced Beginner",
+            "marvelousDesigner": "Competent",
+            "maya": "Proficient",
+            "mentalRay": "Proficient",
+            "moi3d": "Advanced Beginner",
+            "modo": "Novice",
+            "mudbox": "Advanced Beginner",
+            "nuke": "Novice",
+            "paintToolSai": "Novice",
+            "procreate": "Proficient",
+            "quixelSuite": "Advanced Beginner",
+            "revit": "Competent",
+            "rhino": "Expert",
+            "sketchbookPro": "Competent",
+            "sketchup": "Novice",
+            "speedtree": "Competent",
+            "terragen": "Never practiced",
+            "unity": "Advanced Beginner",
+            "unrealEngine": "Proficient",
+            "vray": "Proficient",
+            "zbrush": "Proficient",
+            "xnormal": "Expert",
+            "davinci": "Proficient",
+            "resolve": "Competent",
+            "octaneRender": "Novice",
+            "redshift": "Advanced Beginner",
+            "flame": "Advanced Beginner",
+            "fusion": "Novice",
+            "natron": "Proficient",
+            "meshlab": "Novice",
+            "meshroom": "Advanced Beginner",
+            "pftrack": "Expert",
+            "equalizer": "Competent"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 19,
+        "fields": {
+            "user": 19,
+            "photoshop": "Never practiced",
+            "afterEffects": "Advanced Beginner",
+            "premiere": "Expert",
+            "substancePainter": "Advanced Beginner",
+            "substanceDesigner": "Advanced Beginner",
+            "lightroom": "Never practiced",
+            "Coat": "Never practiced",
+            "max": "Competent",
+            "affinityDesigner": "Never practiced",
+            "affinityPhoto": "Proficient",
+            "akeytsu": "Never practiced",
+            "Arnold": "Proficient",
+            "blender": "Never practiced",
+            "cinema4d": "Novice",
+            "clarisseIfx": "Novice",
+            "clipStudioPaint": "Expert",
+            "corelpainter": "Novice",
+            "dazStudio": "Never practiced",
+            "gaea": "Competent",
+            "gimp": "Expert",
+            "gravitySketch": "Expert",
+            "houdini": "Advanced Beginner",
+            "illustrator": "Expert",
+            "infinitePainter": "Advanced Beginner",
+            "keyshot": "Advanced Beginner",
+            "krita": "Never practiced",
+            "mangaStudio": "Novice",
+            "mari": "Expert",
+            "marmoset": "Competent",
+            "marvelousDesigner": "Advanced Beginner",
+            "maya": "Proficient",
+            "mentalRay": "Proficient",
+            "moi3d": "Expert",
+            "modo": "Advanced Beginner",
+            "mudbox": "Expert",
+            "nuke": "Novice",
+            "paintToolSai": "Competent",
+            "procreate": "Never practiced",
+            "quixelSuite": "Expert",
+            "revit": "Never practiced",
+            "rhino": "Expert",
+            "sketchbookPro": "Expert",
+            "sketchup": "Never practiced",
+            "speedtree": "Competent",
+            "terragen": "Never practiced",
+            "unity": "Expert",
+            "unrealEngine": "Novice",
+            "vray": "Never practiced",
+            "zbrush": "Advanced Beginner",
+            "xnormal": "Proficient",
+            "davinci": "Advanced Beginner",
+            "resolve": "Expert",
+            "octaneRender": "Competent",
+            "redshift": "Expert",
+            "flame": "Advanced Beginner",
+            "fusion": "Advanced Beginner",
+            "natron": "Expert",
+            "meshlab": "Novice",
+            "meshroom": "Novice",
+            "pftrack": "Never practiced",
+            "equalizer": "Advanced Beginner"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 20,
+        "fields": {
+            "user": 20,
+            "photoshop": "Advanced Beginner",
+            "afterEffects": "Advanced Beginner",
+            "premiere": "Advanced Beginner",
+            "substancePainter": "Proficient",
+            "substanceDesigner": "Expert",
+            "lightroom": "Proficient",
+            "Coat": "Competent",
+            "max": "Never practiced",
+            "affinityDesigner": "Advanced Beginner",
+            "affinityPhoto": "Proficient",
+            "akeytsu": "Never practiced",
+            "Arnold": "Proficient",
+            "blender": "Advanced Beginner",
+            "cinema4d": "Never practiced",
+            "clarisseIfx": "Advanced Beginner",
+            "clipStudioPaint": "Novice",
+            "corelpainter": "Expert",
+            "dazStudio": "Never practiced",
+            "gaea": "Proficient",
+            "gimp": "Novice",
+            "gravitySketch": "Advanced Beginner",
+            "houdini": "Competent",
+            "illustrator": "Novice",
+            "infinitePainter": "Proficient",
+            "keyshot": "Novice",
+            "krita": "Competent",
+            "mangaStudio": "Novice",
+            "mari": "Never practiced",
+            "marmoset": "Proficient",
+            "marvelousDesigner": "Expert",
+            "maya": "Proficient",
+            "mentalRay": "Advanced Beginner",
+            "moi3d": "Competent",
+            "modo": "Competent",
+            "mudbox": "Never practiced",
+            "nuke": "Expert",
+            "paintToolSai": "Expert",
+            "procreate": "Never practiced",
+            "quixelSuite": "Advanced Beginner",
+            "revit": "Expert",
+            "rhino": "Expert",
+            "sketchbookPro": "Advanced Beginner",
+            "sketchup": "Never practiced",
+            "speedtree": "Advanced Beginner",
+            "terragen": "Advanced Beginner",
+            "unity": "Proficient",
+            "unrealEngine": "Expert",
+            "vray": "Competent",
+            "zbrush": "Novice",
+            "xnormal": "Proficient",
+            "davinci": "Proficient",
+            "resolve": "Novice",
+            "octaneRender": "Proficient",
+            "redshift": "Proficient",
+            "flame": "Novice",
+            "fusion": "Expert",
+            "natron": "Never practiced",
+            "meshlab": "Competent",
+            "meshroom": "Advanced Beginner",
+            "pftrack": "Never practiced",
+            "equalizer": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 21,
+        "fields": {
+            "user": 21,
+            "photoshop": "Never practiced",
+            "afterEffects": "Novice",
+            "premiere": "Novice",
+            "substancePainter": "Expert",
+            "substanceDesigner": "Novice",
+            "lightroom": "Advanced Beginner",
+            "Coat": "Advanced Beginner",
+            "max": "Competent",
+            "affinityDesigner": "Expert",
+            "affinityPhoto": "Novice",
+            "akeytsu": "Never practiced",
+            "Arnold": "Competent",
+            "blender": "Advanced Beginner",
+            "cinema4d": "Never practiced",
+            "clarisseIfx": "Never practiced",
+            "clipStudioPaint": "Never practiced",
+            "corelpainter": "Competent",
+            "dazStudio": "Competent",
+            "gaea": "Novice",
+            "gimp": "Never practiced",
+            "gravitySketch": "Never practiced",
+            "houdini": "Competent",
+            "illustrator": "Advanced Beginner",
+            "infinitePainter": "Expert",
+            "keyshot": "Never practiced",
+            "krita": "Never practiced",
+            "mangaStudio": "Competent",
+            "mari": "Competent",
+            "marmoset": "Novice",
+            "marvelousDesigner": "Competent",
+            "maya": "Expert",
+            "mentalRay": "Expert",
+            "moi3d": "Never practiced",
+            "modo": "Advanced Beginner",
+            "mudbox": "Advanced Beginner",
+            "nuke": "Novice",
+            "paintToolSai": "Advanced Beginner",
+            "procreate": "Advanced Beginner",
+            "quixelSuite": "Advanced Beginner",
+            "revit": "Never practiced",
+            "rhino": "Advanced Beginner",
+            "sketchbookPro": "Novice",
+            "sketchup": "Proficient",
+            "speedtree": "Novice",
+            "terragen": "Novice",
+            "unity": "Advanced Beginner",
+            "unrealEngine": "Novice",
+            "vray": "Competent",
+            "zbrush": "Expert",
+            "xnormal": "Never practiced",
+            "davinci": "Novice",
+            "resolve": "Never practiced",
+            "octaneRender": "Novice",
+            "redshift": "Competent",
+            "flame": "Novice",
+            "fusion": "Proficient",
+            "natron": "Advanced Beginner",
+            "meshlab": "Never practiced",
+            "meshroom": "Never practiced",
+            "pftrack": "Never practiced",
+            "equalizer": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 22,
+        "fields": {
+            "user": 22,
+            "photoshop": "Expert",
+            "afterEffects": "Novice",
+            "premiere": "Expert",
+            "substancePainter": "Competent",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Never practiced",
+            "Coat": "Proficient",
+            "max": "Competent",
+            "affinityDesigner": "Competent",
+            "affinityPhoto": "Novice",
+            "akeytsu": "Proficient",
+            "Arnold": "Advanced Beginner",
+            "blender": "Advanced Beginner",
+            "cinema4d": "Advanced Beginner",
+            "clarisseIfx": "Proficient",
+            "clipStudioPaint": "Competent",
+            "corelpainter": "Never practiced",
+            "dazStudio": "Expert",
+            "gaea": "Expert",
+            "gimp": "Novice",
+            "gravitySketch": "Expert",
+            "houdini": "Advanced Beginner",
+            "illustrator": "Proficient",
+            "infinitePainter": "Advanced Beginner",
+            "keyshot": "Expert",
+            "krita": "Proficient",
+            "mangaStudio": "Competent",
+            "mari": "Expert",
+            "marmoset": "Novice",
+            "marvelousDesigner": "Never practiced",
+            "maya": "Advanced Beginner",
+            "mentalRay": "Proficient",
+            "moi3d": "Never practiced",
+            "modo": "Never practiced",
+            "mudbox": "Novice",
+            "nuke": "Novice",
+            "paintToolSai": "Expert",
+            "procreate": "Proficient",
+            "quixelSuite": "Advanced Beginner",
+            "revit": "Never practiced",
+            "rhino": "Never practiced",
+            "sketchbookPro": "Competent",
+            "sketchup": "Expert",
+            "speedtree": "Advanced Beginner",
+            "terragen": "Novice",
+            "unity": "Competent",
+            "unrealEngine": "Proficient",
+            "vray": "Proficient",
+            "zbrush": "Proficient",
+            "xnormal": "Expert",
+            "davinci": "Proficient",
+            "resolve": "Expert",
+            "octaneRender": "Advanced Beginner",
+            "redshift": "Never practiced",
+            "flame": "Never practiced",
+            "fusion": "Expert",
+            "natron": "Competent",
+            "meshlab": "Competent",
+            "meshroom": "Proficient",
+            "pftrack": "Expert",
+            "equalizer": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 23,
+        "fields": {
+            "user": 23,
+            "photoshop": "Never practiced",
+            "afterEffects": "Proficient",
+            "premiere": "Proficient",
+            "substancePainter": "Expert",
+            "substanceDesigner": "Expert",
+            "lightroom": "Competent",
+            "Coat": "Novice",
+            "max": "Proficient",
+            "affinityDesigner": "Proficient",
+            "affinityPhoto": "Novice",
+            "akeytsu": "Advanced Beginner",
+            "Arnold": "Competent",
+            "blender": "Advanced Beginner",
+            "cinema4d": "Advanced Beginner",
+            "clarisseIfx": "Novice",
+            "clipStudioPaint": "Proficient",
+            "corelpainter": "Expert",
+            "dazStudio": "Never practiced",
+            "gaea": "Proficient",
+            "gimp": "Expert",
+            "gravitySketch": "Competent",
+            "houdini": "Competent",
+            "illustrator": "Expert",
+            "infinitePainter": "Proficient",
+            "keyshot": "Advanced Beginner",
+            "krita": "Proficient",
+            "mangaStudio": "Proficient",
+            "mari": "Expert",
+            "marmoset": "Expert",
+            "marvelousDesigner": "Proficient",
+            "maya": "Novice",
+            "mentalRay": "Never practiced",
+            "moi3d": "Expert",
+            "modo": "Expert",
+            "mudbox": "Advanced Beginner",
+            "nuke": "Proficient",
+            "paintToolSai": "Competent",
+            "procreate": "Never practiced",
+            "quixelSuite": "Proficient",
+            "revit": "Proficient",
+            "rhino": "Never practiced",
+            "sketchbookPro": "Expert",
+            "sketchup": "Proficient",
+            "speedtree": "Proficient",
+            "terragen": "Never practiced",
+            "unity": "Novice",
+            "unrealEngine": "Expert",
+            "vray": "Proficient",
+            "zbrush": "Expert",
+            "xnormal": "Novice",
+            "davinci": "Advanced Beginner",
+            "resolve": "Advanced Beginner",
+            "octaneRender": "Advanced Beginner",
+            "redshift": "Expert",
+            "flame": "Advanced Beginner",
+            "fusion": "Advanced Beginner",
+            "natron": "Novice",
+            "meshlab": "Advanced Beginner",
+            "meshroom": "Competent",
+            "pftrack": "Advanced Beginner",
+            "equalizer": "Never practiced"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 24,
+        "fields": {
+            "user": 24,
+            "photoshop": "Competent",
+            "afterEffects": "Competent",
+            "premiere": "Expert",
+            "substancePainter": "Novice",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Novice",
+            "Coat": "Proficient",
+            "max": "Never practiced",
+            "affinityDesigner": "Never practiced",
+            "affinityPhoto": "Expert",
+            "akeytsu": "Competent",
+            "Arnold": "Novice",
+            "blender": "Competent",
+            "cinema4d": "Proficient",
+            "clarisseIfx": "Competent",
+            "clipStudioPaint": "Proficient",
+            "corelpainter": "Never practiced",
+            "dazStudio": "Competent",
+            "gaea": "Novice",
+            "gimp": "Expert",
+            "gravitySketch": "Competent",
+            "houdini": "Competent",
+            "illustrator": "Expert",
+            "infinitePainter": "Advanced Beginner",
+            "keyshot": "Competent",
+            "krita": "Competent",
+            "mangaStudio": "Never practiced",
+            "mari": "Novice",
+            "marmoset": "Expert",
+            "marvelousDesigner": "Expert",
+            "maya": "Expert",
+            "mentalRay": "Proficient",
+            "moi3d": "Competent",
+            "modo": "Expert",
+            "mudbox": "Never practiced",
+            "nuke": "Proficient",
+            "paintToolSai": "Advanced Beginner",
+            "procreate": "Expert",
+            "quixelSuite": "Never practiced",
+            "revit": "Competent",
+            "rhino": "Expert",
+            "sketchbookPro": "Novice",
+            "sketchup": "Never practiced",
+            "speedtree": "Proficient",
+            "terragen": "Novice",
+            "unity": "Novice",
+            "unrealEngine": "Expert",
+            "vray": "Competent",
+            "zbrush": "Novice",
+            "xnormal": "Competent",
+            "davinci": "Proficient",
+            "resolve": "Competent",
+            "octaneRender": "Expert",
+            "redshift": "Never practiced",
+            "flame": "Expert",
+            "fusion": "Never practiced",
+            "natron": "Advanced Beginner",
+            "meshlab": "Proficient",
+            "meshroom": "Advanced Beginner",
+            "pftrack": "Novice",
+            "equalizer": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 25,
+        "fields": {
+            "user": 25,
+            "photoshop": "Expert",
+            "afterEffects": "Proficient",
+            "premiere": "Expert",
+            "substancePainter": "Proficient",
+            "substanceDesigner": "Expert",
+            "lightroom": "Never practiced",
+            "Coat": "Expert",
+            "max": "Never practiced",
+            "affinityDesigner": "Never practiced",
+            "affinityPhoto": "Novice",
+            "akeytsu": "Novice",
+            "Arnold": "Advanced Beginner",
+            "blender": "Novice",
+            "cinema4d": "Never practiced",
+            "clarisseIfx": "Competent",
+            "clipStudioPaint": "Novice",
+            "corelpainter": "Proficient",
+            "dazStudio": "Competent",
+            "gaea": "Proficient",
+            "gimp": "Proficient",
+            "gravitySketch": "Never practiced",
+            "houdini": "Competent",
+            "illustrator": "Advanced Beginner",
+            "infinitePainter": "Proficient",
+            "keyshot": "Advanced Beginner",
+            "krita": "Expert",
+            "mangaStudio": "Competent",
+            "mari": "Competent",
+            "marmoset": "Advanced Beginner",
+            "marvelousDesigner": "Expert",
+            "maya": "Advanced Beginner",
+            "mentalRay": "Proficient",
+            "moi3d": "Expert",
+            "modo": "Never practiced",
+            "mudbox": "Advanced Beginner",
+            "nuke": "Advanced Beginner",
+            "paintToolSai": "Advanced Beginner",
+            "procreate": "Competent",
+            "quixelSuite": "Novice",
+            "revit": "Proficient",
+            "rhino": "Competent",
+            "sketchbookPro": "Proficient",
+            "sketchup": "Advanced Beginner",
+            "speedtree": "Competent",
+            "terragen": "Competent",
+            "unity": "Advanced Beginner",
+            "unrealEngine": "Expert",
+            "vray": "Competent",
+            "zbrush": "Expert",
+            "xnormal": "Competent",
+            "davinci": "Proficient",
+            "resolve": "Expert",
+            "octaneRender": "Competent",
+            "redshift": "Expert",
+            "flame": "Never practiced",
+            "fusion": "Never practiced",
+            "natron": "Competent",
+            "meshlab": "Competent",
+            "meshroom": "Never practiced",
+            "pftrack": "Advanced Beginner",
+            "equalizer": "Proficient"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 26,
+        "fields": {
+            "user": 26,
+            "photoshop": "Novice",
+            "afterEffects": "Expert",
+            "premiere": "Never practiced",
+            "substancePainter": "Expert",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Expert",
+            "Coat": "Novice",
+            "max": "Competent",
+            "affinityDesigner": "Advanced Beginner",
+            "affinityPhoto": "Expert",
+            "akeytsu": "Never practiced",
+            "Arnold": "Advanced Beginner",
+            "blender": "Expert",
+            "cinema4d": "Proficient",
+            "clarisseIfx": "Advanced Beginner",
+            "clipStudioPaint": "Competent",
+            "corelpainter": "Proficient",
+            "dazStudio": "Advanced Beginner",
+            "gaea": "Novice",
+            "gimp": "Advanced Beginner",
+            "gravitySketch": "Competent",
+            "houdini": "Never practiced",
+            "illustrator": "Proficient",
+            "infinitePainter": "Expert",
+            "keyshot": "Expert",
+            "krita": "Never practiced",
+            "mangaStudio": "Expert",
+            "mari": "Novice",
+            "marmoset": "Competent",
+            "marvelousDesigner": "Novice",
+            "maya": "Never practiced",
+            "mentalRay": "Novice",
+            "moi3d": "Novice",
+            "modo": "Competent",
+            "mudbox": "Never practiced",
+            "nuke": "Never practiced",
+            "paintToolSai": "Novice",
+            "procreate": "Proficient",
+            "quixelSuite": "Novice",
+            "revit": "Expert",
+            "rhino": "Advanced Beginner",
+            "sketchbookPro": "Novice",
+            "sketchup": "Novice",
+            "speedtree": "Proficient",
+            "terragen": "Advanced Beginner",
+            "unity": "Expert",
+            "unrealEngine": "Advanced Beginner",
+            "vray": "Advanced Beginner",
+            "zbrush": "Novice",
+            "xnormal": "Novice",
+            "davinci": "Competent",
+            "resolve": "Novice",
+            "octaneRender": "Expert",
+            "redshift": "Novice",
+            "flame": "Advanced Beginner",
+            "fusion": "Competent",
+            "natron": "Proficient",
+            "meshlab": "Never practiced",
+            "meshroom": "Never practiced",
+            "pftrack": "Advanced Beginner",
+            "equalizer": "Advanced Beginner"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 27,
+        "fields": {
+            "user": 27,
+            "photoshop": "Expert",
+            "afterEffects": "Never practiced",
+            "premiere": "Never practiced",
+            "substancePainter": "Advanced Beginner",
+            "substanceDesigner": "Novice",
+            "lightroom": "Never practiced",
+            "Coat": "Proficient",
+            "max": "Expert",
+            "affinityDesigner": "Competent",
+            "affinityPhoto": "Novice",
+            "akeytsu": "Expert",
+            "Arnold": "Proficient",
+            "blender": "Expert",
+            "cinema4d": "Advanced Beginner",
+            "clarisseIfx": "Advanced Beginner",
+            "clipStudioPaint": "Never practiced",
+            "corelpainter": "Proficient",
+            "dazStudio": "Novice",
+            "gaea": "Proficient",
+            "gimp": "Expert",
+            "gravitySketch": "Advanced Beginner",
+            "houdini": "Proficient",
+            "illustrator": "Expert",
+            "infinitePainter": "Advanced Beginner",
+            "keyshot": "Advanced Beginner",
+            "krita": "Never practiced",
+            "mangaStudio": "Never practiced",
+            "mari": "Never practiced",
+            "marmoset": "Proficient",
+            "marvelousDesigner": "Advanced Beginner",
+            "maya": "Expert",
+            "mentalRay": "Novice",
+            "moi3d": "Novice",
+            "modo": "Novice",
+            "mudbox": "Never practiced",
+            "nuke": "Proficient",
+            "paintToolSai": "Novice",
+            "procreate": "Proficient",
+            "quixelSuite": "Advanced Beginner",
+            "revit": "Competent",
+            "rhino": "Novice",
+            "sketchbookPro": "Never practiced",
+            "sketchup": "Competent",
+            "speedtree": "Competent",
+            "terragen": "Advanced Beginner",
+            "unity": "Expert",
+            "unrealEngine": "Advanced Beginner",
+            "vray": "Novice",
+            "zbrush": "Competent",
+            "xnormal": "Advanced Beginner",
+            "davinci": "Advanced Beginner",
+            "resolve": "Never practiced",
+            "octaneRender": "Never practiced",
+            "redshift": "Never practiced",
+            "flame": "Proficient",
+            "fusion": "Proficient",
+            "natron": "Proficient",
+            "meshlab": "Advanced Beginner",
+            "meshroom": "Proficient",
+            "pftrack": "Advanced Beginner",
+            "equalizer": "Novice"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 28,
+        "fields": {
+            "user": 28,
+            "photoshop": "Advanced Beginner",
+            "afterEffects": "Competent",
+            "premiere": "Novice",
+            "substancePainter": "Novice",
+            "substanceDesigner": "Never practiced",
+            "lightroom": "Novice",
+            "Coat": "Never practiced",
+            "max": "Never practiced",
+            "affinityDesigner": "Novice",
+            "affinityPhoto": "Competent",
+            "akeytsu": "Advanced Beginner",
+            "Arnold": "Expert",
+            "blender": "Never practiced",
+            "cinema4d": "Novice",
+            "clarisseIfx": "Novice",
+            "clipStudioPaint": "Proficient",
+            "corelpainter": "Proficient",
+            "dazStudio": "Competent",
+            "gaea": "Never practiced",
+            "gimp": "Novice",
+            "gravitySketch": "Proficient",
+            "houdini": "Proficient",
+            "illustrator": "Novice",
+            "infinitePainter": "Expert",
+            "keyshot": "Advanced Beginner",
+            "krita": "Never practiced",
+            "mangaStudio": "Proficient",
+            "mari": "Advanced Beginner",
+            "marmoset": "Never practiced",
+            "marvelousDesigner": "Never practiced",
+            "maya": "Novice",
+            "mentalRay": "Never practiced",
+            "moi3d": "Advanced Beginner",
+            "modo": "Never practiced",
+            "mudbox": "Novice",
+            "nuke": "Expert",
+            "paintToolSai": "Advanced Beginner",
+            "procreate": "Never practiced",
+            "quixelSuite": "Proficient",
+            "revit": "Expert",
+            "rhino": "Proficient",
+            "sketchbookPro": "Never practiced",
+            "sketchup": "Expert",
+            "speedtree": "Expert",
+            "terragen": "Competent",
+            "unity": "Competent",
+            "unrealEngine": "Advanced Beginner",
+            "vray": "Novice",
+            "zbrush": "Never practiced",
+            "xnormal": "Novice",
+            "davinci": "Novice",
+            "resolve": "Proficient",
+            "octaneRender": "Advanced Beginner",
+            "redshift": "Expert",
+            "flame": "Novice",
+            "fusion": "Competent",
+            "natron": "Novice",
+            "meshlab": "Never practiced",
+            "meshroom": "Expert",
+            "pftrack": "Proficient",
+            "equalizer": "Novice"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 29,
+        "fields": {
+            "user": 29,
+            "photoshop": "Proficient",
+            "afterEffects": "Competent",
+            "premiere": "Proficient",
+            "substancePainter": "Proficient",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Competent",
+            "Coat": "Never practiced",
+            "max": "Novice",
+            "affinityDesigner": "Novice",
+            "affinityPhoto": "Novice",
+            "akeytsu": "Expert",
+            "Arnold": "Expert",
+            "blender": "Expert",
+            "cinema4d": "Expert",
+            "clarisseIfx": "Novice",
+            "clipStudioPaint": "Competent",
+            "corelpainter": "Expert",
+            "dazStudio": "Competent",
+            "gaea": "Advanced Beginner",
+            "gimp": "Proficient",
+            "gravitySketch": "Expert",
+            "houdini": "Novice",
+            "illustrator": "Advanced Beginner",
+            "infinitePainter": "Advanced Beginner",
+            "keyshot": "Expert",
+            "krita": "Competent",
+            "mangaStudio": "Never practiced",
+            "mari": "Proficient",
+            "marmoset": "Novice",
+            "marvelousDesigner": "Competent",
+            "maya": "Proficient",
+            "mentalRay": "Proficient",
+            "moi3d": "Novice",
+            "modo": "Competent",
+            "mudbox": "Expert",
+            "nuke": "Competent",
+            "paintToolSai": "Competent",
+            "procreate": "Never practiced",
+            "quixelSuite": "Competent",
+            "revit": "Competent",
+            "rhino": "Expert",
+            "sketchbookPro": "Expert",
+            "sketchup": "Advanced Beginner",
+            "speedtree": "Competent",
+            "terragen": "Proficient",
+            "unity": "Advanced Beginner",
+            "unrealEngine": "Advanced Beginner",
+            "vray": "Proficient",
+            "zbrush": "Novice",
+            "xnormal": "Competent",
+            "davinci": "Never practiced",
+            "resolve": "Proficient",
+            "octaneRender": "Novice",
+            "redshift": "Novice",
+            "flame": "Competent",
+            "fusion": "Expert",
+            "natron": "Competent",
+            "meshlab": "Competent",
+            "meshroom": "Competent",
+            "pftrack": "Novice",
+            "equalizer": "Advanced Beginner"
+        }
+    },
+    {
+        "model": "users.artistsoftware",
+        "pk": 30,
+        "fields": {
+            "user": 30,
+            "photoshop": "Proficient",
+            "afterEffects": "Never practiced",
+            "premiere": "Expert",
+            "substancePainter": "Proficient",
+            "substanceDesigner": "Proficient",
+            "lightroom": "Competent",
+            "Coat": "Expert",
+            "max": "Expert",
+            "affinityDesigner": "Advanced Beginner",
+            "affinityPhoto": "Novice",
+            "akeytsu": "Advanced Beginner",
+            "Arnold": "Never practiced",
+            "blender": "Competent",
+            "cinema4d": "Novice",
+            "clarisseIfx": "Never practiced",
+            "clipStudioPaint": "Never practiced",
+            "corelpainter": "Advanced Beginner",
+            "dazStudio": "Competent",
+            "gaea": "Novice",
+            "gimp": "Expert",
+            "gravitySketch": "Novice",
+            "houdini": "Competent",
+            "illustrator": "Expert",
+            "infinitePainter": "Expert",
+            "keyshot": "Expert",
+            "krita": "Advanced Beginner",
+            "mangaStudio": "Novice",
+            "mari": "Novice",
+            "marmoset": "Competent",
+            "marvelousDesigner": "Proficient",
+            "maya": "Advanced Beginner",
+            "mentalRay": "Never practiced",
+            "moi3d": "Advanced Beginner",
+            "modo": "Competent",
+            "mudbox": "Expert",
+            "nuke": "Advanced Beginner",
+            "paintToolSai": "Proficient",
+            "procreate": "Proficient",
+            "quixelSuite": "Proficient",
+            "revit": "Proficient",
+            "rhino": "Never practiced",
+            "sketchbookPro": "Never practiced",
+            "sketchup": "Proficient",
+            "speedtree": "Proficient",
+            "terragen": "Competent",
+            "unity": "Novice",
+            "unrealEngine": "Expert",
+            "vray": "Competent",
+            "zbrush": "Novice",
+            "xnormal": "Proficient",
+            "davinci": "Advanced Beginner",
+            "resolve": "Never practiced",
+            "octaneRender": "Advanced Beginner",
+            "redshift": "Novice",
+            "flame": "Competent",
+            "fusion": "Competent",
+            "natron": "Novice",
+            "meshlab": "Proficient",
+            "meshroom": "Expert",
+            "pftrack": "Never practiced",
+            "equalizer": "Competent"
+        }
+    }
+]

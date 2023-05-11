@@ -2,7 +2,8 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/common/components/paginator.css' %}">
+<link rel="stylesheet" href="{% static 'css/components/job_card.css' %}">
+<link rel="stylesheet" href="{% static 'css/cgnetwork/components/paginator.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -10,27 +11,15 @@
     <section class="jobs-list">
         {% if objects|length > 0 %}
         {% for object in objects %}
-        <a href="{% url 'artist-job' object.id %}">
-            <img src="/media/{{ object.avatar }}" alt="NO IMAGE CHOSEN">
-        </a>
-
-        <div class="company-content">
-            <h1>{{ object.title | upper}}</h1>
-            <h2>{{ object.company_name | upper}}</h2>
-            <p>{{ object.description |slice:":150"}}...</p>
-        </div>
+        {% include templates_ui.card %}
         {% endfor %}
         {% else %}
         <h1>There is no registered job yet...</h1>
         {% endif %}
     </section>
-    {% if object.has_other_pages %}
-
-    <section class="pagination">
-        {% include paginator_template_path %}
+    <section class="paginator">
+        {% include templates_ui.paginator %}
     </section>
-    {% endif %}
-
 </main>
 {% endblock %}
 

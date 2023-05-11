@@ -8,10 +8,14 @@ from django.utils.html import escape
 
 from django.shortcuts import render
 from django.forms.models import model_to_dict
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.core.paginator import Paginator
 
 from job.models import Job
 from job.forms import JobCreationForm
+
+from users.services.objects_manager import (
+    get_template,
+)
 
 from users.services.models_selector import (
     CONTEXT_TEMPLATE,
@@ -22,8 +26,10 @@ from users.services.models_selector import (
 @login_required()
 def jobs(request):
     jobs = Job.objects.all()
+
     if request.user.role == 'company':
         jobs = Job.objects.filter(user_id=request.user.id)
+
     paginator = Paginator(jobs, 5)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
@@ -31,7 +37,12 @@ def jobs(request):
     context = CONTEXT_TEMPLATE
     context['role'] = request.user.role
     context['objects'] = page_obj
-    context["paginator_template_path"] = os.path.join("common", "components", "paginator.html")
+    context["templates_ui"]["card"] = os.path.join(
+        "components", "job_card.html"
+    )
+    context["templates_ui"]["paginator"] = get_template(
+        "cgnetwork", "cgnetwork", "paginator.html"
+    )
     return render(request, 'jobs.html', context)
 
 

@@ -2,9 +2,14 @@ from django.db import models
 from django.conf import settings
 from django.utils import timezone
 
+from users.services.models_selector import (
+    COMPANY_PROFILE_MODELS,
+)
+
 
 class Job(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    company = models.ForeignKey(COMPANY_PROFILE_MODELS[0], on_delete=models.CASCADE)
     creation_date = models.DateTimeField(default=timezone.now)
 
     title = models.CharField(max_length=100)

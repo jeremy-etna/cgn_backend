@@ -1,7 +1,7 @@
 import os
 
 from django.contrib.auth.decorators import login_required
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.core.paginator import Paginator
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.views import View
@@ -15,6 +15,7 @@ from users.services.objects_manager import (
 
 from users.services.models_selector import (
     CONTEXT_TEMPLATE,
+    ARTIST_PROFILE_MODELS,
     COMPANY_PROFILE_MODELS,
     COMPANY_PROFILE_FORMS,
 )
@@ -58,8 +59,7 @@ def profile(request):
 class ProfileEditView(View):
     COMPONENTS = ["form_edit", "navbar_vertical"]
     context_keys = [
-        str(form.__name__).replace("Form", "").lower()
-        for form in COMPANY_PROFILE_FORMS
+        str(form.__name__).replace("Form", "").lower() for form in COMPANY_PROFILE_FORMS
     ]
     forms_and_instances = list(zip(context_keys, COMPANY_PROFILE_FORMS))
 
@@ -95,16 +95,19 @@ class ProfileEditView(View):
                     self.context["errors"] = current_form.errors
 
         if form_saved:
-            return HttpResponseRedirect("../" + '#' + form_name.replace('Form', '').replace('Company', '').lower())
+            return HttpResponseRedirect(
+                "../"
+                + "#"
+                + form_name.replace("Form", "").replace("Company", "").lower()
+            )
         else:
             return render(request, "profile_edit.html", self.context)
 
 
 @login_required()
 def artists(request):
-    from users.models.artist import ArtistIdentity
-
-    artists_list = ArtistIdentity.objects.all().order_by('id')
+    artist_identity = ARTIST_PROFILE_MODELS[0]
+    artists_list = artist_identity.objects.all().order_by("id")
 
     paginator = Paginator(artists_list, 5)
     page_number = request.GET.get("page")
@@ -113,21 +116,19 @@ def artists(request):
     context = CONTEXT_TEMPLATE
     context["objects"] = page_obj
     context["role"] = request.user.role
-    context["templates_ui"]["artist_card"] = os.path.join(
-        "artist", "components", "company_card.html"
+    context["templates_ui"]["card"] = os.path.join(
+        "artist", "components", "artist_card.html"
     )
-    context["templates_ui"]["paginator"] = os.path.join(
-        "common", "components", "paginator.html"
+    context["templates_ui"]["paginator"] = get_template(
+        "cgnetwork", "cgnetwork", "paginator.html"
     )
-
     return render(request, os.path.join("common", "gallery.html"), context)
 
 
 @login_required()
 def companies(request):
-    from users.models.company import CompanyIdentity
-
-    companies_list = CompanyIdentity.objects.all().order_by('id')
+    company_identity = COMPANY_PROFILE_MODELS[0]
+    companies_list = company_identity.objects.all().order_by("id")
 
     paginator = Paginator(companies_list, 5)
     page_number = request.GET.get("page")
@@ -139,16 +140,15 @@ def companies(request):
     context["templates_ui"]["card"] = os.path.join(
         "company", "components", "company_card.html"
     )
-    context["templates_ui"]["paginator"] = os.path.join(
-        "common", "components", "paginator.html"
+    context["templates_ui"]["paginator"] = get_template(
+        "cgnetwork", "cgnetwork", "paginator.html"
     )
-
     return render(request, os.path.join("common", "gallery.html"), context)
 
 
 @login_required()
 def artist(request, id):
-    objects = get_objects_from_models(ARTIST_PROFILE_MODELS, request.user.id)
+    objects = get_objects_from_models(ARTIST_PROFILE_MODELS, id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "artist")
     context = CONTEXT_TEMPLATE
@@ -184,12 +184,12 @@ def artist(request, id):
     context["templates_ui"]["navbar_vertical"] = os.path.join(
         "common", "components", "navbar_vertical.html"
     )
-    return render(request, os.path.join("artist", "profile.html"), context)
+    return render(request, os.path.join("artist", "profile_show.html"), context)
 
 
 @login_required()
 def company(request, id):
-    objects = get_objects_from_models(COMPANY_PROFILE_MODELS, request.user.id)
+    objects = get_objects_from_models(COMPANY_PROFILE_MODELS, id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "company")
     context = CONTEXT_TEMPLATE
@@ -219,4 +219,4 @@ def company(request, id):
     context["templates_ui"]["navbar_vertical"] = os.path.join(
         "common", "components", "navbar_vertical.html"
     )
-    return render(request, os.path.join("company", "profile.html"), context)
+    return render(request, os.path.join("company", "profile_show.html"), context)

@@ -1,5 +1,7 @@
+import os
 from typing import List, Type, Dict, Any, Union
 from django.forms.models import model_to_dict
+from django.conf import settings
 
 
 def get_objects_from_models(models: List[Type], user_id: int) -> Dict[str, Any]:
@@ -35,8 +37,9 @@ def get_all_objects_from_models(models: List[Type]) -> Dict[str, Any]:
     return objects
 
 
-def remove_elements_by_keys_recursive(dictionary: Dict[str, Any], keys_to_remove: Union[str, List[str]]) -> Dict[
-    str, Any]:
+def remove_elements_by_keys_recursive(
+    dictionary: Dict[str, Any], keys_to_remove: Union[str, List[str]]
+) -> Dict[str, Any]:
     """
     Supprime récursivement les éléments d'un dictionnaire en fonction de leurs clés.
 
@@ -52,7 +55,9 @@ def remove_elements_by_keys_recursive(dictionary: Dict[str, Any], keys_to_remove
     for key, value in dictionary.items():
         if key not in keys_to_remove:
             if isinstance(value, dict):
-                new_dictionary[key] = remove_elements_by_keys_recursive(value, keys_to_remove)
+                new_dictionary[key] = remove_elements_by_keys_recursive(
+                    value, keys_to_remove
+                )
             else:
                 new_dictionary[key] = value
 
@@ -65,8 +70,12 @@ def get_templates(role: str, components: list) -> dict:
     }
 
 
+def get_template(app: str, role: str, component: str) -> str:
+    return os.path.join(settings.BASE_DIR, app, 'templates', role, 'components', component)
+
+
 def remove_pattern_dict_keys(dictionary: dict, pattern: dict) -> dict:
     new_dictionary = {}
     for key_name, value in dictionary.items():
-        new_dictionary[key_name.replace(pattern, '')] = value
+        new_dictionary[key_name.replace(pattern, "")] = value
     return new_dictionary
