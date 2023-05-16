@@ -3,18 +3,29 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/artist/profile.css' %}">
-<link rel="stylesheet" href="{% static 'css/artist/components/level_bar.css' %}">
 <link rel="stylesheet" href="{% static 'css/artist/components/navbar_vertical.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/base_profile_components.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/identity.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/coordinate.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/administrative.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/mobility.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/socialmedia.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/contract.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/sector.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/competence.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/software.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/level_bar.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/toggle_switch.css' %}">
 {% endblock %}
 
 {% block content %}
 <main>
-    <section class="container-profile">
+    <section class="profile-container">
         {% include templates_ui.navbar_vertical with sections=objects %}
         {% for section_name, path_template in templates_models.items %}
-        <section class="{{ section_name }}" id="{{ section_name }}">
-            <a class="edit-btn" href="{% url 'artist-profile-edit' %}#Artist{{ section_name | capfirst }}Form">EDIT MODE</a>\
+        <section class="{{ section_name | lower }}-section" id="{{ section_name | lower }}-section">
             {% include path_template with title=section_name objects=objects %}
+            <a class="profile-edit-btn" href="{% url 'artist-profile-edit' %}#Artist{{ section_name | capfirst }}Form-section">MODIFY</a>\
         </section>
         {% endfor %}
     </section>
@@ -23,5 +34,5 @@
 
 {% block javascript %}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="{% static 'javascript/animated_scroll.js' %}"></script>
+<script src="{% static 'js/animated_scroll.js' %}"></script>
 {% endblock %}

@@ -2,35 +2,34 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/artist/profile.css' %}">
-    <link rel="stylesheet" href="{% static 'css/artist/components/level_bar.css' %}">
-    <link rel="stylesheet" href="{% static 'css/artist/components/toggle_switch.css' %}">
-    <link rel="stylesheet" href="{% static 'css/artist/components/navbar_vertical.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/profile_edit.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/navbar_vertical.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/level_bar.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/toggle_switch.css' %}">
 {% endblock %}
 
 {% block content %}
 <main>
-    <section class="container-profile">
+    <section class="profile-container">
         {% include templates.navbar_vertical with sections=forms %}
-        <img src="/media/{{ artist.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
-        {% for name, form in forms.items %}
-            <section class="{{ name }}" id="{{ name }}">
-                <form method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {% with templates.form_edit as template_name %}
-                        {% include template_name with form_title=name|cut:"Company"|cut:"Form"|cut:"Artist" form=form %}
-                    {% endwith %}
-                    {{ errors }}
-                    <input type="hidden" name="current-form" value="{{ name }}">
-                    <input type="submit" value="save profile">
-                </form>
-            </section>
-        {% endfor %}
+        <img src="/media/{{ objects.identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
+            {% for section_name, form in forms.items %}
+                <section class="{{ section_name }}-section" id="{{ section_name }}-section">
+                    <h1>{{ section_name|cut:"Company"|cut:"Form"|cut:"Artist"}}</h1>
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_div }}
+                        {{ errors }}
+                        <input type="hidden" name="current-form" value="{{ section_name }}">
+                        <input type="submit" value="save profile">
+                    </form>
+                </section>
+            {% endfor %}
     </section>
 </main>
 {% endblock %}
 
 {% block javascript %}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{% static 'javascript/animated_scroll.js' %}"></script>
+    <script src="{% static 'js/animated_scroll.js' %}"></script>
 {% endblock %}

@@ -1,9 +1,19 @@
-<div class="{{ title }}">
-    <h1>{{ title | capfirst }}</h1>
-    <br>
-    <ul class="{{ title }}-list">
-        {% for label, mob in objects.mobility.items %}
-            <li class="{{ label }}">{{ label | upper }}<div class="{{ mob }}">{{ mob }}</div></li>
-        {% endfor %}
-    </ul>
-</div>
+{% load custom_filters %}
+
+<h1>{{ title | capfirst }}</h1>
+<ul class="{{ title }}-container">
+    {% for label, mob in objects.mobility.items %}
+        <li class="{{ title }}-element">
+            <h3>{{ label | capfirst | underscore_to_space }}</h3>
+<!--            <<div class="toggle-switch">-->
+<!--                <input type="checkbox">-->
+<!--                <span class="slider"></span>-->
+<!--            </div>-->
+            {% if mob %}
+                <p><strong>Yes</strong></strong></p>
+            {% else %}
+                <p>No</p>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

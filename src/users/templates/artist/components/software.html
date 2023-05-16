@@ -1,9 +1,15 @@
-<div class="{{ title }}">
-    <h1>{{ title | capfirst }}s</h1>
-    <br>
-    <ul class="{{ title }}s-list">
-        {% for label, soft in objects.software.items %}
-            <li class="{{ label }}">{{ label | upper }}<div class="{{ soft }}">{{ soft }}</div></li>
-        {% endfor %}
-    </ul>
-</div>
+{% load custom_filters %}
+
+<h1>{{ title | capfirst }}s</h1>
+<ul class="{{ title }}-container">
+    {% for label, soft in objects.software.items %}
+        {% if soft != 'Never practiced' %}
+            <li class="{{ title }}-element">
+                <p>{{ label | capfirst | underscore_to_space }}</p>
+                <div class="level-bar-out">
+                    <div class="{{ soft | lower |  remove_spaces }}"</div>
+                </div>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

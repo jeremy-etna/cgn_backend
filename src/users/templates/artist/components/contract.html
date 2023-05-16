@@ -1,9 +1,15 @@
-<div class="{{ title }}">
-    <h1>{{ title | capfirst }}s</h1>
-    <br>
-    <ul class="{{ title }}s-list">
-        {% for label, cont in objects.contract.items %}
-            <li class="{{ label }}">{{ label | upper }}<div class="{{ contract }}">{{ cont }}</div></li>
-        {% endfor %}
-    </ul>
-</div>
+{% load custom_filters %}
+
+<h1>{{ title | capfirst }}s</h1>
+<ul class="{{ title }}-container">
+    {% for label, cont in objects.contract.items %}
+        <li class="{{ title }}-element">
+            <h3>{{ label | capfirst | underscore_to_space }}</h3>
+            {% if cont %}
+                <p><strong>Yes</strong></strong></p>
+            {% else %}
+                <p>No</p>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

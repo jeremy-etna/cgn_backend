@@ -1,9 +1,11 @@
-<div class="{{ title }}">
-    <h1>{{ title | capfirst }}s</h1>
-    <br>
-    <ul class="{{ title }}s-list">
-        {% for label, coord in objects.coordinate.items %}
-            <li class="{{ label }}">{{ label | upper }}<div class="{{ coord }}">{{ coord }}</div></li>
-        {% endfor %}
-    </ul>
-</div>
+{% load custom_filters %}
+
+<h1>{{ title | capfirst }}s</h1>
+<ul class="{{ title }}-container">
+    {% for label, coord in objects.coordinate.items %}
+        <li class="{{ title }}-element">
+            <h3>{{ label | capfirst | underscore_to_space }}</h3>
+            <p>{{ coord }}</p>
+        </li>
+    {% endfor %}
+</ul>

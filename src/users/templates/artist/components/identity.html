@@ -1,10 +1,18 @@
-<div class="identity">
-    <img src="/media/{{ objects.identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
-    <br>
-    <h1>{{ objects.identity.first_name }} {{ objects.identity.last_name }}</h1>
-    <br>
-    <h2>{{ objects.identity.title }}</h2>
-    <br>
-    <h3>About me...</h3>
-    <p>{{ objects.identity.description }}</p>
-</div>
+{% load custom_filters %}
+
+<h1>{{ title | capfirst }}</h1>
+<br>
+<br>
+<img src="/media/{{ objects.identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
+<ul class="{{ title }}-container">
+    {% for label, iden in objects.identity.items %}
+    {% if label != 'avatar' and label != 'description' %}
+        <li class="{{ title }}-element">
+            <h3>{{ label | capfirst | underscore_to_space }}</h3>
+            <p>{{ iden }}</p>
+        </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+<h3>About me...</h3>
+<p>{{ objects.identity.description }}</p>

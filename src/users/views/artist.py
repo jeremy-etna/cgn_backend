@@ -74,8 +74,10 @@ class ProfileEditView(View):
         context = CONTEXT_TEMPLATE
         context["role"] = request.user.role
         model_instances = {}
+
         for model_name in self.context_keys:
             model_instances[model_name] = getattr(request.user, model_name)
+
         for instance_name, form_class in self.forms_and_instances:
             instance = model_instances[instance_name]
             form = form_class(instance=instance)
@@ -85,6 +87,8 @@ class ProfileEditView(View):
         return render(request, os.path.join("artist", "profile_edit.html"), context)
 
     def post(self, request):
+        context = CONTEXT_TEMPLATE
+        context["role"] = request.user.role
         form_saved = False
         model_instances = {}
         for model_name in self.context_keys:
@@ -99,16 +103,18 @@ class ProfileEditView(View):
                     form_saved = True
                     break
                 else:
-                    self.context["errors"] = current_form.errors
+                    context["errors"] = current_form.errors
 
         if form_saved:
             return HttpResponseRedirect(
                 "../"
                 + "#"
-                + form_name.replace("Form", "").replace("Artist", "").lower()
+                + form_name.lower().replace("form", "").replace("artist", "")
+                + "-section"
             )
         else:
-            return render(request, "profile_edit.html", self.context)
+            context["templates"] = get_templates("common", self.COMPONENTS)
+            return render(request, os.path.join("artist", "profile_edit.html"), context)
 
 
 @login_required()
@@ -116,7 +122,7 @@ def artists(request):
     artist_identity = ARTIST_PROFILE_MODELS[0]
     artists_list = artist_identity.objects.all().order_by("id")
 
-    paginator = Paginator(artists_list, 5)
+    paginator = Paginator(artists_list, 15)
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
@@ -137,7 +143,7 @@ def companies(request):
     company_identity = COMPANY_PROFILE_MODELS[0]
     companies_list = company_identity.objects.all().order_by("id")
 
-    paginator = Paginator(companies_list, 5)
+    paginator = Paginator(companies_list, 15)
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 

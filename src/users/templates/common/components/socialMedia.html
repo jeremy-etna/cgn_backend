@@ -1,9 +1,13 @@
-<div class="{{ title }}">
-    <h1>{{ title | capfirst }}s</h1>
-    <br>
-    <ul class="{{ title }}s-list">
-        {% for label, url in objects.socialmedia.items %}
-            <li class="{{ label }}">{{ label | upper }}<div class="{{ url }}">{{ url }}</div></li>
-        {% endfor %}
-    </ul>
-</div>
+{% load custom_filters %}
+
+<h1>{{ title | capfirst }}s</h1>
+<ul class="{{ title | lower }}-container">
+    {% for label, media in objects.socialmedia.items %}
+    {% if media != '' %}
+        <li class="{{ title | lower }}-element">
+            <h3>{{ label | capfirst | underscore_to_space }}</h3>
+            <p>{{ media }}</p>
+        </li>
+    {% endif %}
+    {% endfor %}
+</ul>

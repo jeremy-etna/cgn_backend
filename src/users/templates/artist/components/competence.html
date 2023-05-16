@@ -1,9 +1,15 @@
-<div class="{{ title }}">
-    <h1>{{ title | capfirst }}s</h1>
-    <br>
-    <ul class="{{ title }}s-list">
-        {% for label, comp in objects.competence.items %}
-            <li class="{{ label }}">{{ label | upper }}<div class="level"><div class="{{ comp }}">{{ comp }}</div></div></li>
-        {% endfor %}
-    </ul>
-</div>
+{% load custom_filters %}
+
+<h1>{{ title | capfirst }}s</h1>
+<ul class="{{ title }}-container">
+    {% for label, comp in objects.competence.items %}
+        {% if comp != 'Never practiced' %}
+            <li class="{{ title }}-element">
+                <p>{{ label | capfirst | underscore_to_space }}</p>
+                <div class="level-bar-out">
+                    <div class="{{ comp | lower |  remove_spaces }}"</div>
+                </div>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
