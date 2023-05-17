@@ -2,13 +2,14 @@
 {% load static %}
 
 {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/jobs.css' %}">
 <link rel="stylesheet" href="{% static 'css/components/job_card.css' %}">
 <link rel="stylesheet" href="{% static 'css/cgnetwork/components/paginator.css' %}">
 {% endblock %}
 
 {% block content %}
 <main>
-    <section class="jobs-list">
+    <section class="jobs-container">
         {% if objects|length > 0 %}
         {% for object in objects %}
         {% include templates_ui.card %}

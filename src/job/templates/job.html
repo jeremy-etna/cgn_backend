@@ -2,22 +2,51 @@
 {% load static %}
 
 {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/job.css' %}">
 {% endblock %}
+
 
 {% block content %}
     <main>
         <section class="container-profile">
-            <div class="{{ objects.job.title }}">
+            <div class="summary-section">
+                <div class="avatar">
+                    <a href="/">
+                        <img src="/media/{{ objects.identity.avatar }}" alt="NO IMAGE CHOSEN">
+                    </a>
+                </div>
                 <h1>{{ objects.job.title | capfirst }}</h1>
-                <br>
-                <ul class="{{ objects.job.title }}s-list">
-                    {% for label, url in objects.job.items %}
-                        <li class="{{ label }}">{{ label | upper }}<div class="{{ url }}">{{ url }}</div></li>
-                    {% endfor %}
-                    {% for label, value in objects.company.items %}
-                        <li class="{{ label }}">{{ label | upper }}<div class="{{ value }}">{{ value }}</div></li>
-                    {% endfor %}
-                </ul>
+                <p><span class="label">Creation Date:</span> <span class="value">{{ objects.job.creation_date | date:"D d M Y" }}</span></p>
+                <p><span class="label">Views:</span> <span class="value">{{ objects.job.views | capfirst }}</span></p>
+            </div>
+
+            <div class="company-section">
+                <h2>Company</h2>
+                <h3>{{ objects.identity.company_name | capfirst }}</h3>
+                <p><span class="label">Location:</span> <span class="value">{{ objects.coordinate.country | capfirst }} - {{ objects.coordinate.city | capfirst }}</span></p>
+                <h3><span class="label">Size:</span> <span class="value">{{ objects.identity.company_size | capfirst }}</span></h3>
+                <p><span class="label">Description:</span> <span class="value">{{ objects.identity.description }}</span></p>
+            </div>
+
+            <div class="job-section">
+                <h2>Job Details</h2>
+                <h3>Responsibilities:</h3>
+                <p>{{ objects.job.job_responsibilities | capfirst }}</p>
+                <h3>Requirements:</h3>
+                <p>{{ objects.job.job_requirements | capfirst }}</p>
+                <h3>Required Skills:</h3>
+                <p>{{ objects.job.required_skills | capfirst }}</p>
+                <h3>Qualifications:</h3>
+                <p>{{ objects.job.required_qualifications | capfirst }}</p>
+                <h3>Employee Benefits:</h3>
+                <p>{{ objects.job.employee_benefits | capfirst }}</p>
+            </div>
+
+
+            <div class="salary-section">
+                <h2>Salary</h2>
+                <p><span class="label">Min:</span> <span class="value">{{ objects.job.salary_min | capfirst }}</span></p>
+                <p><span class="label">Max:</span> <span class="value">{{ objects.job.salary_max | capfirst }}</span></p>
             </div>
         </section>
     </main>

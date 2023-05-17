@@ -14,3 +14,7 @@
 
   margin-bottom: 20px;
 }
+
+.scroll-link:active {
+  color: #000000;
+}

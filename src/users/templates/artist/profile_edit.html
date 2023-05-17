@@ -3,16 +3,15 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/artist/profile_edit.css' %}">
-<link rel="stylesheet" href="{% static 'css/artist/components/navbar_vertical.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/navbar_vertical.css' %}">
 <link rel="stylesheet" href="{% static 'css/common/components/level_bar.css' %}">
-<link rel="stylesheet" href="{% static 'css/common/components/toggle_switch.css' %}">
 {% endblock %}
 
 {% block content %}
 <main>
     <section class="profile-container">
         {% include templates.navbar_vertical with sections=forms %}
-        <img src="/media/{{ objects.identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
+        <img class="profile-avatar" src="/media/{{ objects.identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
             {% for section_name, form in forms.items %}
                 <section class="{{ section_name }}-section" id="{{ section_name }}-section">
                     <h1>{{ section_name|cut:"Company"|cut:"Form"|cut:"Artist"}}</h1>
@@ -32,4 +31,5 @@
 {% block javascript %}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{% static 'js/animated_scroll.js' %}"></script>
+    <script src="{% static 'js/stylized_checkbox.js' %}"></script>
 {% endblock %}

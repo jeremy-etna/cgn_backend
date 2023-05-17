@@ -1,0 +1,9 @@
+.jobs-container {
+    width: 80vw;
+    height: auto;
+
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

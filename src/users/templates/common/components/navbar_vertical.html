@@ -6,9 +6,6 @@
         <li>
             <a class="scroll-link" href="#{{ section_name }}-section">
                 {{ section_name|lower|cut:"company"|cut:"form"|cut:"artist" }}
-<!--                {% with 'images/icons/profile/'|add:section_name|cut:'Company'|cut:'Form'|cut:'Artist'|lower|add:'.svg' as image_static %}-->
-<!--                <img src="{% static image_static %}" alt="Description de l'image">-->
-<!--                {% endwith %}-->
             </a>
         </li>
         {% endfor %}

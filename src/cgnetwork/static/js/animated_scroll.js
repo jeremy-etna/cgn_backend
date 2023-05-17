@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#sticky-menu a').click(function(event) {
+  $('.scroll-link').click(function(event) {
     event.preventDefault();
     var href = $(this).attr('href');
     $('html, body').animate({

@@ -5,8 +5,9 @@
         </a>
     </div>
     <div class="content">
-          <h1>{{ object.title | upper}}</h1>
-          <h2>{{ object.company.company_name | upper}}</h2>
-          <p>{{ object.company.description |slice:":150"}}...</p>
+        <h1>{{ object.title | upper}}</h1>
+        <h2>{{ object.company.company_name | upper}}</h2>
+        <h2>{{ object.company.company_size | upper}}</h2>
+        <p>{{ object.company.description |slice:":150"}}...</p>
     </div>
 </div>

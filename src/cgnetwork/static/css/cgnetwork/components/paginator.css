@@ -1,4 +1,3 @@
-/* Pagination Component */
 .paginator {
     display: flex;
     justify-content: center;
@@ -7,30 +6,27 @@
     font-family: Arial, sans-serif;
 }
 
-.step-links {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.paginator li {
+    display: inline-block;
+    margin: 0 5px;
 }
 
-.step-links a {
-    color: #007bff;
+.paginator a,
+.paginator .active span {
+    color: #fff;
+    background-color: #333;
     text-decoration: none;
-    border: 1px solid #007bff;
+    padding: 10px 15px;
     border-radius: 3px;
-    padding: 5px 10px;
     transition: all 0.3s ease;
 }
 
-.step-links a:hover {
-    background-color: #007bff;
-    color: #fff;
+.paginator a:hover,
+.paginator .active span {
+    background-color: #444;
 }
 
-.current {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    background-color: #f8f9fa;
-    color: #333;
+.paginator .disabled span {
+    color: #ccc;
+    cursor: not-allowed;
 }

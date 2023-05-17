@@ -55,10 +55,16 @@ def job(request, id):
         'company': None,
     }
     current_job = Job.objects.get(id=id)
+
     company_identity = COMPANY_PROFILE_MODELS[0]
-    company_data = company_identity.objects.get(user_id=current_job.user_id)
+    company_identity_data = company_identity.objects.get(user_id=current_job.user_id)
+
+    company_coordinate = COMPANY_PROFILE_MODELS[1]
+    company_coordinate_data = company_coordinate.objects.get(user_id=current_job.user_id)
+
     context['objects']['job'] = model_to_dict(current_job, exclude=['user', 'id'])
-    context['objects']['company'] = model_to_dict(company_data, exclude=['user', 'id'])
+    context['objects']['identity'] = model_to_dict(company_identity_data, exclude=['user', 'id'])
+    context['objects']['coordinate'] = model_to_dict(company_coordinate_data, exclude=['user', 'id'])
     return render(request, 'job.html', context)
 
 

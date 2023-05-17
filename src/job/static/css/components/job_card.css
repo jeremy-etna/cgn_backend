@@ -1,10 +1,11 @@
 .card {
+    width: 700px;
+    height: 150px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin: 15px 0;
     background-color: #2d3035;
-    width: 270px;
-    height: 380px;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -17,18 +18,19 @@
 }
 
 .avatar {
+    width: 250px;
+    max-width: 250px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 145px;
     overflow: hidden;
 }
 
 .avatar img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%
+    height: 10%;
+    object-fit: fill;
     transition: all 0.3s ease;
 }
 
@@ -37,18 +39,13 @@
 }
 
 .content {
+    width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 16px;
+    align-items: left;
+    padding: 20px;
     color: #fff;
-    text-align: justify;
-}
-
-h1 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
+    text-align: left;
 }
 
 p {
@@ -64,6 +61,12 @@ p {
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 h2, h3 {
