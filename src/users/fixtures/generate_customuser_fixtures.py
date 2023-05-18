@@ -1,10 +1,12 @@
+import os
+import sys
 import json
 import random
 from faker import Faker
 
-import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cgnetwork.settings")
 import django
+sys.path.append(r'D:\RNCP\cg_network\src')
+os.environ['DJANGO_SETTINGS_MODULE'] = 'cgnetwork.settings'
 django.setup()
 
 from django.contrib.auth.models import Group

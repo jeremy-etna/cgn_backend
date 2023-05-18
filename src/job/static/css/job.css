@@ -7,7 +7,7 @@ body {
 }
 
 .container-profile {
-    width: 80%;
+    width: 60%;
     margin: auto;
     padding: 20px;
 }
@@ -53,6 +53,7 @@ h3 {
     font-size: 18px;
     color: #91b9e1;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 p {

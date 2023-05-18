@@ -1,7 +1,13 @@
 import os
+import sys
 import json
 import random
 from faker import Faker
+
+import django
+sys.path.append(r'D:\RNCP\cg_network\src')
+os.environ['DJANGO_SETTINGS_MODULE'] = 'cgnetwork.settings'
+django.setup()
 
 from cgnetwork.constants.models import (
     MOBILITIES,
@@ -9,6 +15,7 @@ from cgnetwork.constants.models import (
     SECTORS,
     COMPETENCES,
     SOFTWARES,
+    CompanySize,
 )
 
 fake = Faker()
@@ -24,8 +31,6 @@ company_sectors = []
 company_competences = []
 company_softwares = []
 
-import os
-
 
 def list_files(directory):
     files = []
@@ -36,7 +41,7 @@ def list_files(directory):
     return files
 
 
-logos = list_files("../../media/logos")
+logos = list_files(r"D:\RNCP\cg_network\src\media\logos")
 
 for i in range(instance_start, instance_end + 1):
     company_identities.append(
@@ -48,6 +53,7 @@ for i in range(instance_start, instance_end + 1):
                 "avatar": f"logos/{logos[i-30]}",
                 "company_name": fake.company(),
                 "description": fake.text(max_nb_chars=200),
+                "company_size": random.choice(CompanySize.values),
             },
         }
     )
