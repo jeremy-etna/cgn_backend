@@ -69,7 +69,7 @@ def job(request, id):
 
 
 @login_required()
-def job_creation(request):
+def job_create(request):
     if request.user.role != 'company':
         return render(request, 'cgnetwork/404.html', status=404)
 
@@ -77,6 +77,7 @@ def job_creation(request):
                     'required_qualifications', 'job_requirements', 'employee_benefits', 'salary_min', 'salary_max']
     user = request.user
     context = CONTEXT_TEMPLATE
+    context['role'] = request.user.role
 
     if request.method == 'POST':
         form = JobCreationForm(request.POST)
@@ -84,17 +85,33 @@ def job_creation(request):
             new_job = form.save(commit=False)
             new_job.user = user
             new_job.creation_date = datetime.now()
+            company = COMPANY_PROFILE_MODELS[0].objects.get(user_id=user.id)
+            new_job.company = company
             for field in model_fields:
                 setattr(new_job, field, escape(getattr(new_job, field)))
             new_job.save()
-            return HttpResponseRedirect(f'../job/{new_job.id}')
+            return HttpResponseRedirect(f'../{new_job.id}')
         else:
             context['errors'] = form.errors
+            print(context['errors'])
     else:
         context['form'] = JobCreationForm()
 
     return render(request, 'job_create.html', context)
 
+
+@login_required()
+def job_delete(request, job_id):
+    if request.user.role != 'company':
+        return render(request, 'cgnetwork/404.html', status=404)
+
+    user = request.user
+    role = user.role
+    context = {}
+    context['role'] = role
+
+    Job.objects.get(id=job_id).delete()
+    return HttpResponseRedirect('../../all')
 
 
 

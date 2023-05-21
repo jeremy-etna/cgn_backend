@@ -6,11 +6,21 @@
 
 {% block content %}
 <main>
-    <section class="container-profile">
+    <section class="job-create-container">
         <form method="post">
             {% csrf_token %}
-            {% include 'D:\RNCP\cg_network\src\users\templates\common\components\form_edit.html' %}
-            {{ errors }}
+            {% for field in form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                {% if field.help_text %}
+                <small class="form-text text-muted">{{ field.help_text }}</small>
+                {% endif %}
+                {% for error in field.errors %}
+                <div class="alert alert-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+            {% endfor %}
             <input type="hidden" name="current-form" value="{{ name }}">
             <input type="submit" value="save profile">
         </form>

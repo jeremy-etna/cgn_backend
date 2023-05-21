@@ -1,0 +1,29 @@
+.sector-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sector-container {
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.sector-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vh;
+    border-bottom: 2px solid #d30e5a;
+    margin-bottom: 20px;
+}

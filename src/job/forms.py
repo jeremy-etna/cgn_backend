@@ -8,5 +8,6 @@ class JobCreationForm(ModelForm):
         exclude = [
             'user',
             'creation_date',
-            'views'
+            'views',
+            'company'
         ]

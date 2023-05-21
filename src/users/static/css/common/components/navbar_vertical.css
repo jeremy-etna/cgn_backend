@@ -1,17 +1,14 @@
 .navbar-vertical {
-  background-color: transparent;
-
-  padding-left: 50px;
-  z-index: 4;
-  position: fixed;
-  top: 40%;
-  left: 0;
+    background-color: transparent;
+    padding-left: 50px;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 50vh;
+    transform: translateY(-50%);
 }
 
-
 .navbar-vertical li {
-  list-style: none;
-
   margin-bottom: 20px;
 }
 

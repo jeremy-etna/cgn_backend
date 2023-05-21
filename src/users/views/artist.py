@@ -71,7 +71,7 @@ class ProfileEditView(View):
     forms_and_instances = list(zip(context_keys, ARTIST_PROFILE_FORMS))
 
     def get(self, request):
-        context = CONTEXT_TEMPLATE
+        context = CONTEXT_TEMPLATE.copy()
         context["role"] = request.user.role
         model_instances = {}
 
@@ -87,7 +87,7 @@ class ProfileEditView(View):
         return render(request, os.path.join("artist", "profile_edit.html"), context)
 
     def post(self, request):
-        context = CONTEXT_TEMPLATE
+        context = CONTEXT_TEMPLATE.copy()
         context["role"] = request.user.role
         form_saved = False
         model_instances = {}
@@ -126,7 +126,7 @@ def artists(request):
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
-    context = CONTEXT_TEMPLATE
+    context = CONTEXT_TEMPLATE.copy()
     context["objects"] = page_obj
     context["role"] = request.user.role
     context["templates_ui"]["card"] = os.path.join(
@@ -147,7 +147,7 @@ def companies(request):
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
-    context = CONTEXT_TEMPLATE
+    context = CONTEXT_TEMPLATE.copy()
     context["objects"] = page_obj
     context["role"] = request.user.role
     context["templates_ui"]["card"] = os.path.join(
@@ -164,7 +164,7 @@ def artist(request, id):
     objects = get_objects_from_models(ARTIST_PROFILE_MODELS, id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "artist")
-    context = CONTEXT_TEMPLATE
+    context = CONTEXT_TEMPLATE.copy()
     context["role"] = request.user.role
     context["objects"] = objects
     context["templates_models"]["identity"] = os.path.join(
@@ -205,7 +205,7 @@ def company(request, id):
     objects = get_objects_from_models(COMPANY_PROFILE_MODELS, id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "company")
-    context = CONTEXT_TEMPLATE
+    context = CONTEXT_TEMPLATE.copy()
     context["role"] = request.user.role
     context["objects"] = objects
     context["templates_models"]["company"] = os.path.join(

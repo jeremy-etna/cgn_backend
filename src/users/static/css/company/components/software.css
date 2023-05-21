@@ -1,0 +1,24 @@
+.software-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.software-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 60vw;
+    gap: 20px;
+}
+
+
+.software-element {
+  flex: 0 0 200px;
+}
+

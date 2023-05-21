@@ -3,16 +3,25 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/artist/profile.css' %}">
-<link rel="stylesheet" href="{% static 'css/artist/components/level_bar.css' %}">
-<link rel="stylesheet" href="{% static 'css/artist/components/navbar_vertical.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/base_profile_components.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/identity.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/coordinate.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/administrative.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/mobility.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/socialmedia.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/contract.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/sector.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/competence.css' %}">
+<link rel="stylesheet" href="{% static 'css/artist/components/software.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/level_bar.css' %}">
+<link rel="stylesheet" href="{% static 'css/common/components/toggle_switch.css' %}">
 {% endblock %}
 
 {% block content %}
 <main>
-    <section class="container-profile">
-        {% include templates_ui.navbar_vertical with sections=objects %}
+    <section class="profile-container">
         {% for section_name, path_template in templates_models.items %}
-        <section class="{{ section_name }}" id="{{ section_name }}">
+        <section class="{{ section_name | lower }}-section" id="{{ section_name | lower }}-section">
             {% include path_template with title=section_name objects=objects %}
         </section>
         {% endfor %}
@@ -22,5 +31,5 @@
 
 {% block javascript %}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="{% static 'javascript/animated_scroll.js' %}"></script>
+<script src="{% static 'js/animated_scroll.js' %}"></script>
 {% endblock %}

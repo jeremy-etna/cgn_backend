@@ -11,6 +11,7 @@ from users.services.objects_manager import (
     remove_elements_by_keys_recursive,
     remove_pattern_dict_keys,
     get_templates,
+    get_template,
 )
 
 from users.services.models_selector import (
@@ -26,10 +27,10 @@ def profile(request):
     objects = get_objects_from_models(COMPANY_PROFILE_MODELS, request.user.id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "company")
-    context = CONTEXT_TEMPLATE
+    context = CONTEXT_TEMPLATE.copy()
     context["role"] = request.user.role
     context["objects"] = objects
-    context["templates_models"]["company"] = os.path.join(
+    context["templates_models"]["identity"] = os.path.join(
         "company", "components", "identity.html"
     )
     context["templates_models"]["coordinate"] = os.path.join(
@@ -64,7 +65,7 @@ class ProfileEditView(View):
     forms_and_instances = list(zip(context_keys, COMPANY_PROFILE_FORMS))
 
     def get(self, request):
-        context = CONTEXT_TEMPLATE
+        context = CONTEXT_TEMPLATE.copy()
         context["role"] = request.user.role
         model_instances = {}
         for model_name in self.context_keys:
@@ -109,11 +110,11 @@ def artists(request):
     artist_identity = ARTIST_PROFILE_MODELS[0]
     artists_list = artist_identity.objects.all().order_by("id")
 
-    paginator = Paginator(artists_list, 5)
+    paginator = Paginator(artists_list, 15)
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
-    context = CONTEXT_TEMPLATE
+    context = CONTEXT_TEMPLATE.copy()
     context["objects"] = page_obj
     context["role"] = request.user.role
     context["templates_ui"]["card"] = os.path.join(
@@ -130,11 +131,11 @@ def companies(request):
     company_identity = COMPANY_PROFILE_MODELS[0]
     companies_list = company_identity.objects.all().order_by("id")
 
-    paginator = Paginator(companies_list, 5)
+    paginator = Paginator(companies_list, 15)
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
-    context = CONTEXT_TEMPLATE
+    context = CONTEXT_TEMPLATE.copy()
     context["objects"] = page_obj
     context["role"] = request.user.role
     context["templates_ui"]["card"] = os.path.join(
@@ -151,7 +152,7 @@ def artist(request, id):
     objects = get_objects_from_models(ARTIST_PROFILE_MODELS, id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "artist")
-    context = CONTEXT_TEMPLATE
+    context = CONTEXT_TEMPLATE.copy()
     context["role"] = request.user.role
     context["objects"] = objects
     context["templates_models"]["identity"] = os.path.join(
@@ -192,7 +193,7 @@ def company(request, id):
     objects = get_objects_from_models(COMPANY_PROFILE_MODELS, id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "company")
-    context = CONTEXT_TEMPLATE
+    context = CONTEXT_TEMPLATE.copy()
     context["role"] = request.user.role
     context["objects"] = objects
     context["templates_models"]["company"] = os.path.join(

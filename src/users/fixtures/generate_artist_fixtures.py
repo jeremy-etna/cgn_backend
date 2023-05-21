@@ -1,6 +1,13 @@
+import os
+import sys
 import json
 import random
 from faker import Faker
+
+import django
+sys.path.append(r'D:\RNCP\cg_network\src')
+os.environ['DJANGO_SETTINGS_MODULE'] = 'cgnetwork.settings'
+django.setup()
 
 from cgnetwork.constants.models import (
     COMPETENCES,
