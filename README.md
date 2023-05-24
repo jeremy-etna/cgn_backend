@@ -35,25 +35,16 @@ DROP USER nom_utilisateur;`
 
 ## Cheat sheet:
 `\dt : affiche la liste de toutes les tables de la base de données actuelle.
-\c <database> : se connecter a la db
+\c database_name : se connecter a la db
 \du : list users
 \dt+ : affiche la liste de toutes les tables de la base de données actuelle, avec des informations supplémentaires telles que le propriétaire de la table, la taille de la table, etc.
 \z nom_table; : voir les privileges user lies a une table. 
 \q : quitte la console PostgreSQL.`
 
- 
-## Postgres security setup:
-`SECURITY settings in POSTGRES
-alter role cguser set client_encoding to 'utf8';
-alter role cguser set default_transaction_isolation to 'read committed';
-grant all privileges on database cg_network to cguser;`
-
-
 ## SQL DB_SETUP USER
-`CREATE USER cguser WITH ENCRYPTED PASSWORD '0203';
+`CREATE USER cguser WITH ENCRYPTED PASSWORD *password*';
 ALTER ROLE cguser SET client_encoding TO 'utf8';
-ALTER ROLE cguser SET edfault_transaction_isolation TO 'read committed';
-GRANT ALL PRIVILEGES ON DATABASE cg_network TO cguser;
+ALTER ROLE cguser SET default_transaction_isolation TO 'read committed';
+GRANT ALL PRIVILEGES ON DATABASE cgnetwork TO cguser;
 GRANT ALL PRIVILEGES ON SCHEMA public TO cguser;
-GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO cguser;
 GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO cguser;`

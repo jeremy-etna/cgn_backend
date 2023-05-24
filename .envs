@@ -1,0 +1,9 @@
+SECRET_KEY='django-insecure-(u3^js$qw0x7*$2)6@o%ef0wtc-!4=&p-)mr#dgn@+_3c$h(#7'
+DEBUG=True
+
+DJANGO_DB_ENGINE=django.db.backends.postgresql
+DJANGO_DB_NAME=cgnetwork
+DJANGO_DB_USER=cguser
+DJANGO_DB_PASSWORD=0203
+DJANGO_DB_HOST=localhost
+DJANGO_DB_PORT=5432
