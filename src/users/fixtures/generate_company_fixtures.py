@@ -70,7 +70,7 @@ for i in range(instance_start, instance_end + 1):
                 "zip_code": fake.zipcode(),
                 "street_name": fake.street_name(),
                 "street_number": fake.building_number(),
-                "phone_number": fake.phone_number(),
+                "phone_number": fake.bothify(text="01-##-##-##-##"),
             },
         }
     )
