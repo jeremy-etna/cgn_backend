@@ -1,5 +1,5 @@
 from django.test import TestCase
-from CgNetwork.models import CustomUser
+from cgnetwork.models import CustomUser
 from django.utils import timezone
 
 

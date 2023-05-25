@@ -14,7 +14,7 @@
 `python manage.py migrate` > apply migrations in db
 
 ## Load json fixtures in db:
-`python manage.py loaddata .\CgNetwork\fixtures\user_data.json`
+`python manage.py loaddata .\cgnetwork\fixtures\user_data.json`
 
 
 ## Postgres commands:

@@ -1,6 +1,6 @@
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
-from CgNetwork.views import (
+from cgnetwork.views import (
     register,
     home
     )
