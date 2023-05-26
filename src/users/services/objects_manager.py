@@ -6,11 +6,11 @@ from django.conf import settings
 
 def get_objects_from_models(models: List[Type], user_id: int) -> Dict[str, Any]:
     """
-    Récupère les objets des modèles Django spécifiés en fonction de l'ID de l'utilisateur.
+    Retrieves objects from specified Django models based on the user's ID.
 
-    :param models: Une liste de modèles Django.
-    :param user_id: L'ID de l'utilisateur.
-    :return: Un dictionnaire contenant les objets récupérés, avec les noms des modèles comme clés.
+    :param models: A list of Django models.
+    :param user_id: The ID of the user.
+    :return: A dictionary containing the retrieved objects, with the model names as keys.
     """
     objects = {}
 
@@ -23,11 +23,12 @@ def get_objects_from_models(models: List[Type], user_id: int) -> Dict[str, Any]:
 
 def get_all_objects_from_models(models: List[Type]) -> Dict[str, Any]:
     """
-    Récupère tous les objets des modèles Django spécifiés.
+    Retrieves all objects from the specified Django models.
 
-    :param models: Une liste de modèles Django.
-    :return: Un dictionnaire contenant les objets récupérés, avec les noms des modèles comme clés.
+    :param models: A list of Django models.
+    :return: A dictionary containing the retrieved objects, with the model names as keys.
     """
+
     objects = {}
 
     for model in models:
@@ -41,12 +42,13 @@ def remove_elements_by_keys_recursive(
     dictionary: Dict[str, Any], keys_to_remove: Union[str, List[str]]
 ) -> Dict[str, Any]:
     """
-    Supprime récursivement les éléments d'un dictionnaire en fonction de leurs clés.
+    Recursively removes elements from a dictionary based on their keys.
 
-    :param dictionary: Le dictionnaire à partir duquel supprimer les éléments.
-    :param keys_to_remove: Les clés des éléments à supprimer, soit sous forme de chaîne, soit sous forme de liste de chaînes.
-    :return: Un nouveau dictionnaire sans les éléments dont les clés sont spécifiées.
+    :param dictionary: The dictionary from which to remove the elements.
+    :param keys_to_remove: The keys of the elements to remove, either as a string or as a list of strings.
+    :return: A new dictionary without the elements whose keys are specified.
     """
+
     if not isinstance(keys_to_remove, list):
         keys_to_remove = [keys_to_remove]
 
@@ -65,16 +67,43 @@ def remove_elements_by_keys_recursive(
 
 
 def get_templates(role: str, components: list) -> dict:
+    """
+    Generates templates paths based on role and components.
+
+    :param role: User's role
+    :param components: List of component names
+    :return: A dictionary with component names as keys and their template paths as values.
+    """
+
     return {
         component: f"{role}/components/{component}.html" for component in components
     }
 
 
 def get_template(app: str, role: str, component: str) -> str:
-    return os.path.join(settings.BASE_DIR, app, 'templates', role, 'components', component)
+    """
+    Generates a full path to a template based on the application name, role, and component.
+
+    :param app: Name of the Django application.
+    :param role: User's role.
+    :param component: Name of the component.
+    :return: A full path to the desired template.
+    """
+
+    return os.path.join(
+        settings.BASE_DIR, app, "templates", role, "components", component
+    )
 
 
 def remove_pattern_dict_keys(dictionary: dict, pattern: dict) -> dict:
+    """
+    Removes a pattern from dictionary keys.
+
+    :param dictionary: The dictionary to modify.
+    :param pattern: The pattern to remove from the keys.
+    :return: A new dictionary with the modified keys.
+    """
+
     new_dictionary = {}
     for key_name, value in dictionary.items():
         new_dictionary[key_name.replace(pattern, "")] = value

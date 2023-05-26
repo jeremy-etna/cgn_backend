@@ -50,7 +50,7 @@ class CustomUser(AbstractBaseUser):
     role = models.CharField(max_length=30, choices=Role.choices)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['user_role']
+    REQUIRED_FIELDS = ['role']
     objects = CustomUserManager()
 
     def has_module_perms(self, app_label):

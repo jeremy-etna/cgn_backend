@@ -43,7 +43,6 @@ from users.forms.company import (
 )
 
 
-### START SELECTION SET DEFINITIONS
 
 
 CONTEXT_TEMPLATE = {

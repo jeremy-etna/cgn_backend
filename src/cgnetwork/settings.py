@@ -83,14 +83,14 @@ WSGI_APPLICATION = 'cgnetwork.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': env('DJANGO_DB_ENGINE'),
-        'NAME': env('DJANGO_DB_NAME'),
-        'USER': env('DJANGO_DB_USER'),
-        'PASSWORD': env('DJANGO_DB_PASSWORD'),
-        'HOST': env('DJANGO_DB_HOST'),
-        'PORT': env('DJANGO_DB_PORT')
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': env('DJANGO_DB_ENGINE'),
+        # 'NAME': env('DJANGO_DB_NAME'),
+        # 'USER': env('DJANGO_DB_USER'),
+        # 'PASSWORD': env('DJANGO_DB_PASSWORD'),
+        # 'HOST': env('DJANGO_DB_HOST'),
+        # 'PORT': env('DJANGO_DB_PORT')
     }
 }
 
