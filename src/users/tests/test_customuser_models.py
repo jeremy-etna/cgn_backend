@@ -34,12 +34,12 @@ from users.models.company import (
 class CustomUserModelTest(TestCase):
     def setUp(self):
         self.user = CustomUser.objects.create(
-            email="test@example.com", role=Role.ARTIST
+            email="jeremy@etna.com", role=Role.ARTIST
         )
 
     def test_email_uniqueness(self):
         with self.assertRaises(Exception):
-            CustomUser.objects.create(email="test@example.com", role=Role.ARTIST)
+            CustomUser.objects.create(email="jeremy@etna.com", role=Role.ARTIST)
 
     def test_email_presence(self):
         user = CustomUser(email="", role=Role.ARTIST)

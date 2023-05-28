@@ -5,6 +5,7 @@ from django.core.paginator import Paginator
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.views import View
+from django.conf import settings
 
 from users.services.objects_manager import (
     get_objects_from_models,
@@ -197,7 +198,7 @@ def artist(request, id):
     context["templates_ui"]["navbar_vertical"] = os.path.join(
         "common", "components", "navbar_vertical.html"
     )
-    return render(request, os.path.join("artist", "profile_show.html"), context)
+    return render(request, os.path.join(settings.BASE_DIR, 'users', 'templates', "artist", "profile_show.html"), context)
 
 
 @login_required()
@@ -232,4 +233,4 @@ def company(request, id):
     context["templates_ui"]["navbar_vertical"] = os.path.join(
         "common", "components", "navbar_vertical.html"
     )
-    return render(request, os.path.join("company", "profile_show.html"), context)
+    return render(request, os.path.join(settings.BASE_DIR, 'users', 'templates', "company", "profile_show.html"), context)
