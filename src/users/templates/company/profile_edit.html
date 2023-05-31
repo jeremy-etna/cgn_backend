@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/artist/profile_edit.css' %}">
+<link rel="stylesheet" href="{% static 'css/company/profile_edit.css' %}">
 <link rel="stylesheet" href="{% static 'css/common/components/navbar_vertical.css' %}">
 <link rel="stylesheet" href="{% static 'css/common/components/level_bar.css' %}">
 {% endblock %}
@@ -10,7 +10,6 @@
 {% block content %}
 <section class="profile-container">
     {% include templates.navbar_vertical with sections=forms %}
-    <img class="profile-avatar" src="/media/{{ objects.identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
         {% for section_name, form in forms.items %}
             <section class="{{ section_name }}-section" id="{{ section_name }}-section">
                 <h1>{{ section_name|cut:"Company"|cut:"Form"|cut:"Artist"}}</h1>

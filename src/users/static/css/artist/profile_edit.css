@@ -13,7 +13,7 @@
 
 
 section {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -230,4 +230,50 @@ form textarea {
     background-color: #2d3035;
     color: #b3b3b3;
     text-align: left;
+}
+
+
+
+section.ArtistIdentityForm-section form div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #2d3035;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #d30e5a;
+    transition: all 0.3s ease;
+}
+
+section.ArtistIdentityForm-section form div:first-of-type label,
+section.ArtistIdentityForm-section form div:first-of-type input {
+    width: 80%;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+section.ArtistIdentityForm-section form div:first-of-type input[type="file"] {
+    color: #b3b3b3;
+    background-color: #313439;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section.ArtistIdentityForm-section form div:first-of-type input[type="file"]:hover {
+    color: #313439;
+    background-color: #fff;
+}
+
+section.ArtistIdentityForm-section form div:first-of-type a {
+    color: #6e9ecf;
+    text-decoration: none;
+}
+
+section.ArtistIdentityForm-section form div:first-of-type a:hover {
+    color: #d30e5a;
 }
