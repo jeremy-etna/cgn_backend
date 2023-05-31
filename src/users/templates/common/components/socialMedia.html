@@ -6,7 +6,7 @@
     {% if media != '' %}
         <li class="{{ title | lower }}-element">
             <h3>{{ label | capfirst | underscore_to_space }}</h3>
-            <p>{{ media }}</p>
+            <a href={{ media }} target="_blank" rel="noopener noreferrer">{{ media }}</a>
         </li>
     {% endif %}
     {% endfor %}

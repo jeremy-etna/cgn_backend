@@ -8,24 +8,22 @@
 {% endblock %}
 
 {% block content %}
-<main>
-    <section class="profile-container">
-        {% include templates.navbar_vertical with sections=forms %}
-        <img class="profile-avatar" src="/media/{{ objects.identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
-            {% for section_name, form in forms.items %}
-                <section class="{{ section_name }}-section" id="{{ section_name }}-section">
-                    <h1>{{ section_name|cut:"Company"|cut:"Form"|cut:"Artist"}}</h1>
-                    <form method="post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        {{ form.as_div }}
-                        {{ errors }}
-                        <input type="hidden" name="current-form" value="{{ section_name }}">
-                        <input type="submit" value="save profile">
-                    </form>
-                </section>
-            {% endfor %}
-    </section>
-</main>
+<section class="profile-container">
+    {% include templates.navbar_vertical with sections=forms %}
+    <img class="profile-avatar" src="/media/{{ objects.identity.avatar }}" alt="NO IMAGE CHOSEN" style="height:200px">
+        {% for section_name, form in forms.items %}
+            <section class="{{ section_name }}-section" id="{{ section_name }}-section">
+                <h1>{{ section_name|cut:"Company"|cut:"Form"|cut:"Artist"}}</h1>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_div }}
+                    {{ errors }}
+                    <input type="hidden" name="current-form" value="{{ section_name }}">
+                    <input type="submit" value="save profile">
+                </form>
+            </section>
+        {% endfor %}
+</section>
 {% endblock %}
 
 {% block javascript %}

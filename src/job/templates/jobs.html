@@ -8,30 +8,28 @@
 {% endblock %}
 
 {% block content %}
-<main>
-    <section class="jobs-container">
+<section class="jobs-container">
+    {% if role == 'company' %}
+    <div class="create-button">
+        <a href="{% url 'job-create' %}" class="btn btn-primary">Create Job</a>
+    </div>
+    {% endif %}
+    {% if objects|length > 0 %}
+        {% for object in objects %}
+        {% include templates_ui.card %}
         {% if role == 'company' %}
-        <div class="create-button">
-            <a href="{% url 'job-create' %}" class="btn btn-primary">Create Job</a>
-        </div>
+            <div class="delete-button">
+                <a href="{% url 'job-delete' object.id %}" class="btn btn-danger">Delete</a>
+            </div>
         {% endif %}
-        {% if objects|length > 0 %}
-            {% for object in objects %}
-            {% include templates_ui.card %}
-            {% if role == 'company' %}
-                <div class="delete-button">
-                    <a href="{% url 'job-delete' object.id %}" class="btn btn-danger">Delete</a>
-                </div>
-            {% endif %}
-            {% endfor %}
-        {% else %}
-            <h1>There is no registered job yet...</h1>
-        {% endif %}
-    </section>
-    <section class="paginator">
-        {% include templates_ui.paginator %}
-    </section>
-</main>
+        {% endfor %}
+    {% else %}
+        <h1>There is no registered job yet...</h1>
+    {% endif %}
+</section>
+<section class="paginator">
+    {% include templates_ui.paginator %}
+</section>
 {% endblock %}
 
 {% block javascript %}

@@ -43,16 +43,6 @@ from users.forms.company import (
 )
 
 
-
-
-CONTEXT_TEMPLATE = {
-    "role": "",
-    "objects": {},
-    "forms": {},
-    "templates_models": {},
-    "templates_ui": {},
-}
-
 ARTIST_PROFILE_MODELS = [
     ArtistIdentity,
     ArtistCoordinate,

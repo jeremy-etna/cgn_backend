@@ -15,17 +15,15 @@
 {% endblock %}
 
 {% block content %}
-<main>
-    <section class="profile-container">
-        {% include templates_ui.navbar_vertical with sections=objects %}
-        {% for section_name, path_template in templates_models.items %}
-        <section class="{{ section_name | lower }}-section" id="{{ section_name | lower }}-section">
-            {% include path_template with title=section_name objects=objects %}
-            <a class="profile-edit-btn" href="{% url 'company-profile-edit' %}#Company{{ section_name | capfirst }}Form-section">MODIFY</a>\
-        </section>
-        {% endfor %}
+<section class="profile-container">
+    {% include templates_ui.navbar_vertical with sections=objects %}
+    {% for section_name, path_template in templates_models.items %}
+    <section class="{{ section_name | lower }}-section" id="{{ section_name | lower }}-section">
+        {% include path_template with title=section_name objects=objects %}
+        <a class="profile-edit-btn" href="{% url 'company-profile-edit' %}#Company{{ section_name | capfirst }}Form-section">MODIFY</a>\
     </section>
-</main>
+    {% endfor %}
+</section>
 {% endblock %}
 
 {% block javascript %}

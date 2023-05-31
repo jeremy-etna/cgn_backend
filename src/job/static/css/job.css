@@ -1,74 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #313439;
-    margin: 0;
-    padding: 0;
-}
-
-.container-profile {
+.job-container {
     width: 60%;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
 }
 
-.summary-section, .company-section, .job-section, .salary-section {
+.summary-section,
+.company-section,
+.job-section,
+.salary-section {
     background-color: #2d3035;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
-h1, h2 {
+.job-container h1,
+.job-container h2 {
     color: #d30e5a;
+    margin-bottom: 10px;
 }
 
-.avatar img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.avatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-h1 {
+.job-container h1 {
     font-size: 24px;
-    margin-bottom: 10px;
 }
 
-h2 {
+.job-container h2 {
     font-size: 20px;
-    color: #e44978;
-    margin-bottom: 10px;
 }
 
-h3 {
+.job-container h3 {
     font-size: 18px;
     color: #91b9e1;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
-p {
+.job-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.job-container .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.job-container p {
     line-height: 1.6;
     color: #b3b3b3;
     text-align: left;
+    margin-bottom: 10px;
 }
 
-.label {
+.job-container .label {
     color: #b3b3b3;
     font-weight: bold;
     display: inline-block;
     margin-right: 10px;
 }
 
-.value {
+.job-container .value {
     color: #fff;
+}
+
+.job-container p,
+.job-container h2,
+.job-container h3 {
+    word-break: break-all;
+}
+.job-container h2,
+.job-container h3,
+.job-container p {
+    margin: 0;
+    padding: 0;
 }

@@ -1,9 +1,14 @@
+{% load custom_filters %}
+
+
 <div class="{{ title }}">
     <h1>{{ title | capfirst }}s</h1>
     <br>
-    <ul class="{{ title }}s-list">
+    <ul class="{{ title }}-container">
         {% for label, comp in objects.competence.items %}
-            <li class="{{ label }}">{{ label | upper }}<div class="level"><div class="{{ comp }}">{{ comp }}</div></div></li>
+        {% if comp == True %}
+            <li class="{{ label }}">{{ label | upper | underscore_to_space }}<div class="level"><div class="{{ comp }}"></div></div></li>
+        {% endif %}
         {% endfor %}
     </ul>
 </div>

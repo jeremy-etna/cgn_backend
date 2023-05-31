@@ -8,20 +8,18 @@
 {% endblock %}
 
 {% block content %}
-<main>
-    <section class="gallery-container">
-        {% if objects|length > 0 %}
-        {% for object in objects %}
-        {% include templates_ui.card %}
-        {% endfor %}
-        {% else %}
-        <h1>There is no registered company yet...</h1>
-        {% endif %}
-    </section>
-    <section class="paginator">
-        {% include templates_ui.paginator %}
-    </section>
-</main>
+<section class="gallery-container">
+    {% if objects|length > 0 %}
+    {% for object in objects %}
+    {% include templates_ui.card %}
+    {% endfor %}
+    {% else %}
+    <h1>There is no registered company yet...</h1>
+    {% endif %}
+</section>
+<section class="paginator">
+    {% include templates_ui.paginator %}
+</section>
 {% endblock %}
 
 {% block javascript %}

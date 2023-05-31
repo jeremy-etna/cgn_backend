@@ -8,11 +8,8 @@ from cgnetwork.forms import UserRegistrationForm
 def home(request):
     auth = request.user.is_authenticated
     context = {'auth': auth}
-
     if auth:
-        role = request.user.role
-        context['role'] = role
-
+        context = {"role": request.user.role}
     return render(request, 'cgnetwork/home.html', context=context)
 
 

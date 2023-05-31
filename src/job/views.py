@@ -18,7 +18,6 @@ from users.services.objects_manager import (
 )
 
 from users.services.models_selector import (
-    CONTEXT_TEMPLATE,
     COMPANY_PROFILE_MODELS,
 )
 
@@ -34,9 +33,8 @@ def jobs(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
-    context = CONTEXT_TEMPLATE
-    context['role'] = request.user.role
-    context['objects'] = page_obj
+    context = {"role": request.user.role, "objects": page_obj, "templates_models": {}, "templates_ui": {}}
+
     context["templates_ui"]["card"] = os.path.join(
         "components", "job_card.html"
     )
@@ -48,12 +46,10 @@ def jobs(request):
 
 @login_required()
 def job(request, id):
-    context = CONTEXT_TEMPLATE.copy()
-    context['role'] = request.user.role
-    context['objects'] = {
+    context = {"role": request.user.role, "objects": {}, "templates_models": {}, "templates_ui": {}, 'objects': {
         'job': None,
         'company': None,
-    }
+    }}
     current_job = Job.objects.get(id=id)
 
     company_identity = COMPANY_PROFILE_MODELS[0]
@@ -76,8 +72,7 @@ def job_create(request):
     model_fields = ['title', 'company_description', 'job_responsibilities', 'required_skills',
                     'required_qualifications', 'job_requirements', 'employee_benefits', 'salary_min', 'salary_max']
     user = request.user
-    context = CONTEXT_TEMPLATE
-    context['role'] = request.user.role
+    context = {"role": request.user.role, "objects": {}, "templates_models": {}, "templates_ui": {}}
 
     if request.method == 'POST':
         form = JobCreationForm(request.POST)
@@ -105,10 +100,7 @@ def job_delete(request, job_id):
     if request.user.role != 'company':
         return render(request, 'cgnetwork/404.html', status=404)
 
-    user = request.user
-    role = user.role
-    context = {}
-    context['role'] = role
+    context = {"role": request.user.role, "objects": {}, "templates_models": {}, "templates_ui": {}}
 
     Job.objects.get(id=job_id).delete()
     return HttpResponseRedirect('../../all')

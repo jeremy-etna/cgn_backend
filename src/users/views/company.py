@@ -15,7 +15,6 @@ from users.services.objects_manager import (
 )
 
 from users.services.models_selector import (
-    CONTEXT_TEMPLATE,
     ARTIST_PROFILE_MODELS,
     COMPANY_PROFILE_MODELS,
     COMPANY_PROFILE_FORMS,
@@ -27,9 +26,13 @@ def profile(request):
     objects = get_objects_from_models(COMPANY_PROFILE_MODELS, request.user.id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "company")
-    context = CONTEXT_TEMPLATE
-    context["role"] = request.user.role
-    context["objects"] = objects
+    context = {
+        "role": request.user.role,
+        "objects": objects,
+        "templates_models": {},
+        "templates_ui": {},
+    }
+
     context["templates_models"]["identity"] = os.path.join(
         "company", "components", "identity.html"
     )
@@ -65,8 +68,14 @@ class ProfileEditView(View):
     forms_and_instances = list(zip(context_keys, COMPANY_PROFILE_FORMS))
 
     def get(self, request):
-        context = CONTEXT_TEMPLATE
-        context["role"] = request.user.role
+        context = {
+            "role": request.user.role,
+            "objects": {},
+            "templates_models": {},
+            "templates_ui": {},
+            "forms": {},
+        }
+
         model_instances = {}
         for model_name in self.context_keys:
             model_instances[model_name] = getattr(request.user, model_name)
@@ -99,7 +108,8 @@ class ProfileEditView(View):
             return HttpResponseRedirect(
                 "../"
                 + "#"
-                + form_name.replace("Form", "").replace("Company", "").lower()
+                + form_name.lower().replace("form", "").replace("company", "")
+                + "-section"
             )
         else:
             return render(request, "profile_edit.html", self.context)
@@ -114,9 +124,13 @@ def artists(request):
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
-    context = CONTEXT_TEMPLATE
-    context["objects"] = page_obj
-    context["role"] = request.user.role
+    context = {
+        "role": request.user.role,
+        "objects": page_obj,
+        "templates_models": {},
+        "templates_ui": {},
+    }
+
     context["templates_ui"]["card"] = os.path.join(
         "artist", "components", "artist_card.html"
     )
@@ -135,9 +149,13 @@ def companies(request):
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
-    context = CONTEXT_TEMPLATE
-    context["objects"] = page_obj
-    context["role"] = request.user.role
+    context = {
+        "role": request.user.role,
+        "objects": page_obj,
+        "templates_models": {},
+        "templates_ui": {},
+    }
+
     context["templates_ui"]["card"] = os.path.join(
         "company", "components", "company_card.html"
     )
@@ -152,9 +170,13 @@ def artist(request, id):
     objects = get_objects_from_models(ARTIST_PROFILE_MODELS, id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "artist")
-    context = CONTEXT_TEMPLATE
-    context["role"] = request.user.role
-    context["objects"] = objects
+    context = {
+        "role": request.user.role,
+        "objects": objects,
+        "templates_models": {},
+        "templates_ui": {},
+    }
+
     context["templates_models"]["identity"] = os.path.join(
         "artist", "components", "identity.html"
     )
@@ -185,7 +207,7 @@ def artist(request, id):
     context["templates_ui"]["navbar_vertical"] = os.path.join(
         "common", "components", "navbar_vertical.html"
     )
-    return render(request, os.path.join("artist", "profile_show.html"), context)
+    return render(request, os.path.join("artist", "profile_public.html"), context)
 
 
 @login_required()
@@ -193,10 +215,14 @@ def company(request, id):
     objects = get_objects_from_models(COMPANY_PROFILE_MODELS, id)
     objects = remove_elements_by_keys_recursive(objects, ["id", "user", "user_id"])
     objects = remove_pattern_dict_keys(objects, "company")
-    context = CONTEXT_TEMPLATE
-    context["role"] = request.user.role
-    context["objects"] = objects
-    context["templates_models"]["company"] = os.path.join(
+    context = {
+        "role": request.user.role,
+        "objects": objects,
+        "templates_models": {},
+        "templates_ui": {},
+    }
+
+    context["templates_models"]["identity"] = os.path.join(
         "company", "components", "identity.html"
     )
     context["templates_models"]["coordinate"] = os.path.join(
@@ -220,4 +246,5 @@ def company(request, id):
     context["templates_ui"]["navbar_vertical"] = os.path.join(
         "common", "components", "navbar_vertical.html"
     )
-    return render(request, os.path.join("company", "profile_show.html"), context)
+    print(context["objects"].keys())
+    return render(request, os.path.join("company", "profile_public.html"), context)

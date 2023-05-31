@@ -7,7 +7,6 @@
     </div>
     {% else %}
         {% if role == 'artist' %}
-            <p class="nav-welcome" style="display:inline">Welcome {{ objects.identity.first_name }}</p>
             <div class="nav-links">
                 <a class="nav-link" href="{% url 'artist-profile' %}">Profile</a>
                 <a class="nav-link" href="{% url 'jobs' %}">Jobs</a>
@@ -17,7 +16,6 @@
             </div>
         {% endif %}
         {% if role == 'company' %}
-            <p class="nav-welcome" style="display:inline">Welcome {{ objects.identity.company_name }}</p>
             <div class="nav-links">
                 <a class="nav-link" href="{% url 'company-profile' %}">Profile</a>
                 <a class="nav-link" href="{% url 'jobs' %}">Jobs</a>
