@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/job_create.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -10,7 +11,7 @@
         {% csrf_token %}
         {% for field in form %}
         <div class="form-group">
-            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+            <label class="{{ field.id_for_label }}">{{ field.label }}</label>
             {{ field }}
             {% if field.help_text %}
             <small class="form-text text-muted">{{ field.help_text }}</small>
@@ -21,7 +22,7 @@
         </div>
         {% endfor %}
         <input type="hidden" name="current-form" value="{{ name }}">
-        <input type="submit" value="save profile">
+        <input type="submit" value="save job">
     </form>
 </section>
 {% endblock %}

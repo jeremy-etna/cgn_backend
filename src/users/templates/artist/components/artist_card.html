@@ -1,4 +1,4 @@
- <div class="card">
+<div class="card">
     <div class="avatar">
         {% if role == 'artist' %}
         <a href="{% url 'artist-artist' object.user_id %}">
@@ -19,3 +19,4 @@
         <p>{{ object.description | slice:"0:250"}}...</p>
     </div>
 </div>
+```

@@ -1,0 +1,110 @@
+.job-create-container {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.job-create-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.job-create-container .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.job-create-container label {
+    display: block;
+    margin-bottom: .5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.job-create-container input[type="text"],
+.job-create-container textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #d30e5a;
+    border-radius: 4px;
+    background-color: #2d3035;
+    font-family: 'Lato', sans-serif;
+    color: #b3b3b3;
+}
+
+.job-create-container .form-text {
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #6c757d;
+}
+
+.job-create-container .alert {
+    margin-top: .5rem;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.job-create-container input[type="submit"] {
+    background-color: #313439;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    width: 300px;
+    margin: 50px 0;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.job-create-container input[type="submit"]:hover {
+    background-color: #fff;
+    color: #313439;
+    cursor: pointer;
+}
+
+.create-button {
+    background-color: #313439;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+
+    width: 300px;
+    margin: 50px 0;
+    padding: 10px 10px;
+}
+
+
+
+@media (min-width: 769px) {
+    /* PC */
+    .job-create-container {
+        width: 60%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* TABLETTE */
+    .job-create-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* SMARTPHONE */
+    .job-create-container {
+        width: 90%;
+    }
+}

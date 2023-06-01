@@ -1,6 +1,7 @@
 .software-section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,12 +14,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 60vw;
-    gap: 20px;
+    align-items: center;
+    width: 40vw;
+    gap: 5%;
 }
-
 
 .software-element {
   flex: 0 0 200px;
+  margin-bottom: 3%;
 }
 

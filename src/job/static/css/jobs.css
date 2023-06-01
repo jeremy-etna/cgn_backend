@@ -23,6 +23,13 @@
     padding: 10px 10px;
 }
 
+.create-button:hover,
+ .delete-button:hover {
+    background-color: #fff;
+    color: #313439;
+    cursor: pointer;
+}
+
 .delete-button {
     background-color: #313439;
     border: 1px solid #fff;

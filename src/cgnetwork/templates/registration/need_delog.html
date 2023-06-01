@@ -7,11 +7,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="form">
+  {% if user.is_authenticated %}
+<p>You are already logged in. Please log out to access the login page.</p>
+  {% else %}
+    <h2>Se connecter</h2>
     <form method="post">
-        {% csrf_token %}
-        {{ form.as_div }}
-        <input type="submit" value="login">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Se connecter</button>
     </form>
-</div>
+  {% endif %}
 {% endblock %}
