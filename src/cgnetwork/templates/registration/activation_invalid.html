@@ -1,0 +1,23 @@
+{% extends 'cgnetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/cgnetwork/components/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cgnetwork/components/signinSignup.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Erreur d'activation de compte</h5>
+                    <p class="card-text">Le lien d'activation que vous avez suivi n'est pas valide. Il est possible que vous ayez déjà activé votre compte, ou que vous ayez attendu trop longtemps pour activer votre compte. Si vous rencontrez des problèmes pour activer votre compte, veuillez contacter le support.</p>
+                    <a href="{% url 'login' %}" class="btn btn-primary">Retourner à la page de connexion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

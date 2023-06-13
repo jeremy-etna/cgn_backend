@@ -1,0 +1,47 @@
+.container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: #d30e5a;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+.signup-btns {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.register-btn {
+    width: 100px;
+    padding: 10px;
+    background-color: #313439;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.login-btn {
+    width: 100px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #292a2f;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}

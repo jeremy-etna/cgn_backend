@@ -1,0 +1,130 @@
+.post-form-container {
+    width: 100%;
+    height: auto;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-form-container .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.post-form-container label {
+    display: block;
+    margin-bottom: .5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.post-form-container input[type="text"],
+.post-form-container  input[type="url"],
+.post-form-container textarea {
+    width: 30vw;
+    padding: .5rem;
+    border: 1px solid #d30e5a;
+    border-radius: 4px;
+    background-color: #2d3035;
+    font-family: 'Lato', sans-serif;
+    color: #b3b3b3;
+}
+
+.post-form-container .form-text {
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #6c757d;
+}
+
+.post-form-container .alert {
+    margin-top: .5rem;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.post-form-container button[type="submit"] {
+    background-color: #313439;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    width: 300px;
+    margin: 50px 0;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post-form-container button[type="submit"]:hover {
+    background-color: #fff;
+    color: #313439;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    /* PC */
+    .post-form-container {
+        width: 60%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* TABLETTE */
+    .post-form-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* SMARTPHONE */
+    .post-form-container {
+        width: 90%;
+    }
+}
+
+#id_image {
+    width: 100%;
+    padding: 5px;
+    background-color: #2d3035;
+    color: #fff;
+    border: 1px solid #d30e5a;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#id_image::file-selector-button {
+    background-color: #d30e5a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+label[for="id_image"] {
+    width: 30vw;
+
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+

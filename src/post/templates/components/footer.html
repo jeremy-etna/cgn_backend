@@ -1,0 +1,18 @@
+<div class="post-footer">
+    <div class="post-stats">
+        <span class="post-likes">Likes: {{ post.likes }}</span>
+        <span class="post-likes">Comments: {{ post.likes }}</span>
+        <span class="post-likes">Reposts: {{ post.likes }}</span>
+        <span class="post-likes">Shares: {{ post.likes }}</span>
+        {% if post.social_link %}
+            <p class="post-social-link"><a href="{{ post.social_link }}">Visit the link</a></p>
+        {% endif %}
+    </div>
+
+    <div class="post-social-buttons">
+        <button class="like-button">Like</button>
+        <button class="comment-button">Comment</button>
+        <button class="repost-button">Repost</button>
+        <button class="share-button">Share</button>
+    </div>
+</div>

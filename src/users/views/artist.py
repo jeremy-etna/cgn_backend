@@ -1,4 +1,5 @@
 import os
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
@@ -62,7 +63,7 @@ def profile(request):
     return render(request, os.path.join("artist", "profile.html"), context)
 
 
-class ProfileEditView(View):
+class ProfileEditView(LoginRequiredMixin, View):
     COMPONENTS = ["form_edit", "navbar_vertical"]
     context_keys = [
         str(form.__name__).replace("Form", "").lower() for form in ARTIST_PROFILE_FORMS

@@ -1,0 +1,20 @@
+<div class="post-content">
+    {% if post.image %}
+    <div class="post-image">
+        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+    </div>
+    {% endif %}
+
+    {% if post.video_url %}
+    <div class="post-video">
+        <iframe src="https://www.youtube.com/embed/{{ post.get_youtube_video_id }}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+    {% endif %}
+
+    <div class="post-text">
+        {{ post.content }}
+    </div>
+</div>

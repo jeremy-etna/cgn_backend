@@ -1,0 +1,23 @@
+NAMES
+cg guild
+cg republic
+
+ARTISTS
+posts
+comments
+calendar
+working_status (open to work, not available)
+
+COMPANY
+creation de projets
+creation d'equipes
+calcul de budget
+timeline
+
+ADMIN
+reset password
+email de validation de compte
+nouveau user type : school
+Les utilisateurs peuvent avoir un mois gratos de premium si ils font dix posts dans le mois
+Les utilisateurs peuvent avoir 6 mois gratos de premium si ils parrainent 3 nouveaux utilisateurs
+generer les premiers posts avec de l'ia

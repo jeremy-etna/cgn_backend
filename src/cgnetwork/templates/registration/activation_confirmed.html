@@ -1,0 +1,16 @@
+{% extends 'cgnetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/cgnetwork/components/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cgnetwork/activation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cgnetwork/components/signinSignup.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="card-title">Account Activation Confirmation</h1>
+    <p class="card-text">Your account was successfully created! You can login now.</p>
+    <a href="{% url 'login' %}" class="register-btn">login</a>
+</div>
+{% endblock %}

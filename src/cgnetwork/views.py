@@ -1,13 +1,19 @@
 from django.contrib.auth import authenticate, login
+from django.contrib.auth import get_user_model
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.tokens import default_token_generator
+from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect
 from django.shortcuts import render
 from django.urls import reverse
+from django.utils.encoding import force_str
+from django.utils.http import urlsafe_base64_decode
 
 from cgnetwork.forms import UserRegistrationForm
+from mailer import mails
 
 
 def home(request):
@@ -32,7 +38,10 @@ def register(request):
             if form.is_valid():
                 new_user = form.save(commit=False)
                 new_user.save()
-                return HttpResponseRedirect("login")
+
+                mails.send_activation_mail(new_user)
+
+                return HttpResponseRedirect("/")
             else:
                 context["errors"] = form.errors
                 context["form"] = form
@@ -91,3 +100,15 @@ def need_delog(request):
 def logout_view(request):
     logout(request)
     return redirect("login")
+
+
+def activate(request, uidb64, token):
+    uid = force_str(urlsafe_base64_decode(uidb64))
+    user = get_user_model().objects.get(pk=uid)
+    if default_token_generator.check_token(user, token):
+        user.is_active = True
+        user.save()
+        return render(request, 'registration/activation_confirmed.html')
+    else:
+        return render(request, 'registration/activation_invalid.html')
+

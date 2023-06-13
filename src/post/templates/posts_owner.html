@@ -1,0 +1,40 @@
+{% extends 'cgnetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/feed.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/content.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/footer.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="posts-container">
+    <div class="create-button">
+        <a href="{% url 'post-create' %}">New Post</a>
+    </div>
+
+    {% for post in posts %}
+    <div class="post">
+        {% include 'components/header.html' %}
+        {% include 'components/content.html' %}
+        {% include 'components/footer.html' %}
+    </div>
+
+    <div class="options-buttons-container">
+        <div class="delete-button">
+            <a href="{% url 'post-update' pk=post.pk %}">Update</a>
+        </div>
+        <div class="delete-button">
+            <a href="{% url 'post-delete' pk=post.pk %}">Delete</a>
+        </div>
+    </div>
+
+    {% empty %}
+        <p>No posts yet.</p>
+    {% endfor %}
+</section>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

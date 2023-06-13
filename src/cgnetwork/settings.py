@@ -35,8 +35,10 @@ INSTALLED_APPS = [
     'livereload',
     'django.contrib.staticfiles',
     'cgnetwork',
+    'mailer',
     'users',
     'job',
+    'post',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +60,8 @@ TEMPLATES = [
         'DIRS': [os.path.join(BASE_DIR, 'templates'),
                  os.path.join(BASE_DIR, 'users/templates/'),
                  os.path.join(BASE_DIR, 'job/templates/'),
+                 os.path.join(BASE_DIR, 'post/templates/'),
+                 os.path.join(BASE_DIR, 'mailer/templates/'),
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -78,14 +82,14 @@ WSGI_APPLICATION = 'cgnetwork.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': env('DJANGO_DB_ENGINE'),
-        'NAME': env('DJANGO_DB_NAME'),
-        'USER': env('DJANGO_DB_USER'),
-        'PASSWORD': env('DJANGO_DB_PASSWORD'),
-        'HOST': env('DJANGO_DB_HOST'),
-        'PORT': env('DJANGO_DB_PORT')
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': env('DJANGO_DB_ENGINE'),
+        # 'NAME': env('DJANGO_DB_NAME'),
+        # 'USER': env('DJANGO_DB_USER'),
+        # 'PASSWORD': env('DJANGO_DB_PASSWORD'),
+        # 'HOST': env('DJANGO_DB_HOST'),
+        # 'PORT': env('DJANGO_DB_PORT')
     }
 }
 
@@ -127,6 +131,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'cgnetwork/static'),
     os.path.join(BASE_DIR, 'users/static'),
     os.path.join(BASE_DIR, 'job/static'),
+    os.path.join(BASE_DIR, 'post/static'),
+    os.path.join(BASE_DIR, 'mailer/static'),
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'
@@ -141,3 +147,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')

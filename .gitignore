@@ -3,3 +3,6 @@ db.sqlite3
 __pycache__/
 .env/
 .envs
+.BETA-TESTERS.txt
+.FEATURES.txt
+```

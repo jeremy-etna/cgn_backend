@@ -1,0 +1,68 @@
+.post-footer {
+    border-top: 1px solid #40444b;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.post-likes {
+    font-weight: bold;
+    color: #d30e5a;
+}
+
+.post-tags {
+    color: #b3b3b3;
+    font-size: 0.9em;
+}
+
+.post-last-updated {
+    color: #b3b3b3;
+    font-size: 0.8em;
+}
+
+.post-social-link a {
+    color: #d30e5a;
+    text-decoration: none;
+}
+
+.post-social-link a:hover {
+    color: #e44978;
+}
+
+.post-social-link a:active {
+    color: #a20d4c;
+}
+
+
+.post-social-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.post-social-buttons button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d30e5a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.like-button,
+.comment-button,
+.repost-button,
+.share-button {
+    background-color: #d30e5a;
+}
+
+.post-social-buttons button:hover {
+    opacity: 0.7;
+}

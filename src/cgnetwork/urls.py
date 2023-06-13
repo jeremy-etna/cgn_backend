@@ -6,6 +6,7 @@ from django.urls import path, include
 from .views import (
     home,
     register,
+    activate,
     logged_in,
     login_view,
     need_delog,
@@ -17,6 +18,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", home, name="home"),
     path("register/", register, name="register"),
+    path('activate/<uidb64>/<token>/', activate, name='activate'),
     path('login/', login_view, name='login'),
     path('logout/', logout_view, name='logout'),
     path("need_delog/", need_delog, name='need_delog'),
@@ -25,6 +27,7 @@ urlpatterns = [
     path("artist/", include("users.urls.artist")),
     path("company/", include("users.urls.company")),
     path("job/", include("job.urls")),
+    path("post/", include("post.urls")),
 ]
 
 # Media files serving during development

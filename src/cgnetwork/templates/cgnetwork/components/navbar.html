@@ -8,6 +8,7 @@
     {% else %}
         {% if role == 'artist' %}
             <div class="nav-links">
+                <a class="nav-link" href="{% url 'feed' %}">Feed</a>
                 <a class="nav-link" href="{% url 'artist-profile' %}">Profile</a>
                 <a class="nav-link" href="{% url 'jobs' %}">Jobs</a>
                 <a class="nav-link" href="{% url 'artist-artists-gallery' %}">Artists</a>
@@ -17,6 +18,7 @@
         {% endif %}
         {% if role == 'company' %}
             <div class="nav-links">
+                <a class="nav-link" href="{% url 'feed' %}">Feed</a>
                 <a class="nav-link" href="{% url 'company-profile' %}">Profile</a>
                 <a class="nav-link" href="{% url 'jobs' %}">Jobs</a>
                 <a class="nav-link" href="{% url 'company-artists-gallery' %}">Artists</a>

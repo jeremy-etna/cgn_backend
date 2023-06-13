@@ -1,0 +1,20 @@
+{% extends 'cgnetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/post_create.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="post-form-container">
+    <h2>New Post</h2>
+    <form method="POST"  enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <button type="submit">Post</button>
+    </form>
+</div>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
