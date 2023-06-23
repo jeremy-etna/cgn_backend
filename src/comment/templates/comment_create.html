@@ -1,0 +1,16 @@
+{% extends 'cgnetwork/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/common/components/navbar_vertical.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="form-container">
+    <h2>Nouveau commentaire</h2>
+    {% include 'components/comment_form.html' %}
+</section>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

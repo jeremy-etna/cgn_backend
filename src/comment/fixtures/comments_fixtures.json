@@ -1,0 +1,37 @@
+[
+    {
+        "model": "comment.comment",
+        "pk": 1,
+        "fields": {
+            "post": 1,
+            "user": 1,
+            "content": "Ceci est un commentaire",
+            "created_at": "2023-06-15T08:00:00Z",
+            "parent": null,
+            "is_reply": false
+        }
+    },
+    {
+        "model": "comment.comment",
+        "pk": 2,
+        "fields": {
+            "post": 1,
+            "user": 2,
+            "content": "Ceci est une réponse",
+            "created_at": "2023-06-15T08:01:00Z",
+            "parent": 1,
+            "is_reply": true
+        }
+    },
+    {
+        "model": "comment.comment",
+        "pk": 3,
+        "fields": {
+            "post": 2,
+            "user": 3,
+            "content": "Ceci est une réponse",
+            "created_at": "2023-06-15T08:01:00Z",
+            "parent": null,
+            "is_reply": false
+        }
+    }]

@@ -1,0 +1,33 @@
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.comment .date {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.comment strong {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.comment p {
+    font-size: 1em;
+    color: #333;
+}
+
+.comment .replies {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+}
+
+p {
+    font-style: italic;
+    color: #888;
+}

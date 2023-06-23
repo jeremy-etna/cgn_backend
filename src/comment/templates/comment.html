@@ -1,0 +1,21 @@
+<h2>Commentaires</h2>
+{% for comment in comments %}
+    {% if not comment.is_reply %}
+        <div class="comment">
+            <div class="date">{{ comment.created_at }}</div>
+            <strong>{{ comment.user }}</strong>
+            <p>{{ comment.content }}</p>
+            {% if comment.replies.all %}
+                <div class="replies">
+                {% for reply in comment.replies.all %}
+                    <div class="date">{{ reply.created_at }}</div>
+                    <strong>{{ reply.user }}</strong>
+                    <p>{{ reply.content }}</p>
+                {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% empty %}
+    <p>Aucun commentaire n'a été posté.</p>
+{% endfor %}

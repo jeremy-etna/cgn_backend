@@ -13,7 +13,12 @@ from .views import (
     logout_view,
 )
 
+from api.views import api_test
+
 urlpatterns = [
+    path('api-auth/', include('rest_framework.urls')),
+    path("api/test/", api_test, name="api_test"),
+
     path("__reload__/", include("django_browser_reload.urls")),
     path("admin/", admin.site.urls),
     path("", home, name="home"),
