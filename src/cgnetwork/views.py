@@ -1,85 +1,26 @@
-from django.contrib.auth import authenticate, login
+import datetime
+
 from django.contrib.auth import get_user_model
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.tokens import default_token_generator
-from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect
 from django.shortcuts import render
 from django.urls import reverse
 from django.utils.encoding import force_str
 from django.utils.http import urlsafe_base64_decode
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
-from cgnetwork.forms import UserRegistrationForm
-from mailer import mails
+from jwt import (
+    encode
+)
+from cgnetwork.auth_service import authenticate_request
 
-
-def home(request):
-    auth = request.user.is_authenticated
-    context = {"auth": auth}
-    if auth:
-        context = {"role": request.user.role}
-    return render(request, "cgnetwork/home.html", context=context)
-
-
-def register(request):
-    context = {}
-    auth = request.user.is_authenticated
-    context["auth"] = auth
-
-    if auth:
-        context["role"] = request.user.role
-
-    else:
-        if request.method == "POST":
-            form = UserRegistrationForm(request.POST)
-            if form.is_valid():
-                new_user = form.save(commit=False)
-                new_user.save()
-
-                mails.send_activation_mail(new_user)
-
-                return HttpResponseRedirect("/")
-            else:
-                context["errors"] = form.errors
-                context["form"] = form
-        else:
-            form = UserRegistrationForm()
-            context["form"] = form
-
-    form = UserRegistrationForm()
-    context["form"] = form
-    return render(request, "registration/register.html", context=context)
-
-
-def login_view(request):
-    context = {}
-    auth = request.user.is_authenticated
-    context["auth"] = auth
-
-    if auth:
-        context["role"] = request.user.role
-        return HttpResponseRedirect(reverse("need_delog"))
-
-    else:
-        if request.method == "POST":
-            form = AuthenticationForm(request, data=request.POST)
-            if form.is_valid():
-                username = form.cleaned_data["username"]
-                password = form.cleaned_data["password"]
-                user = authenticate(request, username=username, password=password)
-                if user is not None:
-                    login(request, user)
-                    return redirect("logged_in")
-                else:
-                    form.add_error(None, "Invalid username or password")
-        else:
-            form = AuthenticationForm()
-
-    context["form"] = form
-    return render(request, "registration/login.html", context)
+from cgnetwork import settings
+from users.serializers import CustomUserSerializer
+from users.models.common import CustomUser
 
 
 @login_required()
@@ -97,11 +38,6 @@ def need_delog(request):
     return render(request, "registration/need_delog.html", context)
 
 
-def logout_view(request):
-    logout(request)
-    return redirect("login")
-
-
 def activate(request, uidb64, token):
     uid = force_str(urlsafe_base64_decode(uidb64))
     user = get_user_model().objects.get(pk=uid)
@@ -112,3 +48,58 @@ def activate(request, uidb64, token):
     else:
         return render(request, 'registration/activation_invalid.html')
 
+
+class RegisterView(APIView):
+    def post(self, request):
+        serializer = CustomUserSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.create_user(validated_data=request.data)
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=400)
+
+
+class LoginView(APIView):
+    def post(self, request):
+        email = request.data.get('email')
+        password = request.data.get('password')
+        user = CustomUser.objects.filter(email=email).first()
+        if user is None:
+            return Response({'error': 'User not found'}, status=400)
+        if not user.check_password(password):
+            return Response({'error': 'Invalid Password'}, status=400)
+
+        payload = {
+            'id': user.id,
+            'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
+            'iat': datetime.datetime.utcnow(),
+        }
+
+        token = encode(payload, settings.SECRET_KEY, algorithm='HS256')
+
+        response = Response()
+        response.set_cookie(key='jwt', value=token, httponly=True)
+        response.data = {
+            'jwt': token
+        }
+        return response
+
+
+class GetUserView(APIView):
+    def get(self, request):
+        user, error_response = authenticate_request(request)
+        if error_response:
+            return error_response
+
+        serializer = CustomUserSerializer(user)
+        return Response(serializer.data)
+
+
+class LogoutView(APIView):
+    def post(self, request):
+        print('logout')
+        response = Response()
+        response.delete_cookie('jwt')
+        response.data = {
+            'message': 'logout succeeded'
+        }
+        return response
