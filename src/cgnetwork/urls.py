@@ -10,7 +10,6 @@ from rest_framework_simplejwt.views import (
 
 
 from .views import (
-    home,
     activate,
     logged_in,
     need_delog,
@@ -24,8 +23,8 @@ from .views import (
 
 urlpatterns = [
     path("__reload__/", include("django_browser_reload.urls")),
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    # path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    # path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
     path("admin/", admin.site.urls),
 

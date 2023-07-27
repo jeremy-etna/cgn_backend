@@ -1,11 +1,9 @@
 import datetime
 
 from django.contrib.auth import get_user_model
-from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.tokens import default_token_generator
 from django.http import HttpResponseRedirect
-from django.shortcuts import redirect
 from django.shortcuts import render
 from django.urls import reverse
 from django.utils.encoding import force_str
